@@ -14,7 +14,7 @@ public class Endergemblock extends Block {
         this.setBlockTextureName(Main.MODID + ":" + "Endergemblock");
         this.setCreativeTab(Main.Tabtut);
         this.setHardness(60.0F);
-        this.setResistance(1200.0F);
+        this.setResistance(100.0F);
         this.setLightLevel(0.6F);
         this.setHarvestLevel("pickaxe", 4);
         this.setStepSound(soundTypeStone);

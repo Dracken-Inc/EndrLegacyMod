@@ -14,7 +14,7 @@ public class Firegemore extends Block {
         this.setBlockTextureName(Main.MODID + ":" + "Firegemore");
         this.setCreativeTab(Main.Tabtut);
         this.setHardness(50.0F);
-        this.setResistance(1000.0F);
+        this.setResistance(500.0F);
         this.setLightLevel(0.4F);
         this.setHarvestLevel("pickaxe", 4);
         this.setStepSound(soundTypeGlass);

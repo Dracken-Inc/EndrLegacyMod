@@ -14,16 +14,16 @@ public final class ModBlocks {
     public static Block Endergemblock;
 	 
 
-    public static final void init() {
+public static final void init() {
        //Blocks
-    	GameRegistry.registerBlock(Endersteelore = new Endersteelore(), "Endersteelore");
-        GameRegistry.registerBlock(Enderstonebricks = new Enderstonebrick(), "enderstonebricks");
-        GameRegistry.registerBlock(Firegemore = new Firegemore(), "firegemore");
-        GameRegistry.registerBlock(Endergemblock = new Endergemblock(), "endergemblock");
+   GameRegistry.registerBlock(Endersteelore = new Endersteelore(), "Endersteelore");
+   GameRegistry.registerBlock(Enderstonebricks = new Enderstonebrick(), "enderstonebricks");
+   GameRegistry.registerBlock(Firegemore = new Firegemore(), "firegemore");
+   GameRegistry.registerBlock(Endergemblock = new Endergemblock(), "endergemblock");
     
         //Smelting
-        OreDictionary.registerOre("oreEnderSteel", ModBlocks.Endersteelore);
-    	GameRegistry.addSmelting(ModBlocks.Endersteelore, new ItemStack (ModItems.Endersteelignot), 100);
+   OreDictionary.registerOre("oreEnderSteel", ModBlocks.Endersteelore);
+   GameRegistry.addSmelting(ModBlocks.Endersteelore, new ItemStack (ModItems.Endersteelignot), 100);
     }
 }
 

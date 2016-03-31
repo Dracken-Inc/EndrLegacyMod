@@ -14,7 +14,7 @@ public class Enderstonebrick extends Block {
         this.setBlockTextureName(Main.MODID + ":" + "Enderstonebrick");
         this.setCreativeTab(Main.Tabtut);
         this.setHardness(20.0F);
-        this.setResistance(800.0F);
+        this.setResistance(300.0F);
         this.setLightLevel(0.0F);
         this.setHarvestLevel("pickaxe", 2);
         this.setStepSound(soundTypeStone);
