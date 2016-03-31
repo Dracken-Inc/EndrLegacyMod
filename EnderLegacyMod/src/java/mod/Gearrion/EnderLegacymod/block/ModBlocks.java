@@ -12,7 +12,7 @@ public final class ModBlocks {
 
     public static Block Endersteelore;
     public static Block Enderstonebricks;
-    //public static Block Firegemore;
+    ///public static Block Firegemore;
     public static Block Endergemblock;
     public static Block Endersteelblock;
 	 
