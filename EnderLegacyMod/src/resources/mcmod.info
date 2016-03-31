@@ -1,0 +1,16 @@
+[
+{
+  "modid": "EnderLegacyMod",
+  "name": "Ender Legacy Mod",
+  "description": "True Ender Demension Mod.",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["Gearrion, Enderboy1025"],
+  "credits": "Thanks for Enderboy1025",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
