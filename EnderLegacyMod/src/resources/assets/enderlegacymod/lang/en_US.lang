@@ -2,6 +2,7 @@ tile.Enderstonebrick.name=Ender Stone Bricks
 tile.Endersteelore.name=Ender Stone Ore
 tile.Firegemore.name=Fire Gem Ore
 tile.Endergemblock.name=Ender Gem Block
+tile.Endersteelblock.name=Ender Steel Block
 item.EnderBlade.name=Ender Blade
 item.Endersteelpickaxe.name=Ender Steel PickAxe
 itemGroupTabtut=Ender Legacy
