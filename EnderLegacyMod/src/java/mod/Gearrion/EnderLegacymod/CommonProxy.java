@@ -25,7 +25,8 @@ public class CommonProxy {
 	}
 
 	public void init(FMLInitializationEvent e) {
-
+		//Not implemented or coded yet
+		//OreRegistrationEvent.init();
 	}
 
 	public void postInit(FMLPostInitializationEvent e) {
