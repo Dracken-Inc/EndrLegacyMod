@@ -13,7 +13,7 @@ public class Endergemblock extends Block {
         this.setBlockName("Endergemblock");
         this.setBlockTextureName(Main.MODID + ":" + "Endergemblock");
         this.setCreativeTab(Main.Tabtut);
-        this.setHardness(60.0F);
+        this.setHardness(55.0F);
         this.setResistance(100.0F);
         this.setLightLevel(0.6F);
         this.setHarvestLevel("pickaxe", 4);
