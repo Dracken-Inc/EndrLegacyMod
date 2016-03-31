@@ -32,6 +32,11 @@ public static final void init() {
    //Shapped Recipe
    GameRegistry.addRecipe(
 		   new ItemStack(ModBlocks.Endersteelblock),"ddd","ddd","ddd",'d',ModItems.Endersteelignot);
+   
+   //Shapeless Recipe
+   GameRegistry.addShapelessRecipe(
+		   new ItemStack(ModItems.Endersteelignot, 9),
+		   new ItemStack(ModBlocks.Endersteelblock));
  }
 }
 
