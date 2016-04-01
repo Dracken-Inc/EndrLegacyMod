@@ -3,7 +3,7 @@
 
 This mod is open sourced under the Apache License Attribution Non-Commercial License Found at tthe link http://www.apache.org/licenses/
 
-All OWNERSHIP is bount to the entity Gearrion Except for the texture's who they mostly belong to Enderboy1025 whom has provided permisions of it's use in this project.
+All OWNERSHIP is bound to the entity Gearrion Except for the texture's who they mostly belong to Enderboy1025 whom has provided permisions of it's use in this project.
 
 
 You are free to:
