@@ -9,7 +9,7 @@ import net.minecraft.item.Item;
     	public static Item Endersteelaxe;
 
 	public static final void init() {
-       GameRegistry.registerItem(Endersteelpickaxe = new Endersteelpickaxe("Endersteelpickaxe", ModMats.MatEnderSteel), "endersteel pickaxe");
-       GameRegistry.registerItem(Endersteelaxe = new Endersteelaxe("Endersteelaxe", ModMats.MatEnderSteel), "Endersteelaxe"); 
+       GameRegistry.registerItem(Endersteelpickaxe = new Endersteelpickaxe("Endersteelpickaxe", ModMats.MatEnderSteelItem), "endersteelpickaxe");
+       GameRegistry.registerItem(Endersteelaxe = new Endersteelaxe("Endersteelaxe", ModMats.MatEnderSteelItem), "Endersteelaxe"); 
 	}
 }

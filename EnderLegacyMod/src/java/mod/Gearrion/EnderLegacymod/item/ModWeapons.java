@@ -10,8 +10,8 @@ public final class ModWeapons {
 		
 	public static final void init() {
 	//Weapons
-	GameRegistry.registerItem(EnderBlade = new EnderBlade("EnderBlade", ModMats.MatEnderSteel),"EnderBlade");
-	GameRegistry.registerItem(Endersteelsword = new Endersteelsword("Endersteelsword", ModMats.MatEnderSteel),"Endersteelsword");
+	GameRegistry.registerItem(EnderBlade = new EnderBlade("EnderBlade", ModMats.MatEnderSteelItem),"EnderBlade");
+	GameRegistry.registerItem(Endersteelsword = new Endersteelsword("Endersteelsword", ModMats.MatEnderSteelItem),"Endersteelsword");
 //Huntress Bow all Messed up	
 	//GameRegistry.registerItem(Huntressbow = new Huntressbow("Huntressbow", ModMats.MatEnderSteel),"Huntressbow");
  }
