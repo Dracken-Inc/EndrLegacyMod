@@ -3,8 +3,6 @@ package mod.Gearrion.EnderLegacymod.block;
 import mod.Gearrion.EnderLegacymod.Main;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
-import net.minecraft.item.Item.ToolMaterial;
-import net.minecraftforge.common.util.EnumHelper;
 
 public class BlockModBlock extends Block {
 

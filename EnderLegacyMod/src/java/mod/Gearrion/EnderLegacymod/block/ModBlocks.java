@@ -1,9 +1,7 @@
 package mod.Gearrion.EnderLegacymod.block;
 
 import cpw.mods.fml.common.registry.GameRegistry;
-import mod.Gearrion.EnderLegacymod.item.ModMats;
 import net.minecraft.block.Block;
-import net.minecraft.block.Block.SoundType;
 import net.minecraft.block.material.Material;
 
 public final class ModBlocks {
