@@ -4,7 +4,7 @@ import mod.Gearrion.EnderLegacymod.Main;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 
-public class BlockModBlock extends Block {
+  public class BlockModBlock extends Block {
 
 	protected BlockModBlock(String unlocalizedName, Material material, float hardness, float resistants, float lightlevel, String tool, int toolstr, SoundType soundtype ) {
 		super(material);

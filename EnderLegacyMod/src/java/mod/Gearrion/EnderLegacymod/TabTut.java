@@ -9,13 +9,13 @@ import net.minecraft.item.Item;
 public class TabTut extends CreativeTabs {
 
 	public TabTut(int id, String name) {
-    super(id, name);
+		super(id, name);
 	}
 
 	@Override
 	@SideOnly(Side.CLIENT)
 	public Item getTabIconItem() {
-	return Items.ender_eye;
+		return Items.ender_eye;
 	}
 
 }
