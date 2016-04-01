@@ -2,6 +2,7 @@ package mod.Gearrion.EnderLegacymod.block;
 
 import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.block.Block;
+import net.minecraft.block.material.Material;
 
 public final class ModBlocks {
 
@@ -14,11 +15,11 @@ public final class ModBlocks {
 
 public static final void init() {
        //Blocks
-   GameRegistry.registerBlock(Endersteelore = new Endersteelore(), "Endersteelore");
-   GameRegistry.registerBlock(Enderstonebricks = new Enderstonebrick(), "enderstonebricks");
-   //GameRegistry.registerBlock(Firegemore = new Firegemore(), "firegemore");
-   GameRegistry.registerBlock(Endergemblock = new Endergemblock(), "endergemblock");
-   GameRegistry.registerBlock(Endersteelblock = new Endersteelblock(), "Endersteelblock"); 
+   GameRegistry.registerBlock(Endersteelore = new BlockModBlock("Endersteelore", Material.iron, 25.0F, 200.0F, 0.0F, "pickaxe", 3, Block.soundTypeMetal),"Endersteelore");
+   GameRegistry.registerBlock(Enderstonebricks = new BlockModBlock("enderstonebricks", Material.rock, 20.0F, 300.0F, 0.0F, "pickaxe", 2, Block.soundTypeStone), "Enderstonebricks");
+   //GameRegistry.registerBlock(Firegemore = new BlockModBlock(), "firegemore");
+   GameRegistry.registerBlock(Endergemblock = new BlockModBlock("endergemblock", Material.iron, 25.0F, 200.0F, 0.0F, "pickaxe", 3, Block.soundTypeMetal), "endergemblock");
+   GameRegistry.registerBlock(Endersteelblock = new BlockModBlock("Endersteelblock", Material.iron, 55.0F, 100.0F, 0.6F, "pickaxe", 4, Block.soundTypeStone), "Endersteelblock"); 
   }
 }
 
