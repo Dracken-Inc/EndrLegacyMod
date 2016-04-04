@@ -16,3 +16,10 @@
 /saves/
 /screenshots/
 /world/
+/.classpath/
+/.project.
+/build/
+/bin/
+/.settings/
+/.gradle/
+

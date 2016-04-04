@@ -14,8 +14,9 @@ public final class ModBlocks {
 	 
 
   public static final void init() {
-    //Blocks
-		GameRegistry.registerBlock(Endersteelore = new BlockModBlock("Endersteelore", Material.iron, 25.0F, 100.0F, 0.0F, "pickaxe", 3, Block.soundTypeMetal),"Endersteelore");
+    //Blocks       (Name, Material ,  hardness,  resistant,  light level,  tool,  tool strength,  sound type )
+		
+	    GameRegistry.registerBlock(Endersteelore = new BlockModBlock("Endersteelore", Material.iron, 25.0F, 100.0F, 0.0F, "pickaxe", 3, Block.soundTypeMetal),"Endersteelore");
 		GameRegistry.registerBlock(Enderstonebricks = new BlockModBlock("Enderstonebricks", Material.rock, 20.0F, 200.0F, 0.0F, "pickaxe", 2, Block.soundTypeStone), "Enderstonebricks");
     //GameRegistry.registerBlock(Firegemore = new BlockModBlock(), "firegemore");
 		GameRegistry.registerBlock(Endergemblock = new BlockModBlock("Endergemblock", Material.iron, 25.0F, 100.0F, 0.6F, "pickaxe", 3, Block.soundTypeMetal), "Endergemblock");
