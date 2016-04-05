@@ -1,4 +1,4 @@
-package mod.Gearrion.EnderLegacymod.block;
+package mod.Gearrion.EnderLegacymod.Block;
 
 import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.block.Block;

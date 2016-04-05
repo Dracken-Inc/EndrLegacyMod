@@ -1,7 +1,7 @@
-package mod.Gearrion.EnderLegacymod.item;
+package mod.Gearrion.EnderLegacymod.Items.Wands;
 
 import mod.Gearrion.EnderLegacymod.Main;
-import net.minecraft.entity.Entity;
+import mod.Gearrion.EnderLegacymod.Items.ModItems;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
@@ -11,20 +11,23 @@ public class ItemProjectile extends Item
 {
    
 
-	public ItemProjectile(String name,Float damage1, Float damage2 )
+	public ItemProjectile(String name)
     {
-        setCreativeTab(Main.Tabtut);
+        setCreativeTab(Main.TabEnderLegacy);
+        this.setUnlocalizedName(name);
+        this.setTextureName(Main.MODID + ":" + "EnderWand");
         setMaxStackSize(1);
         setMaxDamage(0);
+        
     }
  
     @Override
     public ItemStack onItemRightClick(ItemStack itemStack, World world, EntityPlayer player)
-    {
+       {
         if (player.capabilities.isCreativeMode || player.inventory.consumeInventoryItem(ModItems.Endersteelignot))
         {
             player.swingItem();
-            world.playSoundAtEntity(player, Main.MODID + "name",0.5F , 1.0F);
+            world.playSoundAtEntity(player, Main.MODID + "name",1.0F , 1.0F);
             if (!world.isRemote)
             {
                 world.spawnEntityInWorld(new EntityProjectile(world, player));

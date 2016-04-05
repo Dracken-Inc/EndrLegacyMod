@@ -1,14 +1,14 @@
-package mod.Gearrion.EnderLegacymod.item;
+package mod.Gearrion.EnderLegacymod.Items.Basic;
 
 import mod.Gearrion.EnderLegacymod.Main;
 import net.minecraft.item.Item;
 
 public class ItemModBasic extends Item {
 	
-	protected ItemModBasic(String name) {
+	public ItemModBasic(String name) {
 		super();
         this.setUnlocalizedName(name);
         this.setTextureName(Main.MODID + ":" + name);
-        this.setCreativeTab(Main.Tabtut);
+        this.setCreativeTab(Main.TabEnderLegacy);
 	}
 }

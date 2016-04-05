@@ -1,4 +1,4 @@
-package mod.Gearrion.EnderLegacymod.item;
+package mod.Gearrion.EnderLegacymod.Items.Wands;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockRedstoneDiode;
@@ -30,21 +30,21 @@ public class EntityProjectile extends EntityThrowable
         int bz = (int)posZ;
         worldObj.createExplosion(this, posX, posY, posZ, 0.75F, true);
  
-    //    for (int x = bx - empRadius; x <= empRadius; x++)
+        for (int x = bx - ProjRadius; x <= ProjRadius; x++)
         {
-     //       for (int y = by - empRadius; y <= by + empRadius; y++)
+            for (int y = by - ProjRadius; y <= by + ProjRadius; y++)
             {
-     //           for (int z = bz - empRadius; z <= bz + empRadius; z++)
+               for (int z = bz - ProjRadius; z <= bz + ProjRadius; z++)
                 {
-    //                Block block = worldObj.getBlock(x, y, z);
-    //                if (block == Blocks.redstone_wire || block instanceof BlockRedstoneDiode)
+                   Block block = worldObj.getBlock(x, y, z);
+                   if (block == Blocks.redstone_wire || block instanceof BlockRedstoneDiode)
                     {
-   //                     block.dropBlockAsItem(worldObj, x, y, z, worldObj.getBlockMetadata(x, y, z), 0);
-  //                      worldObj.setBlockToAir(x, y, z);
+                        block.dropBlockAsItem(worldObj, x, y, z, worldObj.getBlockMetadata(x, y, z), 0);
+                        worldObj.setBlockToAir(x, y, z);
                     }
-   //                 if (block == Blocks.redstone_block)
+                    if (block == Blocks.redstone_block)
                     {
-   //                     worldObj.setBlock(x, y, z, Blocks.stone);
+                        worldObj.setBlock(x, y, z, Blocks.stone);
                     }
                 }
             }

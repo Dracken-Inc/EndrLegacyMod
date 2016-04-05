@@ -1,4 +1,4 @@
-package mod.Gearrion.EnderLegacymod.block;
+package mod.Gearrion.EnderLegacymod.Block;
 
 import mod.Gearrion.EnderLegacymod.Main;
 import net.minecraft.block.Block;
@@ -10,7 +10,7 @@ import net.minecraft.block.material.Material;
 		super(material);
 		this.setBlockName(unlocalizedName);
 		this.setBlockTextureName(Main.MODID + ":" + unlocalizedName);
-		this.setCreativeTab(Main.Tabtut);
+		this.setCreativeTab(Main.TabEnderLegacy);
 		this.setHardness(hardness);
 		this.setResistance(resistants);
 		this.setLightLevel(lightlevel);

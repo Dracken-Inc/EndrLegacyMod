@@ -1,6 +1,11 @@
-package mod.Gearrion.EnderLegacymod.item;
+package mod.Gearrion.EnderLegacymod.Items;
 
 import cpw.mods.fml.common.registry.GameRegistry;
+import mod.Gearrion.EnderLegacymod.Items.Armor.ItemModArmor;
+import mod.Gearrion.EnderLegacymod.Items.Basic.ItemModBasic;
+import mod.Gearrion.EnderLegacymod.Items.Tools.ItemModTool;
+import mod.Gearrion.EnderLegacymod.Items.Wands.ItemProjectile;
+import mod.Gearrion.EnderLegacymod.Items.Weapons.ItemModWeapon;
 import net.minecraft.item.Item;
 import net.minecraft.item.Item.ToolMaterial;
 import net.minecraft.item.ItemArmor.ArmorMaterial;
@@ -32,11 +37,13 @@ public final class ModItems {
   public static final void init() {
 		
 	    //ITEMS
-		GameRegistry.registerItem(Enderwand = new ItemModBasic("Enderwand"),"Enderwand");
 		GameRegistry.registerItem(Firewand = new ItemModBasic("Firewand"),"Firewand");
+		GameRegistry.registerItem(Enderwand = new ItemModBasic( "Enderwand"),"Enderwand");
 		GameRegistry.registerItem(spireofdarkness = new ItemModBasic("spireofdarkness"),"spireofdarkness");
 		GameRegistry.registerItem(Endersteelignot = new ItemModBasic("Endersteelignot"),"Endersteelignot");
 	    
+		//Wands
+		GameRegistry.registerItem(Enderwand = new ItemProjectile( "EnderwandTest"),"EnderwandTest");
 		
 		//Armor
         GameRegistry.registerItem(Endersteelhelmet = new ItemModArmor("Endersteelhelmet", MatEnderSteelArmor, "Endersteelhelmet", 0), "Endersteelhelmet"); //0 for helmet
@@ -53,7 +60,7 @@ public final class ModItems {
    
     	
     	//Tools	
-    	GameRegistry.registerItem(Endersteelpickaxe = new ItemModTool("Endersteelpickaxe", MatEnderSteelItem), "endersteelpickaxe");
+    	GameRegistry.registerItem(Endersteelpickaxe = new ItemModTool ("Endersteelpickaxe", MatEnderSteelItem), "endersteelpickaxe");
         GameRegistry.registerItem(Endersteelaxe = new ItemModTool("Endersteelaxe", MatEnderSteelItem), "Endersteelaxe");
    }
 }
