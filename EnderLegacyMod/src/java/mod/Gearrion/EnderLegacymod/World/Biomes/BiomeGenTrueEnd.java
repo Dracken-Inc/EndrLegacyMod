@@ -1,13 +1,13 @@
 package mod.Gearrion.EnderLegacymod.World.Biomes;
 
-import mod.Gearrion.EnderLegacymod.Items.ModItems;
+import mod.Gearrion.EnderLegacymod.Block.ModBlocks;
 import net.minecraft.entity.monster.EntitySlime;
 import net.minecraft.init.Blocks;
 import net.minecraft.world.biome.BiomeGenBase;
-import net.minecraft.world.biome.BiomeGenBase.SpawnListEntry;
 
 public class BiomeGenTrueEnd extends BiomeGenBase{
 	
+	@SuppressWarnings("unchecked")
 	public BiomeGenTrueEnd(int id){
 		super(id);
 		
@@ -19,7 +19,7 @@ public class BiomeGenTrueEnd extends BiomeGenBase{
 		
 		
 		this.topBlock = Blocks.end_stone;
-		this.fillerBlock = ModItems.EndersteelBrick;
+		this.fillerBlock = ModBlocks.Enderstonebricks;
 		
 	}
 	
