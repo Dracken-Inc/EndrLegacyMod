@@ -1,4 +1,4 @@
-package mod.Gearrion.EnderLegacymod.item;
+package mod.Gearrion.EnderLegacymod.Items.Armor;
 
 import mod.Gearrion.EnderLegacymod.Main;
 import net.minecraft.entity.Entity;
@@ -14,7 +14,7 @@ public class ItemModArmor extends ItemArmor {
 		this.textureName = textureName;
 		this.setUnlocalizedName(unlocalizedName);
 		this.setTextureName(Main.MODID + ":" + unlocalizedName);
-		this.setCreativeTab(Main.Tabtut);
+		this.setCreativeTab(Main.TabEnderLegacy);
 		}	
 			@Override
 	public String getArmorTexture(ItemStack stack, Entity entity, int slot, String type) {

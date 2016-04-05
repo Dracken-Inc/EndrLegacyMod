@@ -1,8 +1,8 @@
-package mod.Gearrion.EnderLegacymod.recipes;
+package mod.Gearrion.EnderLegacymod.Recipes;
 
 import cpw.mods.fml.common.registry.GameRegistry;
-import mod.Gearrion.EnderLegacymod.block.ModBlocks;
-import mod.Gearrion.EnderLegacymod.item.ModItems;
+import mod.Gearrion.EnderLegacymod.Block.ModBlocks;
+import mod.Gearrion.EnderLegacymod.Items.ModItems;
 import net.minecraft.init.Items;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;

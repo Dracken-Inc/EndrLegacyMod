@@ -7,23 +7,26 @@ import cpw.mods.fml.common.SidedProxy;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
+import mod.Gearrion.EnderLegacymod.Proxy.CommonProxy;
+import mod.Gearrion.EnderLegacymod.Tabs.TabEnderLegacy;
 import net.minecraft.creativetab.CreativeTabs;
+
 
 @Mod(modid = Main.MODID, name = Main.MODNAME, version = Main.VERSION)
 public class Main {
 
     public static final String MODID = "EnderLegacyMod";
     public static final String MODNAME = "Ender Legacy Mod";
-    public static final String VERSION = "1.0.0";
+    public static final String VERSION = "1.0.1";
         
     @Instance
     public static Main instance = new Main();
         
      
-    @SidedProxy(clientSide="mod.Gearrion.EnderLegacymod.ClientProxy", serverSide="mod.Gearrion.EnderLegacymod.ServerProxy")
+    @SidedProxy(clientSide="mod.Gearrion.EnderLegacymod.Proxy.ClientProxy", serverSide="mod.Gearrion.EnderLegacymod.Proxy.ServerProxy")
     public static CommonProxy proxy;
 
-    public static CreativeTabs Tabtut = new TabTut(CreativeTabs.getNextID(), "Tabtut");
+    public static CreativeTabs TabEnderLegacy = new TabEnderLegacy(CreativeTabs.getNextID(), "EnderLegacy");
     
     
 

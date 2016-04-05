@@ -1,14 +1,14 @@
-package mod.Gearrion.EnderLegacymod.item;
+package mod.Gearrion.EnderLegacymod.Items.Tools;
 
 import mod.Gearrion.EnderLegacymod.Main;
 import net.minecraft.item.ItemPickaxe;
 
 public class ItemModTool extends ItemPickaxe {
 	
-	protected ItemModTool(String name, ToolMaterial Material) {
+	public ItemModTool(String name, ToolMaterial Material) {
 		super(Material);
         this.setUnlocalizedName(name);
         this.setTextureName(Main.MODID + ":" + name);
-        this.setCreativeTab(Main.Tabtut);
+        this.setCreativeTab(Main.TabEnderLegacy);
 	}
 }
