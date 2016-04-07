@@ -1,4 +1,4 @@
-  package mod.Gearrion.EnderLegacymod.Tabs;
+  package mod.Gearrion.EnderLegacymod.CusTabs;
 
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;

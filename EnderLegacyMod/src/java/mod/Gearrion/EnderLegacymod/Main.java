@@ -7,8 +7,8 @@ import cpw.mods.fml.common.SidedProxy;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
+import mod.Gearrion.EnderLegacymod.CusTabs.TabEnderLegacy;
 import mod.Gearrion.EnderLegacymod.Proxy.CommonProxy;
-import mod.Gearrion.EnderLegacymod.Tabs.TabEnderLegacy;
 import net.minecraft.creativetab.CreativeTabs;
 
 

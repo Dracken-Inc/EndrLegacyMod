@@ -3,7 +3,7 @@ package mod.Gearrion.EnderLegacymod.Proxy;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
-import mod.Gearrion.EnderLegacymod.Block.ModBlocks;
+import mod.Gearrion.EnderLegacymod.Blocks.ModBlocks;
 import mod.Gearrion.EnderLegacymod.Items.ModItems;
 import mod.Gearrion.EnderLegacymod.Recipes.ModRecipe;
 

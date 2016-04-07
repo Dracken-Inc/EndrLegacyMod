@@ -3,6 +3,7 @@
 <listAttribute key="arguments"/>
 <stringAttribute key="gradle_distribution" value="GRADLE_DISTRIBUTION(WRAPPER)"/>
 <stringAttribute key="gradle_user_home" value="C:\ModWorkSpace\Git\EnderLegacyMod\gradle\wrapper"/>
+<stringAttribute key="java_home" value="C:\ModWorkSpace\jdk-1.7.10"/>
 <listAttribute key="jvm_arguments"/>
 <booleanAttribute key="show_console_view" value="true"/>
 <booleanAttribute key="show_execution_view" value="true"/>

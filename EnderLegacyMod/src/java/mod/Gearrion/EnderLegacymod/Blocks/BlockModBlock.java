@@ -1,4 +1,4 @@
-package mod.Gearrion.EnderLegacymod.Block;
+package mod.Gearrion.EnderLegacymod.Blocks;
 
 import mod.Gearrion.EnderLegacymod.Main;
 import net.minecraft.block.Block;

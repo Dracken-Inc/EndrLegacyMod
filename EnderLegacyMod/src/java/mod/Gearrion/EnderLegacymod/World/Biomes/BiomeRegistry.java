@@ -16,13 +16,13 @@ public class BiomeRegistry {
 	
 	public static void initializeBiome(){
 		
-		BiomeTrueEnd = new BiomeGenTrueEnd(137).setBiomeName("TrueEnd").setTemperatureRainfall(1.2F, 0.9F);
+		BiomeTrueEnd = new BiomeGenTrueEnd(137).setBiomeName("TrueEnd").setTemperatureRainfall(1.2F, 0.2F);
 		
 	}
 	
 	@SuppressWarnings("static-access")
 	public static void registerBiome(){
-		BiomeDictionary.registerBiomeType(BiomeTrueEnd, Type.CONIFEROUS.FOREST);
+		BiomeDictionary.registerBiomeType(BiomeTrueEnd, Type.END.SPOOKY);
 		BiomeManager.addSpawnBiome(BiomeTrueEnd);
 		
 	}

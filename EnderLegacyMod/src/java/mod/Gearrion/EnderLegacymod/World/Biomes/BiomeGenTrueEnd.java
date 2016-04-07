@@ -1,7 +1,7 @@
 package mod.Gearrion.EnderLegacymod.World.Biomes;
 
-import mod.Gearrion.EnderLegacymod.Block.ModBlocks;
-import net.minecraft.entity.monster.EntitySlime;
+import mod.Gearrion.EnderLegacymod.Blocks.ModBlocks;
+import net.minecraft.entity.monster.EntityEnderman;
 import net.minecraft.init.Blocks;
 import net.minecraft.world.biome.BiomeGenBase;
 
@@ -11,11 +11,11 @@ public class BiomeGenTrueEnd extends BiomeGenBase{
 	public BiomeGenTrueEnd(int id){
 		super(id);
 		
-		this.spawnableCreatureList.add(new SpawnListEntry(EntitySlime.class, 5, 2, 10));
+		this.spawnableCreatureList.add(new SpawnListEntry(EntityEnderman.class, 1, 10, 5));
 		
-		this.theBiomeDecorator.treesPerChunk = 5;
-		this.theBiomeDecorator.grassPerChunk = 2;
-		this.theBiomeDecorator.bigMushroomsPerChunk = 2;
+		this.theBiomeDecorator.treesPerChunk = 0;
+		this.theBiomeDecorator.grassPerChunk = 0;
+		this.theBiomeDecorator.bigMushroomsPerChunk = 0;
 		
 		
 		this.topBlock = Blocks.end_stone;
