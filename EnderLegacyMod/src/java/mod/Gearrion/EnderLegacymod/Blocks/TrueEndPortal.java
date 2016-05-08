@@ -3,6 +3,7 @@ package mod.Gearrion.EnderLegacymod.Blocks;
 import java.util.Random;
 
 import mod.Gearrion.EnderLegacymod.Main;
+import mod.Gearrion.EnderLegacymod.dimension.TeleporterTrueEnd;
 import mod.Gearrion.EnderLegacymod.dimension.dimensionRegistry;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockPortal;
@@ -90,11 +91,11 @@ public class TrueEndPortal extends BlockPortal {
 					
 				}else if(thePlayer.dimension != dimensionRegistry.dimensionId){
 					thePlayer.timeUntilPortal = 10;
-					thePlayer.mcServer.getConfigurationManager().transferPlayerToDimension(thePlayer, dimensionRegistry.dimensionId, new Teleporter(server.worldServerForDimension(dimensionRegistry.dimensionId)));
+					thePlayer.mcServer.getConfigurationManager().transferPlayerToDimension(thePlayer, dimensionRegistry.dimensionId, new TeleporterTrueEnd(server.worldServerForDimension(dimensionRegistry.dimensionId)));
 					
 				}else{
 					thePlayer.timeUntilPortal = 10;
-					thePlayer.mcServer.getConfigurationManager().transferPlayerToDimension(thePlayer, 0, new Teleporter(server.worldServerForDimension(1)));
+					thePlayer.mcServer.getConfigurationManager().transferPlayerToDimension(thePlayer, 0, new TeleporterTrueEnd(server.worldServerForDimension(1)));
 				}
 				
 			}
