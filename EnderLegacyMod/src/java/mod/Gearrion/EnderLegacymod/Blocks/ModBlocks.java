@@ -12,9 +12,8 @@ public static Block Endersteelore;
 //public static Block Firegemore;
   public static Block Endergemblock;
   public static Block Endersteelblock;
-  public static Block TrueEndPortal;
-  public static BlockModFire lightFire;
-public static Object lightPortal;
+ 
+
 	 
 
   public static final void init() {
