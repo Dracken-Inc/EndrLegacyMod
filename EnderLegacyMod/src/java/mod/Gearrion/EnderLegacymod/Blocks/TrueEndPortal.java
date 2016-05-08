@@ -19,6 +19,7 @@ public class TrueEndPortal extends BlockPortal {
 	public TrueEndPortal(){
 		super();
 		this.setCreativeTab(Main.TabEnderLegacy);
+		this.setBlockTextureName(Main.MODID + ":" + "TrueEndPortal");
 	}
 	
 	/*public void updateTick(World world, int x, int y, int z, Random rand){

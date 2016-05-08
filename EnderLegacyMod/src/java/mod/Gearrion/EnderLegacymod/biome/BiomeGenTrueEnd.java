@@ -21,7 +21,7 @@ public class BiomeGenTrueEnd extends BiomeGenBase{
 		
 		this.topBlock = Blocks.end_stone;
 		this.fillerBlock = ModBlocks.Enderstonebricks;
-		
+		this.waterColorMultiplier = 0x660099;
 	}
 	
 }

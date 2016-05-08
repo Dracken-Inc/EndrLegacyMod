@@ -51,7 +51,7 @@ public class TeleporterTrueEnd extends Teleporter {
 						int l1 = j + j1;
 						int i2 = k + i1 * b1 - l * b0;
 						boolean flag = j1 < 0;
-						this.worldServerInstance.setBlock(k1, l1, i2, flag ? ModBlocks.Enderstonebricks : Blocks.air);
+						this.worldServerInstance.setBlock(k1, l1, i2, flag ? ModBlocks.Endersteelblock : Blocks.air);
 					}
 				}
 			}

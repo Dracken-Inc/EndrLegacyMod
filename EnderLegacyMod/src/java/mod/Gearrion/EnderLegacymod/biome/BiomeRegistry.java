@@ -7,7 +7,7 @@ import net.minecraftforge.common.BiomeManager;
 
 public class BiomeRegistry {
 	
-	public static void mainRegsitry(){
+	public static void main(){
 		initializeBiome();
 		registerBiome();
 	}
