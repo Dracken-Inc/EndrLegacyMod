@@ -33,7 +33,7 @@ public class TrueEndPortal extends BlockBreakable
 		this.setTickRandomly(true);
 		this.setBlockName(name);
 		this.setBlockTextureName(Main.MODID + ":" + name);
-		this.setCreativeTab(Main.TabEnderLegacy);
+		this.setCreativeTab(null);
 		}
 
 	/**
