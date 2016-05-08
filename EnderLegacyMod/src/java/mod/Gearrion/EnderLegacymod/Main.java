@@ -33,10 +33,11 @@ public class Main {
     @EventHandler
     public void preInit(FMLPreInitializationEvent e) {
     	proxy.preInit(e);
+
     	}  
+        
     
-    
-    @EventHandler
+	@EventHandler
     public void init(FMLInitializationEvent e) {
     	proxy.init(e);
 	

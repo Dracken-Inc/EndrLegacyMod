@@ -6,11 +6,15 @@ import net.minecraft.block.material.Material;
 
 public final class ModBlocks {
 
-  public static Block Endersteelore;
+ 
+public static Block Endersteelore;
   public static Block Enderstonebricks;
 //public static Block Firegemore;
   public static Block Endergemblock;
   public static Block Endersteelblock;
+  public static Block TrueEndPortal;
+  public static BlockModFire lightFire;
+public static Object lightPortal;
 	 
 
   public static final void init() {
@@ -21,5 +25,7 @@ public final class ModBlocks {
     //GameRegistry.registerBlock(Firegemore = new BlockModBlock(), "firegemore");
 		GameRegistry.registerBlock(Endergemblock = new BlockModBlock("Endergemblock", Material.iron, 25.0F, 100.0F, 0.6F, "pickaxe", 3, Block.soundTypeMetal), "Endergemblock");
 		GameRegistry.registerBlock(Endersteelblock = new BlockModBlock("Endersteelblock", Material.iron, 55.0F, 300.0F, 0.0F, "pickaxe", 4, Block.soundTypeStone), "Endersteelblock"); 
-  }
+		//GameRegistry.registerBlock(TrueEndPortal = new TrueEndPortalBlock(), "TrueEndPortal").setCreativeTab(Main.TabEnderLegacy);		
+  } 
+  	
 }

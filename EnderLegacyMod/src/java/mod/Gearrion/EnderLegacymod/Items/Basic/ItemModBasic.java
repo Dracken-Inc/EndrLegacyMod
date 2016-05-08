@@ -1,4 +1,4 @@
-package mod.Gearrion.EnderLegacymod.Items.Basic;
+package  mod.Gearrion.EnderLegacymod.Items.Basic;
 
 import mod.Gearrion.EnderLegacymod.Main;
 import net.minecraft.item.Item;
