@@ -49,29 +49,6 @@ public class teFIRE extends BlockFire
 
     public static void func_149843_e()
     {
-        ModBlocks.lightFire.func_149842_a(getIdFromBlock(Blocks.planks), 5, 20);
-        ModBlocks.lightFire.func_149842_a(getIdFromBlock(Blocks.double_wooden_slab), 5, 20);
-        ModBlocks.lightFire.func_149842_a(getIdFromBlock(Blocks.wooden_slab), 5, 20);
-        ModBlocks.lightFire.func_149842_a(getIdFromBlock(Blocks.fence), 5, 20);
-        ModBlocks.lightFire.func_149842_a(getIdFromBlock(Blocks.oak_stairs), 5, 20);
-        ModBlocks.lightFire.func_149842_a(getIdFromBlock(Blocks.birch_stairs), 5, 20);
-        ModBlocks.lightFire.func_149842_a(getIdFromBlock(Blocks.spruce_stairs), 5, 20);
-        ModBlocks.lightFire.func_149842_a(getIdFromBlock(Blocks.jungle_stairs), 5, 20);
-        ModBlocks.lightFire.func_149842_a(getIdFromBlock(Blocks.log), 5, 5);
-        ModBlocks.lightFire.func_149842_a(getIdFromBlock(Blocks.log2), 5, 5);
-        ModBlocks.lightFire.func_149842_a(getIdFromBlock(Blocks.leaves), 30, 60);
-        ModBlocks.lightFire.func_149842_a(getIdFromBlock(Blocks.leaves2), 30, 60);
-        ModBlocks.lightFire.func_149842_a(getIdFromBlock(Blocks.bookshelf), 30, 20);
-        ModBlocks.lightFire.func_149842_a(getIdFromBlock(Blocks.tnt), 15, 100);
-        ModBlocks.lightFire.func_149842_a(getIdFromBlock(Blocks.tallgrass), 60, 100);
-        ModBlocks.lightFire.func_149842_a(getIdFromBlock(Blocks.double_plant), 60, 100);
-        ModBlocks.lightFire.func_149842_a(getIdFromBlock(Blocks.yellow_flower), 60, 100);
-        ModBlocks.lightFire.func_149842_a(getIdFromBlock(Blocks.red_flower), 60, 100);
-        ModBlocks.lightFire.func_149842_a(getIdFromBlock(Blocks.wool), 30, 60);
-        ModBlocks.lightFire.func_149842_a(getIdFromBlock(Blocks.vine), 15, 100);
-        ModBlocks.lightFire.func_149842_a(getIdFromBlock(Blocks.coal_block), 5, 5);
-        ModBlocks.lightFire.func_149842_a(getIdFromBlock(Blocks.hay_block), 60, 20);
-        ModBlocks.lightFire.func_149842_a(getIdFromBlock(Blocks.carpet), 60, 20);
     }
 
     @Deprecated // Use setFireInfo
