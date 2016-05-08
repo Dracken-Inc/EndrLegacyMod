@@ -7,18 +7,14 @@ import net.minecraft.world.biome.BiomeGenBase;
 
 public class BiomeGenTrueEnd extends BiomeGenBase{
 
-	
-	@SuppressWarnings("unchecked")
-	public BiomeGenTrueEnd(int id){
+		@SuppressWarnings("unchecked")
+		public BiomeGenTrueEnd(int id){
 		super(id);
 		
 		this.spawnableCreatureList.add(new SpawnListEntry(EntityEnderman.class, 5, 2, 10));
-		
 		this.theBiomeDecorator.treesPerChunk = 0;
 		this.theBiomeDecorator.grassPerChunk = 0;
 		this.theBiomeDecorator.bigMushroomsPerChunk = 0;
-		
-		
 		this.topBlock = Blocks.end_stone;
 		this.fillerBlock = ModBlocks.Enderstonebricks;
 		this.waterColorMultiplier = 0x660099;

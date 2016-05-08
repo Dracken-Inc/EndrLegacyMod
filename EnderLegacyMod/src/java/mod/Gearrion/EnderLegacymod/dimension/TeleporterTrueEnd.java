@@ -1,6 +1,7 @@
 package mod.Gearrion.EnderLegacymod.dimension;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 import java.util.Random;
 
@@ -27,8 +28,10 @@ public class TeleporterTrueEnd extends Teleporter
      * A list of valid keys for the destinationCoordainteCache. These are based on the X & Z of the players initial
      * location.
      */
-    private final List<Long> destinationCoordinateKeys = new ArrayList<Long>();
-    private static final String __OBFID = "CL_00000153";
+    @SuppressWarnings("rawtypes")
+	private final List destinationCoordinateKeys = new ArrayList();
+    @SuppressWarnings("unused")
+	private static final String __OBFID = "CL_00000153";
 
     public TeleporterTrueEnd(WorldServer p_i1963_1_)
     {
@@ -81,7 +84,8 @@ public class TeleporterTrueEnd extends Teleporter
     /**
      * Place an entity in a nearby portal which already exists.
      */
-    public boolean placeInExistingPortal(Entity p_77184_1_, double p_77184_2_, double p_77184_4_, double p_77184_6_, float p_77184_8_)
+    @SuppressWarnings("unchecked")
+	public boolean placeInExistingPortal(Entity p_77184_1_, double p_77184_2_, double p_77184_4_, double p_77184_6_, float p_77184_8_)
     {
         short short1 = 128;
         double d3 = -1.0D;
@@ -97,7 +101,7 @@ public class TeleporterTrueEnd extends Teleporter
 
         if (this.destinationCoordinateCache.containsItem(j1))
         {
-            Teleporter.PortalPosition portalposition = (Teleporter.PortalPosition)this.destinationCoordinateCache.getValueByKey(j1);
+        	TeleporterTrueEnd.PortalPosition portalposition = (TeleporterTrueEnd.PortalPosition)this.destinationCoordinateCache.getValueByKey(j1);
             d3 = 0.0D;
             i = portalposition.posX;
             j = portalposition.posY;
@@ -144,8 +148,9 @@ public class TeleporterTrueEnd extends Teleporter
         {
             if (flag)
             {
-                this.destinationCoordinateCache.add(j1, new Teleporter.PortalPosition(i, j, k, this.worldServerInstance.getTotalWorldTime()));
+                this.destinationCoordinateCache.add(j1, new TeleporterTrueEnd.PortalPosition(i, j, k, this.worldServerInstance.getTotalWorldTime()));
                 this.destinationCoordinateKeys.add(Long.valueOf(j1));
+                System.out.println("Location " + j1);
             }
 
             double d11 = (double)i + 0.5D;
@@ -496,13 +501,14 @@ public class TeleporterTrueEnd extends Teleporter
     {
         if (p_85189_1_ % 100L == 0L)
         {
-            java.util.Iterator<Long> iterator = this.destinationCoordinateKeys.iterator();
+            @SuppressWarnings("rawtypes")
+			Iterator iterator = this.destinationCoordinateKeys.iterator();
             long j = p_85189_1_ - 600L;
 
             while (iterator.hasNext())
             {
-                Long olong = iterator.next();
-                Teleporter.PortalPosition portalposition = (Teleporter.PortalPosition)this.destinationCoordinateCache.getValueByKey(olong.longValue());
+                Long olong = (Long)iterator.next();
+                TeleporterTrueEnd.PortalPosition portalposition = (TeleporterTrueEnd.PortalPosition)this.destinationCoordinateCache.getValueByKey(olong.longValue());
 
                 if (portalposition == null || portalposition.lastUpdateTime < j)
                 {
@@ -513,24 +519,17 @@ public class TeleporterTrueEnd extends Teleporter
         }
     }
 
-    public static String getObfid() {
-		return __OBFID;
-	}
-
-	public class PortalPosition extends ChunkCoordinates
+    public class PortalPosition extends ChunkCoordinates
     {
         /** The worldtime at which this PortalPosition was last verified */
         public long lastUpdateTime;
-        private static final String __OBFID = "CL_00000154";
+        @SuppressWarnings("unused")
+		private static final String __OBFID = "CL_00000154";
 
         public PortalPosition(int p_i1962_2_, int p_i1962_3_, int p_i1962_4_, long p_i1962_5_)
         {
             super(p_i1962_2_, p_i1962_3_, p_i1962_4_);
             this.lastUpdateTime = p_i1962_5_;
         }
-
-		public String getObfid() {
-			return __OBFID;
-		}
     }
 }

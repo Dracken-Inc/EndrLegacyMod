@@ -8,11 +8,13 @@
 :compileApiJava UP-TO-DATE
 :processApiResources UP-TO-DATE
 :apiClasses UP-TO-DATE
-:sourceMainJava UP-TO-DATE
+:sourceMainJava
 :compileJavawarning: [options] bootstrap class path not set in conjunction with -source 1.6
+Note: C:\ModWorkSpace\Git\EnderLegacyMod\build\sources\java\mod\Gearrion\EnderLegacymod\biome\TrueEndGenLayerBiome.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
 1 warning
 
-:processResources UP-TO-DATE
+:processResources
 :classes
 :jar
 :compileTestJava UP-TO-DATE
@@ -30,4 +32,4 @@
 
 BUILD SUCCESSFUL
 
-Total time: 39.11 secs
+Total time: 31.475 secs
