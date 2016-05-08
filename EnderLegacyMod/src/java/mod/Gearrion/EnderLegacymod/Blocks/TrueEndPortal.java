@@ -3,7 +3,6 @@ package mod.Gearrion.EnderLegacymod.Blocks;
 import java.util.Random;
 
 import mod.Gearrion.EnderLegacymod.Main;
-import mod.Gearrion.EnderLegacymod.dimension.TeleporterTrueEnd;
 import mod.Gearrion.EnderLegacymod.dimension.dimensionRegistry;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockPortal;
@@ -12,6 +11,7 @@ import net.minecraft.entity.player.EntityPlayerMP;
 import net.minecraft.init.Blocks;
 import net.minecraft.server.MinecraftServer;
 import net.minecraft.util.AxisAlignedBB;
+import net.minecraft.world.Teleporter;
 import net.minecraft.world.World;
 
 public class TrueEndPortal extends BlockPortal {
@@ -22,9 +22,9 @@ public class TrueEndPortal extends BlockPortal {
 		this.setBlockTextureName(Main.MODID + ":" + "TrueEndPortal");
 	}
 	
-	/*public void updateTick(World world, int x, int y, int z, Random rand){
+	public void updateTick(World world, int x, int y, int z, Random rand){
 		
-	}*/
+	}
 	
 	public AxisAlignedBB getCollisionBoundingBoxFromPool(World world, int x, int y, int z){
 		return null;
@@ -39,7 +39,7 @@ public class TrueEndPortal extends BlockPortal {
 		byte b0 = 0;
 		byte b1 = 1;
 		
-		if(world.getBlock(x - 1, y, z) == ModBlocks.Enderstonebricks || world.getBlock(x + 1, y, z) == ModBlocks.Enderstonebricks){
+		if(world.getBlock(x - 1, y, z) == ModBlocks.Endersteelblock || world.getBlock(x + 1, y, z) == ModBlocks.Endersteelblock){
 			b0 = 1;
 			b1 = 0;
 		}
@@ -49,7 +49,7 @@ public class TrueEndPortal extends BlockPortal {
 		for(i1 = y; world.getBlock(x, i1 - 1, z) == this; --i1){
 			;
 		}
-		if(world.getBlock(x, i1 - 1, z) != ModBlocks.Enderstonebricks){
+		if(world.getBlock(x, i1 - 1, z) != ModBlocks.Endersteelblock){
 			world.setBlockToAir(x, y, z);
 		}else{
 			int j1;
@@ -57,14 +57,14 @@ public class TrueEndPortal extends BlockPortal {
 			for(j1 = 1; j1 < 4 && world.getBlock(x, i1 + j1, z) == this; ++j1){
 				;
 			}
-			if(j1 == 3 && world.getBlock(x, i1 + j1, z) == ModBlocks.Enderstonebricks){
+			if(j1 == 3 && world.getBlock(x, i1 + j1, z) == ModBlocks.Endersteelblock){
 				boolean flag = world.getBlock(x - 1, y, z) == this || world.getBlock(x + 1, y, z) == this;
 				boolean flag1 = world.getBlock(x, y, z - 1) == this || world.getBlock(x, y, z - 1) == this;
 				
 				if(flag && flag1){
 					world.setBlockToAir(x, y, z);
 				}else{
-					if((world.getBlock(x+b0, y, z+b1) != ModBlocks.Enderstonebricks || world.getBlock(x-b0, y, z-b1) != this) && (world.getBlock(x-b0, y, z-b1) !=ModBlocks.Enderstonebricks || world.getBlock(x+b0, y, z+b1) != this)){
+					if((world.getBlock(x+b0, y, z+b1) != ModBlocks.Endersteelblock || world.getBlock(x-b0, y, z-b1) != this) && (world.getBlock(x-b0, y, z-b1) !=ModBlocks.Endersteelblock || world.getBlock(x+b0, y, z+b1) != this)){
 						world.setBlockToAir(x, y, z);
 					}
 				}
@@ -90,11 +90,11 @@ public class TrueEndPortal extends BlockPortal {
 					
 				}else if(thePlayer.dimension != dimensionRegistry.dimensionId){
 					thePlayer.timeUntilPortal = 10;
-					thePlayer.mcServer.getConfigurationManager().transferPlayerToDimension(thePlayer, dimensionRegistry.dimensionId, new TeleporterTrueEnd(server.worldServerForDimension(dimensionRegistry.dimensionId)));
+					thePlayer.mcServer.getConfigurationManager().transferPlayerToDimension(thePlayer, dimensionRegistry.dimensionId, new Teleporter(server.worldServerForDimension(dimensionRegistry.dimensionId)));
 					
 				}else{
 					thePlayer.timeUntilPortal = 10;
-					thePlayer.mcServer.getConfigurationManager().transferPlayerToDimension(thePlayer, 0, new TeleporterTrueEnd(server.worldServerForDimension(0)));
+					thePlayer.mcServer.getConfigurationManager().transferPlayerToDimension(thePlayer, 0, new Teleporter(server.worldServerForDimension(1)));
 				}
 				
 			}
@@ -105,11 +105,11 @@ public class TrueEndPortal extends BlockPortal {
 	public boolean tryTroCreatePortal(World world, int x, int y, int z){
 		byte b0 = 0;
 		byte b1 = 0;
-		if(world.getBlock(x - 1 , y, z) == ModBlocks.Enderstonebricks || world.getBlock(x + 1, y, z) == ModBlocks.Enderstonebricks){
+		if(world.getBlock(x - 1 , y, z) == ModBlocks.Endersteelblock || world.getBlock(x + 1, y, z) == ModBlocks.Endersteelblock){
 			b0 = 1;
 		}
 		
-		if (world.getBlock(x, y, z - 1) == ModBlocks.Enderstonebricks || world.getBlock(x, y, z + 1) == ModBlocks.Enderstonebricks){
+		if (world.getBlock(x, y, z - 1) == ModBlocks.Endersteelblock || world.getBlock(x, y, z + 1) == ModBlocks.Endersteelblock){
 			b1 = 1;
 		}
 		
@@ -131,7 +131,7 @@ public class TrueEndPortal extends BlockPortal {
 					if( l != -1 && l != 2 || i1 != -1 && i1 !=3){
 						Block j1 = world.getBlock(x + b0 * l, y + i1, z + b1 * l);
 								if(flag){
-									if(j1 != ModBlocks.Enderstonebricks){
+									if(j1 != ModBlocks.Endersteelblock){
 										return false;
 									}
 								}
