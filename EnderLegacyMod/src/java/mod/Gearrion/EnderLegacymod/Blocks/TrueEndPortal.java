@@ -197,7 +197,7 @@ public class TrueEndPortal extends BlockBreakable
 					
 				}else{
 					thePlayer.timeUntilPortal = 10;
-					thePlayer.mcServer.getConfigurationManager().transferPlayerToDimension(thePlayer, 0, new TeleporterTrueEnd(server.worldServerForDimension(1)));
+					thePlayer.mcServer.getConfigurationManager().transferPlayerToDimension(thePlayer, 0, new TeleporterTrueEnd(server.worldServerForDimension(0)));
 				}
 			  }
 			}	
