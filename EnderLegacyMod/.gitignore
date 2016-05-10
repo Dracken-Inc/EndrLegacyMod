@@ -15,11 +15,11 @@ crash-reports/
 logs/
 saves/
 screenshots/
-world/
 .classpath
 .project
 build/
 bin/
+gradle/
 .settings/
 .gradle/
 .classpath
