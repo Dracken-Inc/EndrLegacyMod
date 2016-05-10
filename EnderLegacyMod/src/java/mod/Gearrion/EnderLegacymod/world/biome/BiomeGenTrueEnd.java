@@ -25,6 +25,8 @@ public class BiomeGenTrueEnd extends BiomeGenBase{
 		this.fillerBlock = Blocks.end_stone;
 		this.waterColorMultiplier = 0x990000;
 		}
+		
+		
 		@Override
 		public void genTerrainBlocks(World world, Random random, Block[] blocks, byte[] metadataArray, int genX, int genZ, double stoneNoise) {
 			genCustomTerrain(world, random, blocks, metadataArray, genX, genZ, stoneNoise);

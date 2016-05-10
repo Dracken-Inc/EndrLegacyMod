@@ -23,12 +23,13 @@ public class WorldGenerator implements IWorldGenerator{
 	}
 		
 	private void generateTrueEnd(World world, Random rand, int chunkX, int chunkZ) {
-		for (int i = 0; i < 100; i++){
+		for(int k = 0; k < 10; k++){
 			int randPosX = chunkX + rand.nextInt(16);
 			int randPosY = rand.nextInt(64);
 			int randPosZ = chunkZ + rand.nextInt(16);
 						
-			(new WorldGenMinable(ModBlocks.Endersteelore, 3)).generate(world, rand, randPosX, randPosY, randPosZ);
+			(new WorldGenMinable(ModBlocks.Endersteelore, 13)).generate(world, rand, randPosX, randPosY, randPosZ);
+			(new WorldGenMinable(ModBlocks.Endergemblock, 5)).generate(world, rand, randPosX, randPosY, randPosZ);
 
 			
 		}
@@ -36,7 +37,7 @@ public class WorldGenerator implements IWorldGenerator{
 	
 	@SuppressWarnings("unused")
 	private void generateTheEnd(World world, Random rand, int chunkX, int chunkZ) {
-		for (int i = 0; i < 100; i++){
+		for(int k = 0; k < 10; k++){
 			int randPosX = chunkX + rand.nextInt(16);
 			int randPosY = rand.nextInt(64);
 			int randPosZ = chunkZ + rand.nextInt(16);
@@ -48,7 +49,7 @@ public class WorldGenerator implements IWorldGenerator{
 	
 	@SuppressWarnings("unused")
 	private void generateNether(World world, Random rand, int chunkX, int chunkZ){
-		for (int i = 0; i < 100; i++){
+		for(int k = 0; k < 10; k++){
 			int randPosX = chunkX + rand.nextInt(16);
 			int randPosY = rand.nextInt(64);
 			int randPosZ = chunkZ + rand.nextInt(16);
@@ -58,7 +59,7 @@ public class WorldGenerator implements IWorldGenerator{
    
 	@SuppressWarnings("unused")
 	private void generateOverWorld(World world, Random rand, int chunkX, int chunkZ) {
-		for (int i = 0; i < 100; i++){
+		for(int k = 0; k < 10; k++){
 			int randPosX = chunkX + rand.nextInt(16);
 			int randPosY = rand.nextInt(64);
 			int randPosZ = chunkZ + rand.nextInt(16);

@@ -1,7 +1,8 @@
-package mod.Gearrion.EnderLegacymod.world.dimension;
+package mod.Gearrion.EnderLegacymod.world;
 
 import mod.Gearrion.EnderLegacymod.world.biome.BiomeRegistry;
 import mod.Gearrion.EnderLegacymod.world.chunk.ChunkProviderTrueEnd;
+import mod.Gearrion.EnderLegacymod.world.dimension.dimensionRegistry;
 import net.minecraft.world.WorldProvider;
 import net.minecraft.world.biome.WorldChunkManagerHell;
 import net.minecraft.world.chunk.IChunkProvider;
