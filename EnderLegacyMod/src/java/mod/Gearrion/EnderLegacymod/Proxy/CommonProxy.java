@@ -6,9 +6,9 @@ import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import mod.Gearrion.EnderLegacymod.Blocks.ModBlocks;
 import mod.Gearrion.EnderLegacymod.Items.ModItems;
 import mod.Gearrion.EnderLegacymod.Recipes.ModRecipe;
-import mod.Gearrion.EnderLegacymod.biome.BiomeRegistry;
-import mod.Gearrion.EnderLegacymod.dimension.dimensionRegistry;
 import mod.Gearrion.EnderLegacymod.world.TrueEndWorld;
+import mod.Gearrion.EnderLegacymod.world.biome.BiomeRegistry;
+import mod.Gearrion.EnderLegacymod.world.dimension.dimensionRegistry;
 
 
 public class CommonProxy {
