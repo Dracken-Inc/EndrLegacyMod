@@ -10,6 +10,7 @@ import net.minecraft.world.gen.feature.WorldGenMinable;
 
 
 public class WorldGenerator implements IWorldGenerator{
+
 	
 	@Override
 	public void generate(Random rand, int chunkX, int chunkZ, World world, IChunkProvider chunkGenerator, IChunkProvider chunkProvider){
