@@ -4,7 +4,6 @@ import cpw.mods.fml.common.registry.GameRegistry;
 import mod.Gearrion.EnderLegacymod.Items.Armor.ItemModArmor;
 import mod.Gearrion.EnderLegacymod.Items.Basic.ItemModBasic;
 import mod.Gearrion.EnderLegacymod.Items.Tools.ItemModTool;
-import mod.Gearrion.EnderLegacymod.Items.Wands.ItemProjectile;
 import mod.Gearrion.EnderLegacymod.Items.Wands.ignighterWand;
 import mod.Gearrion.EnderLegacymod.Items.Weapons.ItemModWeapon;
 import net.minecraft.item.Item;

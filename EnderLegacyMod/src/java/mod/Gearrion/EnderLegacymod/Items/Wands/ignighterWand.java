@@ -2,7 +2,6 @@ package mod.Gearrion.EnderLegacymod.Items.Wands;
 
 import mod.Gearrion.EnderLegacymod.Main;
 import mod.Gearrion.EnderLegacymod.Blocks.ModBlocks;
-import net.minecraft.block.Block;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.Blocks;
 import net.minecraft.item.Item;

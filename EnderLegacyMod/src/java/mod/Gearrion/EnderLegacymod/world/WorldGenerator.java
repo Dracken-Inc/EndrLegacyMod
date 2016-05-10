@@ -45,6 +45,7 @@ public class WorldGenerator implements IWorldGenerator{
 	
 	}
 	
+	@SuppressWarnings("unused")
 	private void generateNether(World world, Random rand, int chunkX, int chunkZ){
 		for (int i = 0; i < 100; i++){
 			int randPosX = chunkX + rand.nextInt(16);
@@ -54,6 +55,7 @@ public class WorldGenerator implements IWorldGenerator{
 		}
 	}
    
+	@SuppressWarnings("unused")
 	private void generateOverWorld(World world, Random rand, int chunkX, int chunkZ) {
 		for (int i = 0; i < 100; i++){
 			int randPosX = chunkX + rand.nextInt(16);
