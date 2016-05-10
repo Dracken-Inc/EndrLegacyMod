@@ -32,9 +32,13 @@ public class ignighterWand extends Item
 							if (world.isRemote) {
 					return true;
 				} else {
-					if (world.getBlock(x, y + 1, z) == Blocks.air){world.setBlock(x, y + 1, z, ModBlocks.lightFire);
+					if (world.getBlock(x, y, z) == Blocks.tallgrass){world.setBlock(x, y , z, ModBlocks.lightFire);
+					stack.damageItem(20, player);
+					return true;
+					} else {
+					if (world.getBlock(x, y + 1, z) == Blocks.air){world.setBlock(x, y+ 1, z, ModBlocks.lightFire);
 					stack.damageItem(20, player);
 					return true;
 				}
 }}
-		return false;}}
+		return false;}}}
