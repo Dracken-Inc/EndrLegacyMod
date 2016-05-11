@@ -16,8 +16,7 @@ public class CommonProxy {
 	public void preInit(FMLPreInitializationEvent e) {
 		ModItems.init();
         ModBlocks.init();
-        WorldGenRegistry.main();
-        BiomeRegistry.main();
+       
         
         
 
@@ -26,7 +25,7 @@ public class CommonProxy {
 
 	public void init(FMLInitializationEvent e) {
         ModRecipe.init();
-        dimensionRegistry.mainRegistry();
+        
         
 	}
 	

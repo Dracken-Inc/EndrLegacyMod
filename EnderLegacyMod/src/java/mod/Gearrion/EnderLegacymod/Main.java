@@ -9,6 +9,9 @@ import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import mod.Gearrion.EnderLegacymod.CusTabs.TabEnderLegacy;
 import mod.Gearrion.EnderLegacymod.Proxy.CommonProxy;
+import mod.Gearrion.EnderLegacymod.world.WorldGenRegistry;
+import mod.Gearrion.EnderLegacymod.world.biome.BiomeRegistry;
+import mod.Gearrion.EnderLegacymod.world.dimension.dimensionRegistry;
 import net.minecraft.creativetab.CreativeTabs;
 
 
@@ -33,14 +36,16 @@ public class Main {
     @EventHandler
     public void preInit(FMLPreInitializationEvent e) {
     	proxy.preInit(e);
+    	 BiomeRegistry.main();
+    	 dimensionRegistry.mainRegistry();
     	}  
         
     
 	@EventHandler
     public void init(FMLInitializationEvent e) {
     	proxy.init(e);
-	
-}
+    	WorldGenRegistry.main();
+    	}
 
     @EventHandler
     public void postInit(FMLPostInitializationEvent e) {
