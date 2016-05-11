@@ -4,6 +4,7 @@ import java.util.Random;
 
 import cpw.mods.fml.common.IWorldGenerator;
 import mod.Gearrion.EnderLegacymod.Blocks.ModBlocks;
+import net.minecraft.init.Blocks;
 import net.minecraft.world.World;
 import net.minecraft.world.chunk.IChunkProvider;
 import net.minecraft.world.gen.feature.WorldGenMinable;
@@ -23,24 +24,24 @@ public class WorldGenerator implements IWorldGenerator{
 	}
 		
 	private void generateTrueEnd(World world, Random rand, int chunkX, int chunkZ) {
-		for (int i = 0; i < 100; i++){
+		for (int i = 0; i < 20; i++){
 			int randPosX = chunkX + rand.nextInt(16);
 			int randPosY = rand.nextInt(64);
 			int randPosZ = chunkZ + rand.nextInt(16);
-			
-			(new WorldGenMinable(ModBlocks.Endergemblock, 10)).generate(world, rand, randPosX, randPosY, randPosZ);
-			(new WorldGenMinable(ModBlocks.Endersteelore, 10)).generate(world, rand, randPosX, randPosY, randPosZ);
-			}
+			if( i < 9){
+			(new WorldGenMinable(ModBlocks.Endersteelore, 8, Blocks.end_stone)).generate(world, rand, randPosX, randPosY, randPosZ);
+			}else{
+			(new WorldGenMinable(ModBlocks.Enderstonebricks, 30,Blocks.end_stone)).generate(world, rand, randPosX, randPosY, randPosZ);
+			}}
 	}
 	
+	@SuppressWarnings("unused")
 	private void generateTheEnd(World world, Random rand, int chunkX, int chunkZ) {
 		for (int i = 0; i < 100; i++){
 			int randPosX = chunkX + rand.nextInt(16);
 			int randPosY = rand.nextInt(64);
 			int randPosZ = chunkZ + rand.nextInt(16);
-			
-			(new WorldGenMinable(ModBlocks.Enderstonebricks, 10)).generate(world, rand, randPosX, randPosY, randPosZ);
-			(new WorldGenMinable(ModBlocks.Endersteelore, 10)).generate(world, rand, randPosX, randPosY, randPosZ);
+
 		}
 	
 	}
