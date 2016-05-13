@@ -11,8 +11,10 @@ import net.minecraft.world.World;
 public class ignighterWand extends Item
 {
 	
-	public ignighterWand(String name){
+	public ignighterWand(Item.ToolMaterial m, String name){
 		super();
+		maxStackSize = 1;
+		setMaxDamage(m.getMaxUses());
 		this.setMaxStackSize(1);
 		setCreativeTab(Main.TabEnderLegacy);
         this.setUnlocalizedName(name);
@@ -23,14 +25,20 @@ public class ignighterWand extends Item
     
     }
 
-	 public boolean onItemUse(ItemStack itemStack, EntityPlayer player, World world, int x, int y, int z, int side, float px, float py, float pz)
-	    {
-	        if (world.getBlock(x, y + 1, z) == Blocks.air)
-	        {
-	              world.setBlock(x, y + 1, z, ModBlocks.lightFire);
-	                            
-	              return true;
-	        }
-	        return false;
-	    }
-}
+	public boolean onItemUse(ItemStack stack, EntityPlayer player, World world, int x, int y, int z, int par7, float par8, float par9, float par10) {
+		if (!player.canPlayerEdit(x, y, z, par7, stack)) {
+			return false;
+		} else {
+							if (world.isRemote) {
+					return true;
+				} else {
+					if (world.getBlock(x, y, z) == Blocks.tallgrass){world.setBlock(x, y , z, ModBlocks.lightFire);
+					stack.damageItem(20, player);
+					return true;
+					} else {
+					if (world.getBlock(x, y + 1, z) == Blocks.air){world.setBlock(x, y+ 1, z, ModBlocks.lightFire);
+					stack.damageItem(20, player);
+					return true;
+				}
+}}
+		return false;}}}

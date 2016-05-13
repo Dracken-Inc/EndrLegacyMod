@@ -1,5 +1,6 @@
 package mod.Gearrion.EnderLegacymod.world.dimension;
 
+import mod.Gearrion.EnderLegacymod.world.WorldProviderTrueEnd;
 import net.minecraftforge.common.DimensionManager;
 
 public class dimensionRegistry {

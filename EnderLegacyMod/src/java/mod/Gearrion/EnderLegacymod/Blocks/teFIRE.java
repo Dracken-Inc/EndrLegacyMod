@@ -556,4 +556,5 @@ public class teFIRE extends BlockFire
         int newChance = world.getBlock(x, y, z).getFireSpreadSpeed(world, x, y, z, face);
         return (newChance > oldChance ? newChance : oldChance);
     }
+    
 }
