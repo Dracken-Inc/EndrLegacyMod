@@ -52,9 +52,6 @@ processResources
     from(sourceSets.main.resources.srcDirs) {
         exclude 'mcmod.info'
             }
-     runClient {
-    jvmArgs '-javaagent:/path/to/jrebel.jar','-Xmx1g',
-            '-Drebel.plugins=C:\ModWorkSpace\Git\jrebel-minecraft-plugin\jr-minecraft-plugin-6.2.2.jar', 
-            '-Drebel.minecraft.skip_reload_handlers=net.minecraft.client.audio.SoundHandler'
+    
 }       
 }
