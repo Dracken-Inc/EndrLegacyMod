@@ -28,3 +28,6 @@ gradle/
 .log
 .bin
 .lock
+/src/
+/build.gradle
+/gradlew.bat
