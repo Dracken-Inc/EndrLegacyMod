@@ -28,3 +28,7 @@ gradle/
 .log
 .bin
 .lock
+/build.gradle
+/gradlew
+/gradlew.bat
+/eclipse/
