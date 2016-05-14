@@ -57,4 +57,4 @@ processResources
      //       '-Drebel.plugins=C:\ModWorkSpace\Git\jrebel-minecraft-plugin\jr-minecraft-plugin-6.2.2.jar', 
       //      '-Drebel.minecraft.skip_reload_handlers=net.minecraft.client.audio.SoundHandler'
 //       
-}
+}}
