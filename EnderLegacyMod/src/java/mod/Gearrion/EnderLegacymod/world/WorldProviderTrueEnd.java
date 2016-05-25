@@ -5,8 +5,6 @@ import cpw.mods.fml.relauncher.SideOnly;
 import mod.Gearrion.EnderLegacymod.world.biome.BiomeRegistry;
 import mod.Gearrion.EnderLegacymod.world.chunk.ChunkProviderTrueEnd;
 import net.minecraft.util.ChunkCoordinates;
-import net.minecraft.util.MathHelper;
-import net.minecraft.util.Vec3;
 import net.minecraft.world.WorldProvider;
 import net.minecraft.world.biome.WorldChunkManagerHell;
 import net.minecraft.world.chunk.IChunkProvider;
