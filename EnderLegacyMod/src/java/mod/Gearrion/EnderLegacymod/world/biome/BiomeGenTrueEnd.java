@@ -16,8 +16,9 @@ public class BiomeGenTrueEnd extends BiomeGenBase{
 		@SuppressWarnings("unchecked")
 		public BiomeGenTrueEnd(int id){
 		super(id);
+		this.spawnableWaterCreatureList.clear();
 		this.spawnableCreatureList.clear();
-		this.spawnableCreatureList.add(new SpawnListEntry(EntityEnderman.class, 5, 2, 10));
+		this.spawnableCreatureList.add(new SpawnListEntry(EntityEnderman.class, 5, 1, 5));
 		this.theBiomeDecorator.treesPerChunk = 0;
 		this.theBiomeDecorator.grassPerChunk = 0;
 		this.theBiomeDecorator.bigMushroomsPerChunk = 0;
