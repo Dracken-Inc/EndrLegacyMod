@@ -39,7 +39,8 @@ public final class ModItems {
 		public static ArmorMaterial MatEnderSteelArmor = EnumHelper.addArmorMaterial("MatEnderSteelArmor", 16, new int[] {3, 8, 6, 3}, 30);	
 		public static ToolMaterial MatEnderwand = EnumHelper.addToolMaterial("MatEnderwand", 1, 50, 1.0F, 1.0F, 0);	
 		public static ToolMaterial MatSpecialweapons = EnumHelper.addToolMaterial("MatSpecialweapons", 4, 2500, 16.0F, 7.0F, 35);		
-  public static final void init() {
+ 
+		public static final void init() {
 		
 	    //ITEMS
 		GameRegistry.registerItem(Firewand = new ItemModBasic("Firewand"),"Firewand");
