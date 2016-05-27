@@ -29,13 +29,13 @@ public final class ModItems {
   public static Item Enderwand;
   public static Item VoidCutter;
   public static Item EnderSparker;
-
+  public static Item DivineBlade;
         //MATS			Name("Name"	=(Harvestlvl,Durability,Minning Speed,Damage,enchantability)									
 		public static ToolMaterial MatEnderSteelItem = EnumHelper.addToolMaterial("MatEnderSteelItem", 4, 2500, 14.0F, 6.0F, 30);
-		public static ToolMaterial MatEnderBladeItem = EnumHelper.addToolMaterial("MatEnderBladeItem", 4, 3000, 16.0F, 8.0F, 40);
+		public static ToolMaterial MatEnderBladeItem = EnumHelper.addToolMaterial("MatEnderBladeItem", 4, 3000, 18.0F, 8.0F, 40);
 		public static ArmorMaterial MatEnderSteelArmor = EnumHelper.addArmorMaterial("MatEnderSteelArmor", 16, new int[] {3, 8, 6, 3}, 30);	
 		public static ToolMaterial MatEnderwand = EnumHelper.addToolMaterial("MatEnderwand", 1, 50, 1.0F, 1.0F, 0);	
-		
+		public static ToolMaterial MatSpecialweapons = EnumHelper.addToolMaterial("MatSpecialweapons", 4, 2500, 16.0F, 7.0F, 35);		
   public static final void init() {
 		
 	    //ITEMS
@@ -57,7 +57,7 @@ public final class ModItems {
     	GameRegistry.registerItem(Endersteelsword = new ItemModWeapon("Endersteelsword", MatEnderSteelItem, "Endersteelsword"),"Endersteelsword");
 //      GameRegistry.registerItem(Huntressbow = new ItemModWeapon("Huntressbow", MatEnderSteel),"Huntressbow", "Huntressbow");
     	GameRegistry.registerItem(VoidCutter = new ItemModWeapon("VoidCutter", MatEnderSteelItem, "VoidCutter3"),"VoidCutter");
-   
+    	GameRegistry.registerItem(DivineBlade = new ItemModWeapon("DivineBlade", MatSpecialweapons, "DivineBlade"),"DivineBlade");
     	
     	//Tools	
     	GameRegistry.registerItem(Endersteelpickaxe = new ItemModTool ("Endersteelpickaxe", MatEnderSteelItem), "endersteelpickaxe");
