@@ -2,147 +2,209 @@ package mod.Gearrion.EnderLegacymod.world;
 
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
+import mod.Gearrion.EnderLegacymod.world.Renderers.CloudRenderer;
+import mod.Gearrion.EnderLegacymod.world.Renderers.SkyRenderer;
+import mod.Gearrion.EnderLegacymod.world.Renderers.WeatherRenderer;
 import mod.Gearrion.EnderLegacymod.world.biome.BiomeRegistry;
 import mod.Gearrion.EnderLegacymod.world.chunk.ChunkProviderTrueEnd;
+import mod.Gearrion.EnderLegacymod.world.dimension.dimensionRegistry;
+import net.minecraft.entity.Entity;
 import net.minecraft.util.ChunkCoordinates;
+import net.minecraft.util.MathHelper;
+import net.minecraft.util.Vec3;
+import net.minecraft.world.World;
 import net.minecraft.world.WorldProvider;
 import net.minecraft.world.biome.WorldChunkManagerHell;
 import net.minecraft.world.chunk.IChunkProvider;
+import net.minecraftforge.client.IRenderHandler;
 
 public class WorldProviderTrueEnd extends WorldProvider{
 
-	@Override
 	public void registerWorldChunkManager(){
-        this.worldChunkMgr = new WorldChunkManagerHell(BiomeRegistry.biomeTrueEnd, 0.0F);
-        this.dimensionId = 8;
-        this.hasNoSky = true;
+		this.worldChunkMgr = new WorldChunkManagerHell(BiomeRegistry.biomeTrueEnd, 1.2F);
+		this.dimensionId = dimensionRegistry.dimensionId;
 	}
 	
-	/**
-     * Returns a new chunk provider which generates chunks for this world
-     */
+	
 	public IChunkProvider createChunkGeneration(){
 		return new ChunkProviderTrueEnd(this.worldObj, this.worldObj.getSeed(), true);
 	}
-
-
-    /**
-     * Calculates the angle of sun and moon in the sky relative to a specified time (usually worldTime)
-     */
 	@Override
-    public float calculateCelestialAngle(long p_76563_1_, float p_76563_3_)
-    {
-        return 0.0F;
-    }
+	/**
+	 * @return the name of the dimension
+	 */
+	public String getDimensionName() {
+		return "Light Forest";
+	}
 
-    /**
-     * Returns array with sunrise/sunset colors
-     */
-	@Override @SideOnly(Side.CLIENT)
-    public float[] calcSunriseSunsetColors(float p_76560_1_, float p_76560_2_)
-    {
-        return null;
-    }
+	@Override
+	/** sets/creates the save folder */
+	public String getSaveFolder() {
+			return "DIM" + dimensionRegistry.dimensionId;
+	}
 
-    /**
-     * Return Vec3D with biome specific fog color
-     
-	@Override @SideOnly(Side.CLIENT)
-    public Vec3 getFogColor(float p_76562_1_, float p_76562_2_)
-    {
-        int i = 10518688;
-        float f2 = MathHelper.cos(p_76562_1_ * (float)Math.PI * 2.0F) * 2.0F + 0.5F;
+	@SideOnly(Side.CLIENT)
+	/** should stars be rendered? */
+	public boolean renderStars() {
+		return true;
+	}
 
-        if (f2 < 0.0F)
+	@SideOnly(Side.CLIENT)
+	/** @return the player speed */
+	public double getMovementFactor() {
+		return 0.1;
+	}
+
+	@SideOnly(Side.CLIENT)
+	/** @return the light value of the stars*/
+	public float getStarBrightness(World world, float f) {
+		return 1.0F;
+	}
+
+	@SideOnly(Side.CLIENT)
+	/** should clouds be rendered? */
+	public boolean renderClouds() {
+		return true;
+	}
+
+	@SideOnly(Side.CLIENT)
+	public boolean renderVoidFog() {
+		return false;
+	}
+
+	@SideOnly(Side.CLIENT)
+	/** should the end sky be rendered or the overworld sky? */
+	public boolean renderEndSky() {
+		return false;
+	}
+
+	@SideOnly(Side.CLIENT)
+	/** @return the size of the sun */
+	public float setSunSize() {
+		return 0.25F;
+	}
+
+	@SideOnly(Side.CLIENT)
+	/** @return the size of the moon */
+	public float setMoonSize() {
+		return 4.0F;
+	}
+
+	@Override
+	@SideOnly(Side.CLIENT)
+	/**
+	 * @return the sky color
+	 */
+	public Vec3 getSkyColor(Entity cameraEntity, float partialTicks) {
+		return worldObj.getSkyColorBody(cameraEntity, partialTicks);
+	}
+
+	@SideOnly(Side.CLIENT)
+	/** should a color for the sky be rendered? */
+	public boolean isSkyColored()
+	{
+		return true;
+	}
+
+	@Override
+	/** can the player respawn in this dimension? */
+	public boolean canRespawnHere()
+	{
+		return true;
+	}
+
+	@Override
+	/** is this a surface world or an underworld */
+	public boolean isSurfaceWorld()
+	{
+		return true;
+	}
+
+	@Override
+	@SideOnly(Side.CLIENT)
+	/** @return the high of the clouds */
+	public float getCloudHeight()
+	{
+		return this.terrainType.getCloudHeight();
+	}
+
+	@Override
+	public ChunkCoordinates getEntrancePortalLocation()
+	{
+		return new ChunkCoordinates(50, 5, 0);
+	}
+
+	@Override
+	/** the light value in this dimension */
+	protected void generateLightBrightnessTable()
+	{
+		float f = 0.0F;
+
+        for (int i = 0; i <= 15; ++i)
         {
-            f2 = 0.0F;
+            float f1 = 1.0F - (float)i / 15.0F;
+            this.lightBrightnessTable[i] = (1.0F - f1) / (f1 * 3.0F + 1.0F) * (1.0F - f) + f;
         }
+	}
 
-        if (f2 > 1.0F)
-        {
-            f2 = 1.0F;
-        }
+	@Override
+	@SideOnly(Side.CLIENT)
+	/** @return the dimension join message */
+	public String getWelcomeMessage()
+	{
+		return "Entering the Forest";
+	}
 
-        float f3 = (float)(i >> 16 & 255) / 255.0F;
-        float f4 = (float)(i >> 8 & 255) / 255.0F;
-        float f5 = (float)(i & 255) / 255.0F;
-        f3 *= f2 * 0.0F + 0.15F;
-        f4 *= f2 * 0.0F + 0.15F;
-        f5 *= f2 * 0.0F + 0.15F;
-        return Vec3.createVectorHelper((double)f3, (double)f4, (double)f5);
-    }
-    */
+	@Override
+	@SideOnly(Side.CLIENT)
+	/** @return the dimension leave message */
+	public String getDepartMessage()
+	{
+		return "Leaving the Forest";
+	}
 
-	@Override @SideOnly(Side.CLIENT)
-    public boolean isSkyColored()
-    {
-        return false;
-    }
+	@Override
+	public IRenderHandler getSkyRenderer() {
+		return new SkyRenderer();
+	}
 
-    /**
-     * True if the player can respawn in this dimension (true = overworld, false = nether).
-     */
-    public boolean canRespawnHere()
-    {
-        return true;
-    }
+	@Override
+	public IRenderHandler getCloudRenderer() {
+		return new CloudRenderer();
+	}
 
-    /**
-     * Returns 'true' if in the "main surface world", but 'false' if in the Nether or End dimensions.
-     */
-    @Override
-    public boolean isSurfaceWorld()
-    {
-        return true;
-    }
+	@Override
+	public IRenderHandler getWeatherRenderer() {
+		return new WeatherRenderer();
+	}
 
-    /**
-     * the y level at which clouds are rendered.
-     */
-    @Override  @SideOnly(Side.CLIENT)
-    public float getCloudHeight()
-    {
-        return 8.0F;
-    }
+	@Override
+	public Vec3 drawClouds(float partialTicks) {
+		return super.drawClouds(partialTicks);
+	}
 
-    /**
-     * Will check if the x, z position specified is alright to be set as the map spawn point
-     */
-    @Override
-    public boolean canCoordinateBeSpawn(int p_76566_1_, int p_76566_2_)
-    {
-        return this.worldObj.getTopBlock(p_76566_1_, p_76566_2_).getMaterial().blocksMovement();
-    }
+	@Override
+	@SideOnly(Side.CLIENT)
+	public Vec3 getFogColor(float par1, float par2)
+	{
+		 float f2 = MathHelper.cos(par1 * (float)Math.PI * 2.0F) * 2.0F + 0.5F;
 
-    /**
-     * Gets the hard-coded portal location to use when entering this dimension.
-     */
-    @Override
-    public ChunkCoordinates getEntrancePortalLocation()
-    {
-        return new ChunkCoordinates(100, 50, 0);
-    }
+	        if (f2 < 0.0F)
+	        {
+	            f2 = 0.0F;
+	        }
 
-    public int getAverageGroundLevel()
-    {
-        return 50;
-    }
+	        if (f2 > 1.0F)
+	        {
+	            f2 = 1.0F;
+	        }
 
-    /**
-     * Returns true if the given X,Z coordinate should show environmental fog.
-     */
-    @Override @SideOnly(Side.CLIENT)
-    public boolean doesXZShowFog(int p_76568_1_, int p_76568_2_)
-    {
-        return true;
-    }
-
-    /**
-     * Returns the dimension's name, e.g. "The End", "Nether", or "Overworld".
-     */
-    @Override
-    public String getDimensionName()
-    {
-        return "True End";
-    }
+	        float f3 = 0.7529412F;
+	        float f4 = 0.84705883F;
+	        float f5 = 1.0F;
+	        f3 *= f2 * 0.94F + 0.06F;
+	        f4 *= f2 * 0.94F + 0.06F;
+	        f5 *= f2 * 0.91F + 0.09F;
+	        return Vec3.createVectorHelper((double)f3, (double)f4, (double)f5);
+	}
 }
