@@ -19,8 +19,10 @@ import net.minecraft.block.Block;
 import net.minecraft.block.BlockFire;
 import net.minecraft.block.material.MapColor;
 import net.minecraft.client.renderer.texture.IIconRegister;
+import net.minecraft.entity.Entity;
 import net.minecraft.init.Blocks;
 import net.minecraft.util.AxisAlignedBB;
+import net.minecraft.util.DamageSource;
 import net.minecraft.util.IIcon;
 import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
@@ -556,5 +558,9 @@ public class teFIRE extends BlockFire
         int newChance = world.getBlock(x, y, z).getFireSpreadSpeed(world, x, y, z, face);
         return (newChance > oldChance ? newChance : oldChance);
     }
-    
+    public void onEntityCollidedWithBlock(World world, int a, int b, int c, Entity entity) {
+
+        entity.attackEntityFrom(DamageSource.onFire, 1);
+        entity.setFire(5);
+}
 }
