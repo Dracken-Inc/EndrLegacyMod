@@ -174,10 +174,10 @@ public class WorldProviderTrueEnd extends WorldProvider{
 		return new CloudRenderer();
 	}
 
-	@Override
-	public IRenderHandler getWeatherRenderer() {
-		return new WeatherRenderer();
-	}
+	//@Override
+	//public IRenderHandler getWeatherRenderer() {
+	//	return new WeatherRenderer();
+	//}
 
 	@Override
 	public Vec3 drawClouds(float partialTicks) {

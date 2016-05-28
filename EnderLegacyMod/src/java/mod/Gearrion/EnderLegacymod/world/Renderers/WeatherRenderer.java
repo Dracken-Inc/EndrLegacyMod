@@ -4,8 +4,6 @@ import java.util.Random;
 
 import org.lwjgl.opengl.GL11;
 
-import cpw.mods.fml.relauncher.Side;
-import cpw.mods.fml.relauncher.SideOnly;
 import mod.Gearrion.EnderLegacymod.Main;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.multiplayer.WorldClient;
@@ -29,10 +27,9 @@ public class WeatherRenderer extends IRenderHandler {
 
 	private String weather_Name;
 
-	private static final ResourceLocation locationRainPng = new ResourceLocation("enderlegacymod:textures/environment/rain.png");
+	private static final ResourceLocation locationRainPng = new ResourceLocation(Main.MODID +":/textures/environment/rain.png");
 
 	@Override
-	@SideOnly(Side.CLIENT)
 	public void render(float partialTicks, WorldClient world, Minecraft mc) {
 		this.getWeatherToRenderer("fog");
 		if(weather_Name != null){
