@@ -1,7 +1,6 @@
 package mod.Gearrion.EnderLegacymod.Blocks;
 
 import cpw.mods.fml.common.registry.GameRegistry;
-import mod.Gearrion.EnderLegacymod.Blocks.Tree.BlockModLeaves;
 import mod.Gearrion.EnderLegacymod.Blocks.Tree.EnderLog;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
