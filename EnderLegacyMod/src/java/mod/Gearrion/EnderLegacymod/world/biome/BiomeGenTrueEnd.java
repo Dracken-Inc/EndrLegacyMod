@@ -2,6 +2,7 @@ package mod.Gearrion.EnderLegacymod.world.biome;
 
 import java.util.Random;
 
+import mod.Gearrion.EnderLegacymod.world.biome.decorators.BiomeDecoratorMod;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.entity.monster.EntityEnderman;
@@ -14,12 +15,13 @@ public class BiomeGenTrueEnd extends BiomeGenBase{
 
 		
 		public static int treesPerChunk;
-
+		protected BiomeDecoratorMod decorator;
+		
 		@SuppressWarnings("unchecked")
 		public BiomeGenTrueEnd(int id){
 		super(id);
 		this.spawnableWaterCreatureList.clear();
-		this.theBiomeDecorator.treesPerChunk = 3;
+		BiomeGenTrueEnd.treesPerChunk = 3;
 		this.spawnableCreatureList.clear();
 		this.spawnableCreatureList.add(new SpawnListEntry(EntityEnderman.class, 5, 1, 5));
 		this.theBiomeDecorator.treesPerChunk = 0;
@@ -27,7 +29,6 @@ public class BiomeGenTrueEnd extends BiomeGenBase{
 		this.theBiomeDecorator.bigMushroomsPerChunk = 0;
 		this.topBlock = Blocks.end_stone;
 		this.spawnableMonsterList.clear();
-		
 		this.fillerBlock = Blocks.end_stone;
 		this.waterColorMultiplier = 0x990000;
 		
