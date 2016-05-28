@@ -2,6 +2,9 @@ package mod.Gearrion.EnderLegacymod.world.Renderers;
 
 import java.util.Random;
 
+import org.lwjgl.opengl.GL11;
+
+import mod.Gearrion.EnderLegacymod.Main;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.multiplayer.WorldClient;
 import net.minecraft.client.renderer.OpenGlHelper;
@@ -11,10 +14,6 @@ import net.minecraft.util.MathHelper;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.world.biome.BiomeGenBase;
 import net.minecraftforge.client.IRenderHandler;
-
-import org.lwjgl.opengl.GL11;
-
-import mod.Gearrion.EnderLegacymod.Main;
 
 public class WeatherRenderer extends IRenderHandler {
 

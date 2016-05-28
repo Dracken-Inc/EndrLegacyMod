@@ -1,13 +1,14 @@
 package mod.Gearrion.EnderLegacymod.Blocks.Tree;
 import java.util.List;
 
+import cpw.mods.fml.relauncher.Side;
+import cpw.mods.fml.relauncher.SideOnly;
+import mod.Gearrion.EnderLegacymod.Main;
 import net.minecraft.client.renderer.texture.IIconRegister;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.IIcon;
-import cpw.mods.fml.relauncher.Side;
-import cpw.mods.fml.relauncher.SideOnly;
 
 public class EnderLog extends BlockModLogBase
 {
@@ -18,7 +19,7 @@ public class EnderLog extends BlockModLogBase
     public EnderLog(String name, String blockTextureName){
     	this.setBlockName(name);
     	this.setBlockTextureName(blockTextureName);
-    	this.setCreativeTab(CreativeTabs.tabBlock);
+		this.setCreativeTab(Main.TabEnderLegacy);
     }
 
     /**

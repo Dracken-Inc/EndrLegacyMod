@@ -1,6 +1,8 @@
 package mod.Gearrion.EnderLegacymod.Blocks;
 
 import cpw.mods.fml.common.registry.GameRegistry;
+import mod.Gearrion.EnderLegacymod.Blocks.Tree.BlockModLeaves;
+import mod.Gearrion.EnderLegacymod.Blocks.Tree.EnderLog;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 
@@ -15,6 +17,8 @@ public final class ModBlocks {
   public static Block Endersteelblock;
   public static teFIRE lightFire;
   public static TrueEndPortal TrueEndPortal;
+  public static EnderLog EnderLog;
+  public static BlockModLeaves BlockModEndLeaves;
 	 
 
   public static final void init() {
@@ -26,8 +30,8 @@ public final class ModBlocks {
 		GameRegistry.registerBlock(Endergemblock = new BlockModBlock("Endergemblock", Material.iron, 25.0F, 100.0F, 0.6F, "pickaxe", 3, Block.soundTypeMetal), "Endergemblock");
 		GameRegistry.registerBlock(Endersteelblock = new BlockModBlock("Endersteelblock", Material.iron, 55.0F, 300.0F, 0.0F, "pickaxe", 4, Block.soundTypeStone), "Endersteelblock"); 
 		GameRegistry.registerBlock(TrueEndPortal = new TrueEndPortal("TrueEndPortal"), "TrueEndPortal"); 
-		GameRegistry.registerBlock(Endlog = new teFIRE("lightFire"), "lightFire"); 
-		GameRegistry.registerBlock(lightFire = new teFIRE("lightFire"), "lightFire"); 
+		GameRegistry.registerBlock(EnderLog = new EnderLog("EnderLog", "EnderLog"), "EnderLog"); 
+		GameRegistry.registerBlock(BlockModEndLeaves = new mod.Gearrion.EnderLegacymod.Blocks.Tree.BlockModEndLeaves("BlockModEndLeaves","BlockModEndLeaves" ), "BlockModEndLeaves");
 		GameRegistry.registerBlock(lightFire = new teFIRE("lightFire"), "lightFire"); 
 
   }
