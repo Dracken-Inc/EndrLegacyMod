@@ -35,6 +35,7 @@ public final class ModItems {
   public static Item PaladosHammer;
   public static Item seeingeye;   
   public static Item Nathanielskatana; 
+  
   //MATS			Name("Name"	=(Harvestlvl,Durability,Minning Speed,Damage,enchantability)									
 		public static ToolMaterial MatEnderSteelItem = EnumHelper.addToolMaterial("MatEnderSteelItem", 4, 2500, 14.0F, 6.0F, 30);
 		public static ToolMaterial MatEnderBladeItem = EnumHelper.addToolMaterial("MatEnderBladeItem", 4, 3000, 18.0F, 8.0F, 40);
