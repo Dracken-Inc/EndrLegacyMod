@@ -49,7 +49,7 @@ public class WorldProviderTrueEnd extends WorldProvider{
 		return true;
 	}
 
-	@Override @SideOnly(Side.CLIENT)
+	@SideOnly(Side.CLIENT)
 	/** @return the player speed */
 	public double getMovementFactor() {
 		return 0.1;
@@ -98,7 +98,7 @@ public class WorldProviderTrueEnd extends WorldProvider{
 	public Vec3 getSkyColor(Entity cameraEntity, float partialTicks) {
 		return worldObj.getSkyColorBody(cameraEntity, partialTicks);
 	}
-	@Override
+	
 	@SideOnly(Side.CLIENT)
 	/** should a color for the sky be rendered? */
 	public boolean isSkyColored()
@@ -112,29 +112,29 @@ public class WorldProviderTrueEnd extends WorldProvider{
 	{
 		return true;
 	}
-	
+
 	@Override
-		/** is this a surface world or an underworld */
+	/** is this a surface world or an underworld */
 	public boolean isSurfaceWorld()
 	{
 		return true;
 	}
-	
+
 	@Override
+	@SideOnly(Side.CLIENT)
 	/** @return the high of the clouds */
 	public float getCloudHeight()
 	{
 		return this.terrainType.getCloudHeight();
 	}
-	
+
 	@Override
 	public ChunkCoordinates getEntrancePortalLocation()
 	{
 		return new ChunkCoordinates(50, 5, 0);
 	}
-	
+
 	@Override
-	@SideOnly(Side.CLIENT)
 	/** the light value in this dimension */
 	protected void generateLightBrightnessTable()
 	{
@@ -163,22 +163,22 @@ public class WorldProviderTrueEnd extends WorldProvider{
 		return "Leaving the Forest";
 	}
 
-	@Override @SideOnly(Side.CLIENT)
+	@Override
 	public IRenderHandler getSkyRenderer() {
 		return new SkyRenderer();
 	}
 
-	@Override @SideOnly(Side.CLIENT)
+	@Override
 	public IRenderHandler getCloudRenderer() {
 		return new CloudRenderer();
 	}
 
-	@Override @SideOnly(Side.CLIENT)
+	@Override
 	public IRenderHandler getWeatherRenderer() {
 		return new WeatherRenderer();
 	}
 
-	@Override @SideOnly(Side.CLIENT)
+	@Override
 	public Vec3 drawClouds(float partialTicks) {
 		return super.drawClouds(partialTicks);
 	}

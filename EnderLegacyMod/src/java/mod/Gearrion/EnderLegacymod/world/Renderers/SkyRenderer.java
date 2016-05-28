@@ -24,7 +24,7 @@ public class SkyRenderer extends IRenderHandler {
 	public SkyRenderer()
 	{
 		RenderGlobal renderGlobal = Minecraft.getMinecraft().renderGlobal;
-		this.glSkyList2 = (this.glSkyList = (this.starGLCallList = ReflectionHelper.getPrivateValue(RenderGlobal.class, renderGlobal, "starGLCallList")) + 1) + 1;
+		this.glSkyList2 = (this.glSkyList = (this.starGLCallList = ReflectionHelper.getPrivateValue(RenderGlobal.class, renderGlobal, "starGLCallList", "field_72772_v")) + 1) + 1;
 	}
 
 	@Override
