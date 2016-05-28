@@ -3,7 +3,7 @@
   "modid": "EnderLegacyMod",
   "name": "Ender Legacy Mod",
   "description": "True Ender Demension Mod.",
-  "version": "${version}",
+  "version": "1.0.8",
   "mcversion": "${mcversion}",
   "url": "",
   "updateUrl": "",

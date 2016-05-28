@@ -1,5 +1,7 @@
 package mod.Gearrion.EnderLegacymod.Blocks.Tree;
 
+import cpw.mods.fml.relauncher.Side;
+import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.client.particle.EntityFX;
 import net.minecraft.client.renderer.Tessellator;
 import net.minecraft.world.World;
@@ -13,9 +15,9 @@ public class EntityTreeFX extends EntityFX{
 	private double portalPosY;
 	private double portalPosZ;
 
-	@SuppressWarnings("unused")
+	@SideOnly(Side.CLIENT)
 	private static final String __OBFID = "CL_000003921";
-
+	
 	public EntityTreeFX(World world, double posX, double posY, double posZ, double motionPosX, double motionPosY, double motionPosZ)
 	{
 
@@ -34,7 +36,7 @@ public class EntityTreeFX extends EntityFX{
 		this.noClip = true;
 		this.setParticleTextureIndex((int)(Math.random() * 8.0D));
 	}
-
+	
 	public void renderParticle(Tessellator tessellator, float posX, float posY, float posZ, float movePosX, float movePosY, float movePosZ)
 	{
 		float f6 = ((float)this.particleAge + posX) / (float)this.particleMaxAge;

@@ -32,7 +32,7 @@ public final class ModBlocks {
 		GameRegistry.registerBlock(TrueEndPortal = new TrueEndPortal("TrueEndPortal"), "TrueEndPortal"); 
 		GameRegistry.registerBlock(EnderLog = new EnderLog("EnderLog", "EnderLog"), "EnderLog"); 
 		GameRegistry.registerBlock(End_Leaves = new mod.Gearrion.EnderLegacymod.Blocks.Tree.BlockModEndLeaves("End Leaves","End_Leaves" ), "End_Leaves");
-		GameRegistry.registerBlock(End_Effect_Leaves = new mod.Gearrion.EnderLegacymod.Blocks.Tree.BlockModEffectLeaves("End Effect Leaves","End_Effect_Leaves" ), "End_Effect_Leaves");
+		//GameRegistry.registerBlock(End_Effect_Leaves = new mod.Gearrion.EnderLegacymod.Blocks.Tree.BlockModEffectLeaves("End Effect Leaves","End_Effect_Leaves" ), "End_Effect_Leaves");
 		GameRegistry.registerBlock(lightFire = new teFIRE("lightFire"), "lightFire"); 
 
   }
