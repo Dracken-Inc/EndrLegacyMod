@@ -24,6 +24,7 @@ public class BiomeRegistry {
 		BiomeDictionary.registerBiomeType(biomeTrueEnd, Type.END);
 		BiomeManager.addSpawnBiome(biomeTrueEnd);
 		
+		
 	}
 
 }

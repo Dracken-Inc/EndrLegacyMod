@@ -28,7 +28,7 @@ import net.minecraftforge.oredict.OreDictionary;
 		GameRegistry.addRecipe(new ItemStack(ModItems.Endersteelaxe, 1),"ee ",	"eo "," o ",'e', ModItems.Endersteelignot,'o', Item.itemRegistry.getObject("stick"));
 		
 	//Weapons
-		GameRegistry.addRecipe(new ItemStack(ModItems.seeingeye, 1),"eee",	" e "," i ",'o', ModItems.Endersteelignot,'o', Item.itemRegistry.getObject("stick"),'e',ModItems.Endersteelignot);
+		GameRegistry.addRecipe(new ItemStack(ModItems.seeingeye, 1),"eee"," i "," o ",'e', ModItems.Endersteelignot,'o',Item.itemRegistry.getObject("stick"),'i',Item.itemRegistry.getObject("ender_eye")); 
 		GameRegistry.addRecipe(new ItemStack(ModItems.Endersteelsword, 1)," e "," e "," o ",'e', ModItems.Endersteelignot,'o', Item.itemRegistry.getObject("stick"));
 		GameRegistry.addRecipe(new ItemStack(ModItems.Enderrelicsword, 1),"ge ","ge "," b ",'e', ModItems.Endersteelignot,'g', Item.itemRegistry.getObject("gold_ingot"),'b', Item.itemRegistry.getObject("blaze_rod")); 
  

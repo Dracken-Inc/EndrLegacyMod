@@ -12,30 +12,24 @@ import net.minecraft.world.biome.BiomeGenBase;
 
 
 public class BiomeGenTrueEnd extends BiomeGenBase{
+	
+		public static final int treesPerChunk = 3;
+		
 
-		
-		public static int treesPerChunk;
-		protected BiomeDecoratorMod decorator;
-		
 		@SuppressWarnings("unchecked")
 		public BiomeGenTrueEnd(int id){
 		super(id);
 		this.spawnableWaterCreatureList.clear();
-		BiomeGenTrueEnd.treesPerChunk = 3;
 		this.spawnableCreatureList.clear();
 		this.spawnableCreatureList.add(new SpawnListEntry(EntityEnderman.class, 5, 1, 5));
-		this.theBiomeDecorator.treesPerChunk = 0;
-		this.theBiomeDecorator.grassPerChunk = 0;
-		this.theBiomeDecorator.bigMushroomsPerChunk = 0;
-		this.topBlock = Blocks.end_stone;
 		this.spawnableMonsterList.clear();
 		this.fillerBlock = Blocks.end_stone;
+		this.topBlock = Blocks.end_stone;
 		this.waterColorMultiplier = 0x990000;
-		
-		 
-		}
-		
-		
+		BiomeDecoratorMod.howMenyTrees = 3;
+		theBiomeDecorator = new BiomeDecoratorMod();		
+		 	}
+				
 		@Override
 		public void genTerrainBlocks(World world, Random random, Block[] blocks, byte[] metadataArray, int genX, int genZ, double stoneNoise) {
 			genCustomTerrain(world, random, blocks, metadataArray, genX, genZ, stoneNoise);
