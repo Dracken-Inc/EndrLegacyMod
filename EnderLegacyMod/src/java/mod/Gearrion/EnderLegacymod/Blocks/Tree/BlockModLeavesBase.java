@@ -4,9 +4,9 @@ import java.util.Random;
 
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
+import mod.Gearrion.EnderLegacymod.Main;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
-import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
 
@@ -21,7 +21,7 @@ public class BlockModLeavesBase extends Block
     {
         super(p_i45433_1_);
         this.field_150121_P = p_i45433_2_;
-        this.setCreativeTab(CreativeTabs.tabBlock);
+		setCreativeTab(Main.TabEnderLegacy);
         this.setTickRandomly(true);
     }
 

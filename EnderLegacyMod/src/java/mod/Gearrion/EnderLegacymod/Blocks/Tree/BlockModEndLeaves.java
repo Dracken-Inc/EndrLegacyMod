@@ -20,8 +20,8 @@ public class BlockModEndLeaves extends BlockModLeaves
 	
 	//TODO: block renders see through back/adjcent faces
 	
-    public static final String[][] field_150130_N = new String[][] {{"light_leaves"}, {"light_leaves_opaque"}};
-    public static final String[] field_150131_O = new String[] {"light"};
+    public static final String[][] field_150130_N = new String[][] {{"end_leaves"}, {"end_leaves_opaque"}};
+    public static final String[] field_150131_O = new String[] {"end"};
   
     
     @SuppressWarnings("unused")
@@ -100,7 +100,7 @@ public class BlockModEndLeaves extends BlockModLeaves
 
             for (int j = 0; j < field_150130_N[i].length; ++j)
             {
-                this.field_150129_M[i][j] = p_149651_1_.registerIcon("tutorial:" + field_150130_N[i][j]);
+                this.field_150129_M[i][j] = p_149651_1_.registerIcon("EnderLegacymod:" + field_150130_N[i][j]);
             }
         }
     }

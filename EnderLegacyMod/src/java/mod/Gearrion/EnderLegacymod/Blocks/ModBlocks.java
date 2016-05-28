@@ -17,8 +17,9 @@ public final class ModBlocks {
   public static Block Endersteelblock;
   public static teFIRE lightFire;
   public static TrueEndPortal TrueEndPortal;
-  public static EnderLog EnderLog;
-  public static BlockModLeaves BlockModEndLeaves;
+  public static Block EnderLog;
+  public static Block End_Leaves;
+  public static Block End_Effect_Leaves;
 	 
 
   public static final void init() {
@@ -31,7 +32,8 @@ public final class ModBlocks {
 		GameRegistry.registerBlock(Endersteelblock = new BlockModBlock("Endersteelblock", Material.iron, 55.0F, 300.0F, 0.0F, "pickaxe", 4, Block.soundTypeStone), "Endersteelblock"); 
 		GameRegistry.registerBlock(TrueEndPortal = new TrueEndPortal("TrueEndPortal"), "TrueEndPortal"); 
 		GameRegistry.registerBlock(EnderLog = new EnderLog("EnderLog", "EnderLog"), "EnderLog"); 
-		GameRegistry.registerBlock(BlockModEndLeaves = new mod.Gearrion.EnderLegacymod.Blocks.Tree.BlockModEndLeaves("BlockModEndLeaves","BlockModEndLeaves" ), "BlockModEndLeaves");
+		GameRegistry.registerBlock(End_Leaves = new mod.Gearrion.EnderLegacymod.Blocks.Tree.BlockModEndLeaves("End Leaves","End_Leaves" ), "End_Leaves");
+		GameRegistry.registerBlock(End_Effect_Leaves = new mod.Gearrion.EnderLegacymod.Blocks.Tree.BlockModEffectLeaves("End Effect Leaves","End_Effect_Leaves" ), "End_Effect_Leaves");
 		GameRegistry.registerBlock(lightFire = new teFIRE("lightFire"), "lightFire"); 
 
   }

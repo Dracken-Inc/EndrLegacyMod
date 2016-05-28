@@ -5,9 +5,9 @@ import java.util.Random;
 
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
+import mod.Gearrion.EnderLegacymod.Main;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
-import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.Blocks;
 import net.minecraft.item.Item;
@@ -30,7 +30,7 @@ public abstract class BlockModLeaves extends BlockModLeavesBase implements IShea
     {
         super(Material.leaves, true);
         this.setTickRandomly(true);
-        this.setCreativeTab(CreativeTabs.tabBlock);
+		setCreativeTab(Main.TabEnderLegacy);
         this.setHardness(0.2F);
         this.setLightOpacity(1);
         this.setStepSound(soundTypeGrass);

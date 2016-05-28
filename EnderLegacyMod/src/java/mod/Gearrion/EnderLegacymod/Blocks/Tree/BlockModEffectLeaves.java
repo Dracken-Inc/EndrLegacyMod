@@ -18,8 +18,8 @@ import net.minecraft.world.World;
 
 public class BlockModEffectLeaves extends BlockModLeaves
 {
-	public static final String[][] field_150130_N = new String[][] { { "effect_leaves" }, { "effect_leaves_opaque" } };
-	public static final String[] field_150131_O = new String[] { "effect" };
+	public static final String[][] field_150130_N = new String[][] { { "end_effect_leaves" }, { "end_effect_leaves_opaque" } };
+	public static final String[] field_150131_O = new String[] { "end_effect" };
 
 	@SuppressWarnings("unused")
 	private static final String __OBFID = "CL_00000280";

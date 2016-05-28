@@ -41,8 +41,8 @@ public class EnderLog extends BlockModLogBase
 
         for (int i = 0; i < this.field_150167_a.length; ++i)
         {
-            this.field_150167_a[i] = p_149651_1_.registerIcon("tutorial:" + this.getTextureName() + "_" + field_150169_M[i]);
-            this.field_150166_b[i] = p_149651_1_.registerIcon("tutorial:" + this.getTextureName() + "_" + field_150169_M[i] + "_top");
+            this.field_150167_a[i] = p_149651_1_.registerIcon("EnderLegacymod:" + this.getTextureName() + "_" + field_150169_M[i]);
+           this.field_150166_b[i] = p_149651_1_.registerIcon("EnderLegacymod:" + this.getTextureName() + "_" + field_150169_M[i] + "_top");
         }
     }
 }
