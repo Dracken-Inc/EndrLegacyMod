@@ -34,7 +34,7 @@ public class WorldProviderTrueEnd extends WorldProvider{
 	 * @return the name of the dimension
 	 */
 	public String getDimensionName() {
-		return "Light Forest";
+		return "True End";
 	}
 
 	@Override
@@ -98,7 +98,7 @@ public class WorldProviderTrueEnd extends WorldProvider{
 	public Vec3 getSkyColor(Entity cameraEntity, float partialTicks) {
 		return worldObj.getSkyColorBody(cameraEntity, partialTicks);
 	}
-	
+
 	@SideOnly(Side.CLIENT)
 	/** should a color for the sky be rendered? */
 	public boolean isSkyColored()
@@ -152,7 +152,7 @@ public class WorldProviderTrueEnd extends WorldProvider{
 	/** @return the dimension join message */
 	public String getWelcomeMessage()
 	{
-		return "Entering the Forest";
+		return "Entering the True End";
 	}
 
 	@Override
@@ -160,7 +160,7 @@ public class WorldProviderTrueEnd extends WorldProvider{
 	/** @return the dimension leave message */
 	public String getDepartMessage()
 	{
-		return "Leaving the Forest";
+		return "Leaving the True End";
 	}
 
 	@Override
