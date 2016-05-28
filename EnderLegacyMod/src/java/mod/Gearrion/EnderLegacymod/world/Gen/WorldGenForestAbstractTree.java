@@ -2,7 +2,7 @@ package mod.Gearrion.EnderLegacymod.world.Gen;
 
 import java.util.Random;
 
-import jimmy.tutorial.block.Blockss;
+import mod.Gearrion.EnderLegacymod.Blocks.ModBlocks;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.init.Blocks;
@@ -21,7 +21,7 @@ public abstract class WorldGenForestAbstractTree extends WorldGenerator
 
     protected boolean func_150523_a(Block p_150523_1_)
     {
-        return p_150523_1_.getMaterial() == Material.air || p_150523_1_.getMaterial() == Material.leaves || p_150523_1_ == Blockss.lightForestGrass || p_150523_1_ == Blockss.lightForestDirt || p_150523_1_ == Blockss.lightLog || p_150523_1_ == Blockss.lightLog || p_150523_1_ == Blocks.sapling || p_150523_1_ == Blocks.vine;
+        return p_150523_1_.getMaterial() == Material.air || p_150523_1_.getMaterial() == Material.leaves || p_150523_1_ == Blocks.end_stone || p_150523_1_ == Blocks.end_stone  || p_150523_1_ == ModBlocks.EnderLog || p_150523_1_ == ModBlocks.EnderLog || p_150523_1_ == Blocks.sapling || p_150523_1_ == Blocks.vine;
     }
 
     public void func_150524_b(World p_150524_1_, Random p_150524_2_, int p_150524_3_, int p_150524_4_, int p_150524_5_) {}

@@ -13,10 +13,13 @@ import net.minecraft.world.biome.BiomeGenBase;
 public class BiomeGenTrueEnd extends BiomeGenBase{
 
 		
+		public static int treesPerChunk;
+
 		@SuppressWarnings("unchecked")
 		public BiomeGenTrueEnd(int id){
 		super(id);
 		this.spawnableWaterCreatureList.clear();
+		this.theBiomeDecorator.treesPerChunk = 3;
 		this.spawnableCreatureList.clear();
 		this.spawnableCreatureList.add(new SpawnListEntry(EntityEnderman.class, 5, 1, 5));
 		this.theBiomeDecorator.treesPerChunk = 0;
