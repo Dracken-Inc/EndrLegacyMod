@@ -26,6 +26,8 @@ public final class ModBlocks {
 		GameRegistry.registerBlock(Endergemblock = new BlockModBlock("Endergemblock", Material.iron, 25.0F, 100.0F, 0.6F, "pickaxe", 3, Block.soundTypeMetal), "Endergemblock");
 		GameRegistry.registerBlock(Endersteelblock = new BlockModBlock("Endersteelblock", Material.iron, 55.0F, 300.0F, 0.0F, "pickaxe", 4, Block.soundTypeStone), "Endersteelblock"); 
 		GameRegistry.registerBlock(TrueEndPortal = new TrueEndPortal("TrueEndPortal"), "TrueEndPortal"); 
+		GameRegistry.registerBlock(Endlog = new teFIRE("lightFire"), "lightFire"); 
+		GameRegistry.registerBlock(lightFire = new teFIRE("lightFire"), "lightFire"); 
 		GameRegistry.registerBlock(lightFire = new teFIRE("lightFire"), "lightFire"); 
 
   }
