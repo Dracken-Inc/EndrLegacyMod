@@ -29,7 +29,7 @@ public class WeatherRenderer extends IRenderHandler {
 
 	private String weather_Name;
 
-	private static final ResourceLocation locationRainPng = new ResourceLocation(Main.MODID +":/textures/environment/rain.png");
+	private static final ResourceLocation locationRainPng = new ResourceLocation("enderlegacymod:textures/environment/rain.png");
 
 	@Override
 	@SideOnly(Side.CLIENT)

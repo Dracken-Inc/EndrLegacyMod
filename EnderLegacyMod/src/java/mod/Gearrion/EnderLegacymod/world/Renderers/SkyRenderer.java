@@ -112,7 +112,7 @@ public class SkyRenderer extends IRenderHandler {
 		
 		
 		f10 = 20.0F; // Size of sun from center
-		mc.renderEngine.bindTexture(new ResourceLocation("EnderLegacymod:/textures/environment/oldsun.png")); 
+		mc.renderEngine.bindTexture(new ResourceLocation("enderlegacymod:textures/environment/oldsun.png")); 
 				
 		tessellator1.startDrawingQuads();
 		tessellator1.addVertexWithUV((double) (-f10), 100.0D, (double) (-f10), 0.0D, 0.0D);
@@ -122,8 +122,8 @@ public class SkyRenderer extends IRenderHandler {
 		
 		
 		tessellator1.draw(); // Draw sun
-		f10 = 15.0F; // Size of moon from center
-		mc.renderEngine.bindTexture(new ResourceLocation("EnderLegacymod:/textures/environment/moon_phases.png"));
+		f10 = 15.0F; // Size of moon from center         "enderlegacymod"
+		mc.renderEngine.bindTexture(new ResourceLocation("enderlegacymod:textures/environment/moon_phases.png"));
 		
 		
 		int k = world.getMoonPhase();
