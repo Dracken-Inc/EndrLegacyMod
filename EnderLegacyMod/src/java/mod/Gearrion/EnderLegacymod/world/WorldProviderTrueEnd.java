@@ -98,7 +98,7 @@ public class WorldProviderTrueEnd extends WorldProvider{
 	public Vec3 getSkyColor(Entity cameraEntity, float partialTicks) {
 		return worldObj.getSkyColorBody(cameraEntity, partialTicks);
 	}
-
+	
 	@SideOnly(Side.CLIENT)
 	/** should a color for the sky be rendered? */
 	public boolean isSkyColored()

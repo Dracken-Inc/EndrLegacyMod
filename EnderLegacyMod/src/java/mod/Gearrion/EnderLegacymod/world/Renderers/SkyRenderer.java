@@ -1,5 +1,10 @@
 package mod.Gearrion.EnderLegacymod.world.Renderers;
 
+import org.lwjgl.opengl.GL11;
+
+import cpw.mods.fml.relauncher.ReflectionHelper;
+import cpw.mods.fml.relauncher.Side;
+import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.multiplayer.WorldClient;
 import net.minecraft.client.renderer.RenderGlobal;
@@ -9,13 +14,6 @@ import net.minecraft.util.MathHelper;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.Vec3;
 import net.minecraftforge.client.IRenderHandler;
-
-import org.lwjgl.opengl.GL11;
-
-import cpw.mods.fml.relauncher.ReflectionHelper;
-import cpw.mods.fml.relauncher.Side;
-import cpw.mods.fml.relauncher.SideOnly;
-import mod.Gearrion.EnderLegacymod.Main;
 
 public class SkyRenderer extends IRenderHandler {
 
@@ -114,7 +112,7 @@ public class SkyRenderer extends IRenderHandler {
 		
 		
 		f10 = 20.0F; // Size of sun from center
-		mc.renderEngine.getTexture(new ResourceLocation("enderlegacymod:/textures/environment/sun.png")); 
+		mc.renderEngine.bindTexture(new ResourceLocation("enderlegacymod:/textures/environment/oldsun.png")); 
 				
 		tessellator1.startDrawingQuads();
 		tessellator1.addVertexWithUV((double) (-f10), 100.0D, (double) (-f10), 0.0D, 0.0D);
