@@ -23,6 +23,7 @@ public class WorldProviderTrueEnd extends WorldProvider{
 	public void registerWorldChunkManager(){
 		this.worldChunkMgr = new WorldChunkManagerHell(BiomeRegistry.biomeTrueEnd, 1.2F);
 		this.dimensionId = dimensionRegistry.dimensionId;
+		
 	}
 	
 	
