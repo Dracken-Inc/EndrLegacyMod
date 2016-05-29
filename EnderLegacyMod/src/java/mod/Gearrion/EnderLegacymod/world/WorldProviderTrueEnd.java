@@ -4,7 +4,6 @@ import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import mod.Gearrion.EnderLegacymod.world.Renderers.CloudRenderer;
 import mod.Gearrion.EnderLegacymod.world.Renderers.SkyRenderer;
-import mod.Gearrion.EnderLegacymod.world.biome.BiomeRegistry;
 import mod.Gearrion.EnderLegacymod.world.chunk.ChunkProviderTrueEnd;
 import mod.Gearrion.EnderLegacymod.world.dimension.dimensionRegistry;
 import net.minecraft.entity.Entity;
@@ -13,22 +12,31 @@ import net.minecraft.util.MathHelper;
 import net.minecraft.util.Vec3;
 import net.minecraft.world.World;
 import net.minecraft.world.WorldProvider;
-import net.minecraft.world.biome.WorldChunkManagerHell;
 import net.minecraft.world.chunk.IChunkProvider;
 import net.minecraftforge.client.IRenderHandler;
+import net.minecraftforge.common.DimensionManager;
 
 public class WorldProviderTrueEnd extends WorldProvider{
 
+	@Override
+	/** tells Minecraft to use our new Terrain Generator */
+	public IChunkProvider createChunkGenerator() {
+		return new ChunkProviderTrueEnd(this.worldObj, this.worldObj.getSeed(), true);
+	}
+	
+	@Override
 	public void registerWorldChunkManager(){
-		this.worldChunkMgr = new WorldChunkManagerHell(BiomeRegistry.biomeTrueEnd, 1.2F);
+		this.worldChunkMgr = new WorldChunkManagerTrueEnd(worldObj.getSeed(), terrainType);
 		this.dimensionId = dimensionRegistry.dimensionId;
 		
 	}
 	
-	
-	public IChunkProvider createChunkGeneration(){
-		return new ChunkProviderTrueEnd(this.worldObj, this.worldObj.getSeed(), true);
+	/** Get Provider for Dimension **/
+	public static WorldProvider getProviderForDimension(int id)
+	{
+		return DimensionManager.createProviderFor(dimensionRegistry.dimensionId);
 	}
+	
 	@Override
 	/**
 	 * @return the name of the dimension

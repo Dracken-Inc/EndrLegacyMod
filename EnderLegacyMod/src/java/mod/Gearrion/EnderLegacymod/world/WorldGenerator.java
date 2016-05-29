@@ -35,13 +35,15 @@ public class WorldGenerator implements IWorldGenerator{
 			}}
 	}
 	
-	@SuppressWarnings("unused")
+	
 	private void generateTheEnd(World world, Random rand, int chunkX, int chunkZ) {
 		for (int i = 0; i < 100; i++){
 			int randPosX = chunkX + rand.nextInt(16);
 			int randPosY = rand.nextInt(64);
 			int randPosZ = chunkZ + rand.nextInt(16);
-
+			if( i < 9){
+				(new WorldGenMinable(ModBlocks.Endersteelore, 8, Blocks.end_stone)).generate(world, rand, randPosX, randPosY, randPosZ);
+				}
 		}
 	
 	}
