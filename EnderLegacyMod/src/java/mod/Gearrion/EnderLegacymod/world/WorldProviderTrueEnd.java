@@ -4,7 +4,6 @@ import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import mod.Gearrion.EnderLegacymod.world.Renderers.CloudRenderer;
 import mod.Gearrion.EnderLegacymod.world.Renderers.SkyRenderer;
-import mod.Gearrion.EnderLegacymod.world.Renderers.WeatherRenderer;
 import mod.Gearrion.EnderLegacymod.world.biome.BiomeRegistry;
 import mod.Gearrion.EnderLegacymod.world.chunk.ChunkProviderTrueEnd;
 import mod.Gearrion.EnderLegacymod.world.dimension.dimensionRegistry;
