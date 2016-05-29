@@ -6,8 +6,6 @@ import java.util.Random;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import mod.Gearrion.EnderLegacymod.world.GenLayer.EndForestGenLayer;
-import mod.Gearrion.EnderLegacymod.world.GenLayer.EndForestGenLayerBiomes;
-import mod.Gearrion.EnderLegacymod.world.biome.BiomeRegistry;
 import net.minecraft.crash.CrashReport;
 import net.minecraft.crash.CrashReportCategory;
 import net.minecraft.util.ReportedException;
