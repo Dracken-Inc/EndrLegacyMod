@@ -10,6 +10,7 @@ public class EndForestGenLayerBiomes extends GenLayer {
 	// TODO: spawning with temperatures
     protected BiomeGenBase[] allowedBiomes = {
     		BiomeRegistry.biomeTrueEnd,
+    		BiomeRegistry.biomeTrueEndPlains,
     };
     
     public EndForestGenLayerBiomes(long seed) {

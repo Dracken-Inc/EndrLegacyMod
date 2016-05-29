@@ -13,16 +13,19 @@ public class BiomeRegistry {
 	}
 	
 	public static BiomeGenBase biomeTrueEnd;
+	public static BiomeGenBase biomeTrueEndPlains;
 	
 	public static void initializeBiome(){
 		
 		biomeTrueEnd = new BiomeGenTrueEnd(137).setBiomeName("TrueEnd").setTemperatureRainfall(1.2F, 0.9F);
-		
+		biomeTrueEndPlains = new biomeTrueEndPlains(138).setBiomeName("TrueEndPlains").setTemperatureRainfall(1.2F, 0.9F);
 	}
 	
 	public static void registerBiome(){
 		BiomeDictionary.registerBiomeType(biomeTrueEnd, Type.END);
+		BiomeDictionary.registerBiomeType(biomeTrueEndPlains, Type.END);
 		BiomeManager.addSpawnBiome(biomeTrueEnd);
+		BiomeManager.addSpawnBiome(biomeTrueEndPlains);
 		
 		
 	}
