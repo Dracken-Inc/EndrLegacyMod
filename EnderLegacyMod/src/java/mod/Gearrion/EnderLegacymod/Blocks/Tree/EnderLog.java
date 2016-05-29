@@ -4,24 +4,32 @@ import java.util.List;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import mod.Gearrion.EnderLegacymod.Main;
+import net.minecraft.block.material.Material;
 import net.minecraft.client.renderer.texture.IIconRegister;
 import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.init.Blocks;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.IIcon;
+import net.minecraft.world.World;
+import net.minecraftforge.common.util.ForgeDirection;
 
 public class EnderLog extends BlockModLogBase
 {
     public static final String[] field_150169_M = new String[] {"lightOak"};
     @SuppressWarnings("unused")
 	private static final String __OBFID = "CL_00000277";
-    
-    public EnderLog(String name, String blockTextureName){
+        public EnderLog(String name, String blockTextureName){
     	this.setBlockName(name);
+    	//Blocks.fire.setFireInfo(this, 5, 20);
+    	this.blockMaterial.equals(Material.wood);
     	this.setBlockTextureName(blockTextureName);
 		this.setCreativeTab(Main.TabEnderLegacy);
     }
-
+        @Override
+        public boolean isFireSource(World world, int x, int y, int z, ForgeDirection side) {
+             return true;
+        }
     /**
      * returns a list of blocks with the same ID, but different meta (eg: wood returns 4 blocks)
      */

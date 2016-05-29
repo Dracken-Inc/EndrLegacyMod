@@ -26,7 +26,7 @@ public class GameLogger {
 	 * Configure the Tutorial logger
 	 */
 	private static void configureLogging() {
-		log.myLog = Logger.getLogger("TUTORIAL-DIMENSION");
+		log.myLog = Logger.getLogger("EnderLegacyMod");
 		configured = true;
 	}
 
@@ -82,9 +82,9 @@ public class GameLogger {
 	 * Creates Config folder in Tutorial folder.
 	 */
 	public static void createFolders() {
-		tutorialFolder = new File(dir, "Tutorial");
-		tutorialLogFolder = new File(dir + "Tutorial/TutorialLog/");
-		configTutorialFolder = new File(dir + "Tutorial/Configs/");
+		tutorialFolder = new File(dir, "EnderLegacy");
+		tutorialLogFolder = new File(dir + "EnderLegacy/EnderLegacyLog/");
+		configTutorialFolder = new File(dir + "EnderLegacy/Configs/");
 		
 		if (tutorialFolder.exists() != true || configTutorialFolder.exists() != true) {
 			tutorialFolder.mkdirs();
