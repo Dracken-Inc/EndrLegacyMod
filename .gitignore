@@ -1,0 +1,6 @@
+*.classpath
+*.classpath
+*.gradle
+EnderLegacyMod/build.gradle
+*.project
+EnderLegacyMod/.project
