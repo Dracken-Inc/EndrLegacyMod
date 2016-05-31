@@ -38,10 +38,6 @@ public class teFIRE extends BlockFire
     private IIcon[] field_149850_M;
     @SuppressWarnings("unused")
     private static final String __OBFID = "CL_00000245";
-
-    
-    
-    
     
     protected teFIRE (String name)    {
         super();
@@ -51,39 +47,6 @@ public class teFIRE extends BlockFire
         this.setLightLevel(1.0F);
         this.setCreativeTab(null);
        }
-public static void func_149843_e()
-    {
-	    Blocks.fire.setFireInfo(ModBlocks.EnderLog, 5, 5);
-    	Blocks.fire.setFireInfo(Blocks.planks,5, 20);
-        Blocks.fire.setFireInfo(Blocks.double_wooden_slab,5, 20);
-        Blocks.fire.setFireInfo(Blocks.wooden_slab,5, 20);
-        Blocks.fire.setFireInfo(Blocks.fence,5, 20);
-        Blocks.fire.setFireInfo(Blocks.oak_stairs,5, 20);
-        Blocks.fire.setFireInfo(Blocks.birch_stairs,5, 20);
-        Blocks.fire.setFireInfo(Blocks.spruce_stairs,5, 20);
-        Blocks.fire.setFireInfo(Blocks.jungle_stairs,5, 20);
-        Blocks.fire.setFireInfo(Blocks.log,5, 5);
-        Blocks.fire.setFireInfo(Blocks.log2,5, 5);
-        Blocks.fire.setFireInfo(Blocks.leaves,30, 60);
-        Blocks.fire.setFireInfo(Blocks.leaves2,30, 60);
-        Blocks.fire.setFireInfo(Blocks.bookshelf,30, 20);
-        Blocks.fire.setFireInfo(Blocks.tnt,15, 100);
-        Blocks.fire.setFireInfo(Blocks.tallgrass,60, 100);
-        Blocks.fire.setFireInfo(Blocks.double_plant,60, 100);
-        Blocks.fire.setFireInfo(Blocks.yellow_flower,60, 100);
-        Blocks.fire.setFireInfo(Blocks.red_flower,60, 100);
-        Blocks.fire.setFireInfo(Blocks.wool,30, 60);
-        Blocks.fire.setFireInfo(Blocks.vine,15, 100);
-        Blocks.fire.setFireInfo(Blocks.coal_block,5, 5);
-        Blocks.fire.setFireInfo(Blocks.hay_block,60, 20);
-        Blocks.fire.setFireInfo(Blocks.carpet,60, 20);
-    }
-
-    @Deprecated // Use setFireInfo
-    public void setFireInfo(int p_149842_1_, int p_149842_2_, int p_149842_3_)
-    {
-        this.setFireInfo((Block)Block.blockRegistry.getObjectById(p_149842_1_), p_149842_2_, p_149842_3_);
-    }
 
     /**
      * Returns a bounding box from the pool of bounding boxes (this means this box can change after the pool has been

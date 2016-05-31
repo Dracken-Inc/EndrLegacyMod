@@ -7,7 +7,6 @@ import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockRotatedPillar;
 import net.minecraft.block.material.Material;
-import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 import net.minecraft.util.IIcon;
 import net.minecraft.world.IBlockAccess;
@@ -25,10 +24,10 @@ public class BlockModLogBase extends BlockRotatedPillar
     public BlockModLogBase()
     {
         super(Material.wood);
-        this.setCreativeTab(CreativeTabs.tabBlock);
+        //this.setCreativeTab(CreativeTabs.tabBlock);
         this.setHardness(2.0F);
         this.setStepSound(soundTypeWood);
-    }
+            }
 
     public static int func_150165_c(int p_150165_0_)
     {

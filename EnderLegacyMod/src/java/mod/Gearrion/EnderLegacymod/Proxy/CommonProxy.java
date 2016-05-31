@@ -7,6 +7,10 @@ import mod.Gearrion.EnderLegacymod.Blocks.ModBlocks;
 import mod.Gearrion.EnderLegacymod.Items.ModItems;
 import mod.Gearrion.EnderLegacymod.Recipes.ModRecipe;
 import mod.Gearrion.EnderLegacymod.Util.OreRegistry_TE;
+import mod.Gearrion.EnderLegacymod.world.WorldGenRegistry;
+import mod.Gearrion.EnderLegacymod.world.biome.BiomeRegistry;
+import mod.Gearrion.EnderLegacymod.world.dimension.dimensionRegistry;
+import net.minecraft.init.Blocks;
 
 
 public class CommonProxy {
@@ -19,13 +23,16 @@ public class CommonProxy {
 	
 
 	public void init(FMLInitializationEvent e) {
-        ModRecipe.init();
-        OreRegistry_TE.init();
+   	 BiomeRegistry.main();
+   	 dimensionRegistry.mainRegistry();
         
 	}
 	
 	public void postInit(FMLPostInitializationEvent e) {
-		//@SuppressWarnings("unused")
-		//WorldTypeTrueEnd WorldTypeTrueEnd = new WorldTypeTrueEnd(3, "TrueEnd");
+		OreRegistry_TE.init();
+		ModRecipe.init();
+        Blocks.fire.setFireInfo(ModBlocks.EnderLog,5, 5);
+        Blocks.fire.setFireInfo(ModBlocks.End_Leaves,30, 60);
+        WorldGenRegistry.main();
 	}
 }
