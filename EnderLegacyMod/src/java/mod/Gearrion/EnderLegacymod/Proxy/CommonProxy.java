@@ -18,21 +18,20 @@ public class CommonProxy {
 	public void preInit(FMLPreInitializationEvent e) {
 		ModItems.init();
         ModBlocks.init();
-        
-           	}
+                   	}
 	
 
 	public void init(FMLInitializationEvent e) {
-   	 BiomeRegistry.main();
-   	 dimensionRegistry.mainRegistry();
-        
+   	 BiomeRegistry.init();
+   	 dimensionRegistry.init();
+   	         
 	}
 	
 	public void postInit(FMLPostInitializationEvent e) {
 		OreRegistry_TE.init();
 		ModRecipe.init();
-        Blocks.fire.setFireInfo(ModBlocks.EnderLog,5, 5);
+        Blocks.fire.setFireInfo(ModBlocks.EnderLog,10, 10);
         Blocks.fire.setFireInfo(ModBlocks.End_Leaves,30, 60);
-        WorldGenRegistry.main();
-	}
+        WorldGenRegistry.init();
+       	}
 }

@@ -5,11 +5,7 @@ import cpw.mods.fml.common.registry.GameRegistry;
 
 public class WorldGenRegistry {
 	
-	public static void main(){
-		initWorldGen();
-	}
-	
-	public static void initWorldGen(){
+	public static void init(){
 		registerWorldGen(new WorldGenerator(), 1);
 	}
 	
