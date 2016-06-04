@@ -35,7 +35,7 @@ public final class ModItems {
   public static Item PaladosHammer;
   public static Item seeingeye;   
   public static Item Nathanielskatana; 
-  
+  public static Item enderinsignia;
   //MATS			Name("Name"	=(Harvestlvl,Durability,Minning Speed,Damage,enchantability)									
 		public static ToolMaterial MatEnderSteelItem = EnumHelper.addToolMaterial("MatEnderSteelItem", 4, 2500, 14.0F, 6.0F, 30);
 		public static ToolMaterial MatEnderBladeItem = EnumHelper.addToolMaterial("MatEnderBladeItem", 4, 3000, 18.0F, 8.0F, 40);
@@ -50,7 +50,8 @@ public final class ModItems {
 		GameRegistry.registerItem(spireofdarkness = new ItemModBasic("spireofdarkness"),"spireofdarkness");
 		GameRegistry.registerItem(Endersteelignot = new ItemModBasic("Endersteelignot"),"Endersteelignot");
 	    GameRegistry.registerItem(EnderSparker = new EnderSparker(MatEnderwand, "Enderwand"),"Enderwand");
-	  //Wands
+	    GameRegistry.registerItem(enderinsignia = new ItemModBasic("enderinsignia"),"enderinsignia");
+	    //Wands
 		
 		//Armor
         GameRegistry.registerItem(Endersteelhelmet = new ItemModArmor("Endersteelhelmet", MatEnderSteelArmor, "Endersteelhelmet", 0), "Endersteelhelmet"); //0 for helmet
@@ -63,7 +64,7 @@ public final class ModItems {
     	GameRegistry.registerItem(EnderBlade = new ItemModWeapon("EnderBlade", MatEnderBladeItem, "EnderBlade25"),"EnderBlade");
     	GameRegistry.registerItem(Endersteelsword = new ItemModWeapon("Endersteelsword", MatEnderSteelItem, "Endersteelsword"),"Endersteelsword");
 //      GameRegistry.registerItem(Huntressbow = new ItemModWeapon("Huntressbow", MatEnderSteel),"Huntressbow", "Huntressbow");
-    	GameRegistry.registerItem(VoidCutter = new ItemModWeapon("VoidCutter", MatEnderSteelItem, "VoidCutter3"),"VoidCutter");
+    	GameRegistry.registerItem(VoidCutter = new ItemModWeapon("VoidCutter", MatSpecialweapons, "Voidcutterfinal"),"VoidCutter");
     	GameRegistry.registerItem(DivineBlade = new ItemModWeapon("DivineBlade", MatSpecialweapons, "DivineBlade"),"DivineBlade");
     	GameRegistry.registerItem(Enderrelicsword = new ItemModWeapon("Enderrelicsword", MatSpecialweapons, "Enderrelicsword"),"Enderrelicsword");
     	GameRegistry.registerItem(endgeneralsword = new ItemModWeapon("endgeneralsword", MatSpecialweapons, "endgeneralsword"),"endgeneralsword");

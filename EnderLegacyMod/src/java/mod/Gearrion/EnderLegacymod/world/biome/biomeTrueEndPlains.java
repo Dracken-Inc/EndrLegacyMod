@@ -25,7 +25,7 @@ public class biomeTrueEndPlains extends BiomeGenBase{
 		this.spawnableMonsterList.clear();
 		this.fillerBlock = Blocks.end_stone;
 		this.topBlock = Blocks.end_stone;
-		this.waterColorMultiplier = 0x990000;
+		this.waterColorMultiplier = 0x990066;
 		BiomeDecoratorMod.howMenyTrees = 0;
 		//theBiomeDecorator = new BiomeDecoratorMod();		
 		 	}
