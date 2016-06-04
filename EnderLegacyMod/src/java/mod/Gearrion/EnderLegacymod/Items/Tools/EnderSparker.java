@@ -1,4 +1,4 @@
-package mod.Gearrion.EnderLegacymod.Items.Wands;	
+package mod.Gearrion.EnderLegacymod.Items.Tools;	
 
 import mod.Gearrion.EnderLegacymod.Main;
 import mod.Gearrion.EnderLegacymod.Blocks.ModBlocks;
@@ -8,17 +8,17 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.world.World;
 
-public class ignighterWand extends Item
+public class EnderSparker extends Item
 {
 	
-	public ignighterWand(Item.ToolMaterial m, String name){
+	public EnderSparker(Item.ToolMaterial m, String name){
 		super();
 		maxStackSize = 1;
 		setMaxDamage(m.getMaxUses());
 		this.setMaxStackSize(1);
 		setCreativeTab(Main.TabEnderLegacy);
         this.setUnlocalizedName(name);
-		this.setTextureName(Main.MODID + ":" + "EnderWand");
+		this.setTextureName(Main.MODID + ":" + "EnderSparker");
 			
 	}
     {
