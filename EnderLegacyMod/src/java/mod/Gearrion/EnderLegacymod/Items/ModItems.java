@@ -5,6 +5,7 @@ import mod.Gearrion.EnderLegacymod.Items.Armor.ItemModArmor;
 import mod.Gearrion.EnderLegacymod.Items.Basic.EnderSparker;
 import mod.Gearrion.EnderLegacymod.Items.Basic.ItemModBasic;
 import mod.Gearrion.EnderLegacymod.Items.Tools.ItemModTool;
+import mod.Gearrion.EnderLegacymod.Items.Wands.ItemProjectile;
 import mod.Gearrion.EnderLegacymod.Items.Weapons.ItemModWeapon;
 import net.minecraft.item.Item;
 import net.minecraft.item.Item.ToolMaterial;
@@ -52,6 +53,8 @@ public final class ModItems {
 		GameRegistry.registerItem(Endersteelignot = new ItemModBasic("Endersteelignot"),"Endersteelignot");
 	    GameRegistry.registerItem(EnderSparker = new EnderSparker(MatEnderwand, "EnderSparker"),"EnderSparker");
 	    GameRegistry.registerItem(enderinsignia = new ItemModBasic("enderinsignia"),"enderinsignia");
+	    GameRegistry.registerItem(Enderwand = new ItemProjectile("Enderwand"),"Enderwand");
+	    
 	    //Wands
 		
 		//Armor
