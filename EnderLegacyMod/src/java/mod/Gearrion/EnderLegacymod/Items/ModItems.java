@@ -36,6 +36,7 @@ public final class ModItems {
   public static Item seeingeye;   
   public static Item Nathanielskatana; 
   public static Item enderinsignia;
+  
   //MATS			Name("Name"	=(Harvestlvl,Durability,Minning Speed,Damage,enchantability)									
 		public static ToolMaterial MatEnderSteelItem = EnumHelper.addToolMaterial("MatEnderSteelItem", 4, 2500, 14.0F, 6.0F, 30);
 		public static ToolMaterial MatEnderBladeItem = EnumHelper.addToolMaterial("MatEnderBladeItem", 4, 3000, 18.0F, 8.0F, 40);
@@ -49,7 +50,7 @@ public final class ModItems {
 		GameRegistry.registerItem(Firewand = new ItemModBasic("Firewand"),"Firewand");
 		GameRegistry.registerItem(spireofdarkness = new ItemModBasic("spireofdarkness"),"spireofdarkness");
 		GameRegistry.registerItem(Endersteelignot = new ItemModBasic("Endersteelignot"),"Endersteelignot");
-	    GameRegistry.registerItem(EnderSparker = new EnderSparker(MatEnderwand, "Enderwand"),"Enderwand");
+	    GameRegistry.registerItem(EnderSparker = new EnderSparker(MatEnderwand, "EnderSparker"),"EnderSparker");
 	    GameRegistry.registerItem(enderinsignia = new ItemModBasic("enderinsignia"),"enderinsignia");
 	    //Wands
 		
