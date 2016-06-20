@@ -37,7 +37,7 @@ public final class ModItems {
   public static Item seeingeye;   
   public static Item Nathanielskatana; 
   public static Item enderinsignia;
-  
+  public static Item frostdragonsword;
   //MATS			Name("Name"	=(Harvestlvl,Durability,Minning Speed,Damage,enchantability)									
 		public static ToolMaterial MatEnderSteelItem = EnumHelper.addToolMaterial("MatEnderSteelItem", 4, 2500, 14.0F, 6.0F, 30);
 		public static ToolMaterial MatEnderBladeItem = EnumHelper.addToolMaterial("MatEnderBladeItem", 4, 3000, 18.0F, 8.0F, 40);
@@ -75,7 +75,7 @@ public final class ModItems {
     	GameRegistry.registerItem(PaladosHammer = new ItemModWeapon("Palados'Hammer", MatSpecialweapons, "Palados'Hammer"),"Palados'Hammer");
     	GameRegistry.registerItem(seeingeye = new ItemModWeapon("Seeingeye", MatSpecialweapons, "Seeingeye"),"Seeingeye");
     	GameRegistry.registerItem(Nathanielskatana = new ItemModWeapon("Nathanielskatana", MatSpecialweapons, "Nathanielskatana"),"Nathanielskatana");
-    	
+    	GameRegistry.registerItem(frostdragonsword = new ItemModWeapon("frostdragonsword", MatSpecialweapons, "Frostdragon"),"frostdragonsword");
     	//Tools	
     	GameRegistry.registerItem(Endersteelpickaxe = new ItemModTool ("Endersteelpickaxe", MatEnderSteelItem), "endersteelpickaxe");
         GameRegistry.registerItem(Endersteelaxe = new ItemModTool("Endersteelaxe", MatEnderSteelItem), "Endersteelaxe");
