@@ -35,6 +35,10 @@ import net.minecraftforge.oredict.OreDictionary;
 		GameRegistry.addRecipe(new ItemStack(ModItems.frostdragonsword, 1),"ifi","ifi"," s ",'i', Item.itemRegistry.getObject("ice"),'f', Item.itemRegistry.getObject("iron_ingot"),'s', Item.itemRegistry.getObject("stick")); 
 		GameRegistry.addRecipe(new ItemStack(ModItems.Bonesword, 1)," b "," b "," r ",'b', Item.itemRegistry.getObject("bone"),'r', Item.itemRegistry.getObject("blaze_rod")); 
 		GameRegistry.addRecipe(new ItemStack(ModItems.xclaibur, 1),"geg","geg"," b ",'e', ModItems.Endersteelignot,'g', Item.itemRegistry.getObject("gold_ingot"),'b', Item.itemRegistry.getObject("blaze_rod")); 
+		GameRegistry.addRecipe(new ItemStack(ModItems.enderinsignia, 1),"bbb","bib","bbb",'b',Item.itemRegistry.getObject("wool"),'i',Item.itemRegistry.getObject("ender_eye")); 
+		GameRegistry.addRecipe(new ItemStack(ModItems.endgeneralsword, 1),"eee"," d "," o ",'e', ModItems.Endersteelignot,'o',Item.itemRegistry.getObject("blaze_rod"),'d',Item.itemRegistry.getObject("diamond")); 
+		GameRegistry.addRecipe(new ItemStack(ModItems.EnderSparker, 1),"e  "," p ","   ",'e', ModItems.Endersteelignot,'p',Item.itemRegistry.getObject("ender_pearl"));
+		GameRegistry.addRecipe(new ItemStack(ModItems.EnderSparker, 1),"  e"," p ","   ",'e', ModItems.Endersteelignot,'p',Item.itemRegistry.getObject("ender_pearl"));
 		
 		//Armor	
 		GameRegistry.addRecipe(new ItemStack(ModItems.Endersteelhelmet, 1),"eee","e e","   ",'e', ModItems.Endersteelignot);
