@@ -17,12 +17,18 @@ import net.minecraftforge.oredict.OreDictionary;
     //Shapped Recipe
 		GameRegistry.addRecipe(
 		   new ItemStack(ModBlocks.Endersteelblock),"ddd","ddd","ddd",'d',ModItems.Endersteelignot);
-   
+		GameRegistry.addRecipe(
+				   new ItemStack(ModBlocks.Endergemblock),"ddd","ddd","ddd",'d',ModItems.Endergem);
+				
+		   
     //Shapeless Recipe
 		GameRegistry.addShapelessRecipe(
 		   new ItemStack(ModItems.Endersteelignot, 9),
 		   new ItemStack(ModBlocks.Endersteelblock));	
-		
+		GameRegistry.addShapelessRecipe(
+				   new ItemStack(ModItems.Endergem, 9),
+				   new ItemStack(ModBlocks.Endergemblock));	
+				
 	//Tools
 		GameRegistry.addRecipe(new ItemStack(ModItems.Endersteelpickaxe, 1),"eee"," o "," o ",'e', ModItems.Endersteelignot,'o', Item.itemRegistry.getObject("stick"));
 		GameRegistry.addRecipe(new ItemStack(ModItems.Endersteelaxe, 1),"ee ",	"eo "," o ",'e', ModItems.Endersteelignot,'o', Item.itemRegistry.getObject("stick"));
@@ -48,6 +54,8 @@ import net.minecraftforge.oredict.OreDictionary;
 		GameRegistry.addRecipe(new ItemStack(ModItems.swordofjudgement, 1),"obo","obo","i",'o', Item.itemRegistry.getObject("obsidian"),'b', Item.itemRegistry.getObject("blaze_powder"),'i',ModItems.Ironrod);		
 		GameRegistry.addRecipe(new ItemStack(ModItems.Herostone, 1),"dgd","gng","dgd",'d', Item.itemRegistry.getObject("diamond"),'g', Item.itemRegistry.getObject("gold_ingot"),'n',Item.itemRegistry.getObject("nether_star"));		
 		GameRegistry.addRecipe(new ItemStack(ModItems.Herosword, 1),"jri"," n "," h ",'j', ModItems.swordofjudgement,'i', ModItems.Infernalblade,'r',ModItems.Riftblade,'n',ModItems.Herostone,'h',ModItems.Ironrod);		
+		GameRegistry.addRecipe(new ItemStack(ModItems.dragonjawblade, 1),"oeo","oeo"," s ",'e', ModItems.Endersteelignot,'s', Item.itemRegistry.getObject("stick"),'o', Item.itemRegistry.getObject("obsidian"));		
+		GameRegistry.addRecipe(new ItemStack(ModItems.Poseidonswrath, 1)," i "," l "," s ",'s', ModItems.Ironrod,'i', Item.itemRegistry.getObject("ice"),'l', Item.itemRegistry.getObject("gold_ingot"));		
 
 		
 		//Armor	

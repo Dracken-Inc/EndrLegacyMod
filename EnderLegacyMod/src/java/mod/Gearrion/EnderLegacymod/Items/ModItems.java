@@ -56,6 +56,11 @@ public final class ModItems {
   public static Item bonechestplate;
   public static Item boneleggings;
   public static Item boneboots;
+  public static Item dragonjawblade;
+  public static Item dragonsymbol;
+  public static Item Poseidonswrath;
+  public static Item Endergem;
+  
   
   //MATS			Name("Name"	=(Harvestlvl,Durability,Mining Speed,Damage,enchantability)									
 		public static ToolMaterial MatEnderSteelItem = EnumHelper.addToolMaterial("MatEnderSteelItem", 4, 2500, 14.0F, 6.0F, 30);
@@ -72,6 +77,7 @@ public final class ModItems {
 		public static ToolMaterial Matrift = EnumHelper.addToolMaterial("Matrift", 4, 3000, 5.0F, 17.0F, 60);
 		public static ToolMaterial Mathero = EnumHelper.addToolMaterial("Mathero", 4, 6000, 12.0F, 20.0F, 60);
 		public static ArmorMaterial MatBoneArmor = EnumHelper.addArmorMaterial("MatBoneArmor", 7, new int[] {2, 6, 4, 2}, 18);	
+		public static ToolMaterial MatSpecialweaponsadvanced = EnumHelper.addToolMaterial("MatSpecialweaponsadvanced", 4, 2500, 16.0F, 11.0F, 40);		
 		
 		
 		
@@ -85,10 +91,13 @@ public final class ModItems {
 	    GameRegistry.registerItem(enderinsignia = new ItemModBasic("enderinsignia"),"enderinsignia");
 	    GameRegistry.registerItem(Enderwand = new ItemProjectile("Enderwand"),"Enderwand");
 	    GameRegistry.registerItem(demonblood = new ItemModBasic("Demonblood"),"demonblood");
-	    GameRegistry.registerItem(infernalingot = new ItemModBasic("infernalingot"),"evil");
+	    GameRegistry.registerItem(infernalingot = new ItemModBasic("infernalingot"),"infernalingot");
 	    GameRegistry.registerItem(Ironrod = new ItemModBasic("reinforcedirongrip"),"Ironrod");
 	    GameRegistry.registerItem(Herostone = new ItemModBasic("herostone"),"Herostone");
 	    GameRegistry.registerItem(Enderkingsymbol = new ItemModBasic("Enderkingsymbol"),"Enderkingsymbol");
+	    GameRegistry.registerItem(dragonsymbol = new ItemModBasic("dragonsymbol"),"dragonsymbol");
+	    GameRegistry.registerItem(Endergem = new ItemModBasic("Endergem"),"Endergem");
+		
 	    //Wands
 		
 		//Armor
@@ -110,20 +119,22 @@ public final class ModItems {
     	GameRegistry.registerItem(DivineBlade = new ItemModWeapon("DivineBlade", MatDivineblade, "DivineBlade"),"DivineBlade");
     	GameRegistry.registerItem(Enderrelicsword = new ItemModWeapon("Enderrelicsword", MatSpecialweapons, "Enderrelicsword"),"Enderrelicsword");
     	GameRegistry.registerItem(endgeneralsword = new ItemModWeapon("endgeneralsword", MatSpecialweapons, "endgeneralsword"),"endgeneralsword");
-    	GameRegistry.registerItem(PaladosHammer = new ItemModWeapon("Palados'Hammer", MatSpecialweapons, "Palados'Hammer"),"Palados'Hammer");
+    	GameRegistry.registerItem(PaladosHammer = new ItemModWeapon("Palados'Hammer", Matpalados, "Palados'Hammer"),"Palados'Hammer");
     	GameRegistry.registerItem(seeingeye = new ItemModWeapon("Seeingeye", MatSpecialweapons, "Seeingeye"),"Seeingeye");
     	GameRegistry.registerItem(Nathanielskatana = new ItemModWeapon("Nathanielskatana", MatSpecialweapons, "Nathanielskatana"),"Nathanielskatana");
     	GameRegistry.registerItem(frostdragonsword = new ItemModWeapon("frostdragonsword", MatSpecialweapons, "Frostdragon"),"frostdragonsword");
-    	GameRegistry.registerItem(xclaibur = new ItemModWeapon("xclaibur", MatSpecialweapons, "TrueXcalibur"),"xclaibur");
-    	GameRegistry.registerItem(tomerspear = new ItemModWeapon("tomerspear", MatSpecialweapons, "Tomer"),"tomerspear");
+    	GameRegistry.registerItem(xclaibur = new ItemModWeapon("xclaibur", MatSpecialweaponsadvanced, "TrueXcalibur"),"xclaibur");
+    	GameRegistry.registerItem(tomerspear = new ItemModWeapon("tomerspear", MatSpecialweaponsadvanced, "Tomer"),"tomerspear");
     	GameRegistry.registerItem(Bonesword = new ItemModWeapon("Bonesword", Matbasic, "Bonesword2"),"Bonesword");
-    	GameRegistry.registerItem(Nightpike= new ItemModWeapon("Nightpike", MatSpecialweapons, "midnightpike"),"Nightpike");
+    	GameRegistry.registerItem(Nightpike= new ItemModWeapon("Nightpike", MatSpecialweaponsadvanced, "midnightpike"),"Nightpike");
     	GameRegistry.registerItem(Demonsword= new ItemModWeapon("Demonsword", MatDemonbasic, "demonsword"),"Demonsword");
     	GameRegistry.registerItem(Infernalblade= new ItemModWeapon("Infernalblade", MatDemonadvanced, "Infernalblade"),"Infernalblade");
     	GameRegistry.registerItem(Riftblade= new ItemModWeapon("Riftblade", Matrift, "Riftblade"),"Riftblade");
-    	GameRegistry.registerItem(swordofjudgement= new ItemModWeapon("swordofjudgement", MatSpecialweapons, "Swordofjudgement"),"swordofjudgement");
+    	GameRegistry.registerItem(swordofjudgement= new ItemModWeapon("swordofjudgement", MatSpecialweaponsadvanced, "Swordofjudgement"),"swordofjudgement");
     	GameRegistry.registerItem(Herosword= new ItemModWeapon("Herosword", Mathero, "Trueherosword"),"Herosword");
-    	
+    	GameRegistry.registerItem(dragonjawblade= new ItemModWeapon("dragonjawblade", MatSpecialweaponsadvanced, "dragonjawblade"),"dragonjawblade");
+    	GameRegistry.registerItem(Poseidonswrath= new ItemModWeapon("Poseidonswrath", MatSpecialweapons, "Poseidonswrath"),"Poseidonswrath");
+        
     	
     	//Tools	
     	GameRegistry.registerItem(Endersteelpickaxe = new ItemModTool ("Endersteelpickaxe", MatEnderSteelItem), "endersteelpickaxe");
