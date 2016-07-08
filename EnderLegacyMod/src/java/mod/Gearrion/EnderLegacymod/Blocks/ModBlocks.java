@@ -19,7 +19,7 @@ public final class ModBlocks {
   public static Block EnderLog;
   public static Block End_Leaves;
   public static Block End_Effect_Leaves;
-	 
+  public static Block Enderplanks;
 
   public static final void init() {
     //Blocks       (Name, Material ,  hardness,  resistant,  light level,  tool,  tool strength,  sound type )
@@ -34,7 +34,7 @@ public final class ModBlocks {
 		GameRegistry.registerBlock(End_Leaves = new mod.Gearrion.EnderLegacymod.Blocks.Tree.BlockModEndLeaves("End Leaves","End_Leaves" ), "End_Leaves");
 		//GameRegistry.registerBlock(End_Effect_Leaves = new mod.Gearrion.EnderLegacymod.Blocks.Tree.BlockModEffectLeaves("End Effect Leaves","End_Effect_Leaves" ), "End_Effect_Leaves");
 		GameRegistry.registerBlock(lightFire = new teFIRE("lightFire"), "lightFire"); 
-
+		GameRegistry.registerBlock(Enderplanks = new BlockModBlock("Enderplanks", Material.wood, 15.0F, 30.0F, 0.0F, "axe", 2, Block.soundTypeWood), "Enderplanks");
   }
 
 

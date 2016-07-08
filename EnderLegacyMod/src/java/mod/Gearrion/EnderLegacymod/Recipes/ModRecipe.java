@@ -28,7 +28,10 @@ import net.minecraftforge.oredict.OreDictionary;
 		GameRegistry.addShapelessRecipe(
 				   new ItemStack(ModItems.Endergem, 9),
 				   new ItemStack(ModBlocks.Endergemblock));	
-				
+		GameRegistry.addShapelessRecipe(
+				   new ItemStack(ModBlocks.Enderplanks, 4),
+				   new ItemStack(ModBlocks.EnderLog));	
+	
 	//Tools
 		GameRegistry.addRecipe(new ItemStack(ModItems.Endersteelpickaxe, 1),"eee"," o "," o ",'e', ModItems.Endersteelignot,'o', Item.itemRegistry.getObject("stick"));
 		GameRegistry.addRecipe(new ItemStack(ModItems.Endersteelaxe, 1),"ee ",	"eo "," o ",'e', ModItems.Endersteelignot,'o', Item.itemRegistry.getObject("stick"));
