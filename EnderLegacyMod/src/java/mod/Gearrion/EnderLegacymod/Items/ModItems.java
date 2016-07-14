@@ -52,10 +52,10 @@ public final class ModItems {
   public static Item Herosword;
   public static Item Herostone;
   public static Item Enderkingsymbol;
-  public static Item bonehelmet;
-  public static Item bonechestplate;
-  public static Item boneleggings;
-  public static Item boneboots;
+  //public static Item bonehelmet;
+ // public static Item bonechestplate;
+ // public static Item boneleggings;
+ // public static Item boneboots;
   public static Item dragonjawblade;
   public static Item dragonsymbol;
   public static Item Poseidonswrath;
@@ -106,10 +106,10 @@ public final class ModItems {
     	GameRegistry.registerItem(Endersteelchestplate = new ItemModArmor("Endersteelchestplate", MatEnderSteelArmor, "Endersteelchestplate", 1), "EndersteelChestplate"); // 1 for chestplate
     	GameRegistry.registerItem(Endersteelleggings = new ItemModArmor("Endersteelleggings", MatEnderSteelArmor, "Endersteelleggings", 2), "EndersteelLeggings"); // 2 for leggings
     	GameRegistry.registerItem(Endersteelboots = new ItemModArmor("Endersteelboots", MatEnderSteelArmor, "Endersteelboots", 3), "EndersteelBoots"); // 3 for boots
-    	GameRegistry.registerItem(bonehelmet = new ItemModArmor("bonehelmet", MatBoneArmor, "bonehelmet", 0), "bonehelmet"); //0 for helmet
-    	GameRegistry.registerItem(bonechestplate = new ItemModArmor("bonechestplate", MatBoneArmor, "bonechestplate", 1), "boneChestplate"); // 1 for chestplate
-    	GameRegistry.registerItem(boneleggings = new ItemModArmor("boneleggings", MatBoneArmor, "boneleggings", 2), "boneLeggings"); // 2 for leggings
-    	GameRegistry.registerItem(boneboots = new ItemModArmor("boneboots", MatBoneArmor, "boneboots", 3), "boneBoots"); // 3 for boots
+    	//GameRegistry.registerItem(bonehelmet = new ItemModArmor("bonehelmet", MatBoneArmor, "bonehelmet", 0), "bonehelmet"); //0 for helmet
+    	//GameRegistry.registerItem(bonechestplate = new ItemModArmor("bonechestplate", MatBoneArmor, "bonechestplate", 1), "boneChestplate"); // 1 for chestplate
+    	//GameRegistry.registerItem(boneleggings = new ItemModArmor("boneleggings", MatBoneArmor, "boneleggings", 2), "boneLeggings"); // 2 for leggings
+    	//GameRegistry.registerItem(boneboots = new ItemModArmor("boneboots", MatBoneArmor, "boneboots", 3), "boneBoots"); // 3 for boots
 	
     	
     	//Weapons                 ( "Class Name"                ( "Internal Name"    Material         "Texture")   "give item name")
