@@ -1,5 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
+	<name>EnderLegacyMod</name>
+	<comment></comment>
+	<projects>
+	</projects>
+	<buildSpec>
+		<buildCommand>
+			<name>org.eclipse.jdt.core.javabuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+		<buildCommand>
+			<name>org.zeroturnaround.eclipse.rebelXmlBuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+	</buildSpec>
+	<natures>
+		<nature>org.eclipse.jdt.core.javanature</nature>
+		<nature>org.zeroturnaround.eclipse.jrebelNature</nature>
+	</natures>
 	<filteredResources>
 		<filter>
 			<id>1462653035540</id>
@@ -11,22 +31,4 @@
 			</matcher>
 		</filter>
 	</filteredResources>
-	<name>EnderLegacyMod</name>
-	<comment/>
-	<projects/>
-	<natures>
-		<nature>org.eclipse.jdt.core.javanature</nature>
-		<nature>org.zeroturnaround.eclipse.jrebelNature</nature>
-	</natures>
-	<buildSpec>
-		<buildCommand>
-			<name>org.eclipse.jdt.core.javabuilder</name>
-			<arguments/>
-		</buildCommand>
-		<buildCommand>
-			<name>org.zeroturnaround.eclipse.rebelXmlBuilder</name>
-			<arguments/>
-		</buildCommand>
-	</buildSpec>
-	<linkedResources/>
 </projectDescription>
