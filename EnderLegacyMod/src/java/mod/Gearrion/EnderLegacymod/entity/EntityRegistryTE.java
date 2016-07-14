@@ -2,7 +2,9 @@ package mod.Gearrion.EnderLegacymod.entity;
 
 import cpw.mods.fml.common.registry.EntityRegistry;
 import mod.Gearrion.EnderLegacymod.Main;
+import mod.Gearrion.EnderLegacymod.world.biome.BiomeRegistry;
 import net.minecraft.entity.EntityList;
+import net.minecraft.entity.EnumCreatureType;
 
 public class EntityRegistryTE {
 
@@ -12,8 +14,10 @@ public class EntityRegistryTE {
 
 	public static void createEntity(Class<EntityVoidling> entityClass, String entityName, int solidColor, int spotColor){
 		int randomId = EntityRegistry.findGlobalUniqueEntityId();
-				EntityRegistry.registerModEntity(entityClass, entityName, randomId, Main.MODID, 64, 1, true);
-	createEgg(randomId,solidColor,spotColor);
+		EntityRegistry.registerGlobalEntityID(entityClass, entityName, randomId);
+		EntityRegistry.registerModEntity(entityClass, entityName, randomId, Main.MODID, 64, 1, true);
+	    EntityRegistry.addSpawn(entityClass, 2, 0, 1, EnumCreatureType.monster, BiomeRegistry.biomeTrueEndPlains);
+		createEgg(randomId,solidColor,spotColor);
 	}
 		
 	@SuppressWarnings("unchecked")
