@@ -66,10 +66,10 @@ import net.minecraftforge.oredict.OreDictionary;
 		GameRegistry.addRecipe(new ItemStack(ModItems.Endersteelchestplate, 1),"e e","eee","eee",'e', ModItems.Endersteelignot);
 		GameRegistry.addRecipe(new ItemStack(ModItems.Endersteelleggings, 1),"eee","e e","e e",'e', ModItems.Endersteelignot);
 		GameRegistry.addRecipe(new ItemStack(ModItems.Endersteelboots, 1),"   ","e e","e e",'e', ModItems.Endersteelignot);
-		GameRegistry.addRecipe(new ItemStack(ModItems.bonehelmet, 1),"eee","e e","   ",'e', Item.itemRegistry.getObject("bone"));
-		GameRegistry.addRecipe(new ItemStack(ModItems.bonechestplate, 1),"e e","eee","eee",'e', Item.itemRegistry.getObject("bone"));
-		GameRegistry.addRecipe(new ItemStack(ModItems.boneleggings, 1),"eee","e e","e e",'e',  Item.itemRegistry.getObject("bone"));
-		GameRegistry.addRecipe(new ItemStack(ModItems.boneboots, 1),"   ","e e","e e",'e',  Item.itemRegistry.getObject("bone"));
+		//GameRegistry.addRecipe(new ItemStack(ModItems.bonehelmet, 1),"eee","e e","   ",'e', Item.itemRegistry.getObject("bone"));
+		//GameRegistry.addRecipe(new ItemStack(ModItems.bonechestplate, 1),"e e","eee","eee",'e', Item.itemRegistry.getObject("bone"));
+		//GameRegistry.addRecipe(new ItemStack(ModItems.boneleggings, 1),"eee","e e","e e",'e',  Item.itemRegistry.getObject("bone"));
+		//GameRegistry.addRecipe(new ItemStack(ModItems.boneboots, 1),"   ","e e","e e",'e',  Item.itemRegistry.getObject("bone"));
 
 	}
 }
