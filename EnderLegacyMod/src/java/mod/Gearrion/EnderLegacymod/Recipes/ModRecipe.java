@@ -13,6 +13,8 @@ import net.minecraftforge.oredict.OreDictionary;
     //Smelting
 		OreDictionary.registerOre("oreEnderSteel", ModBlocks.Endersteelore);
 		GameRegistry.addSmelting(ModBlocks.Endersteelore, new ItemStack (ModItems.Endersteelignot), 100);
+		OreDictionary.registerOre("demonblood", ModBlocks.Endersteelore);
+		GameRegistry.addSmelting(ModItems.demonblood, new ItemStack (ModItems.Demoningot), 100);
    
     //Shapped Recipe
 		GameRegistry.addRecipe(
@@ -43,20 +45,20 @@ import net.minecraftforge.oredict.OreDictionary;
 		GameRegistry.addRecipe(new ItemStack(ModItems.DivineBlade, 1)," d "," n "," b ",'n', Item.itemRegistry.getObject("nether_star"),'d', Item.itemRegistry.getObject("diamond"),'b', Item.itemRegistry.getObject("blaze_rod")); 
 		GameRegistry.addRecipe(new ItemStack(ModItems.frostdragonsword, 1),"ifi","ifi"," s ",'i', Item.itemRegistry.getObject("ice"),'f', Item.itemRegistry.getObject("iron_ingot"),'s', Item.itemRegistry.getObject("stick")); 
 		GameRegistry.addRecipe(new ItemStack(ModItems.Bonesword, 1)," b "," b "," r ",'b', Item.itemRegistry.getObject("bone"),'r', Item.itemRegistry.getObject("blaze_rod")); 
-		GameRegistry.addRecipe(new ItemStack(ModItems.xclaibur, 1),"geg","geg"," b ",'e', ModItems.Endersteelignot,'g', Item.itemRegistry.getObject("gold_ingot"),'b', Item.itemRegistry.getObject("blaze_rod")); 
+		GameRegistry.addRecipe(new ItemStack(ModItems.xclaibur, 1),"geg","geg"," b ",'e', ModItems.Endersteelignot,'g', Item.itemRegistry.getObject("gold_ingot"),'b',ModItems.Ironrod); 
 		GameRegistry.addRecipe(new ItemStack(ModItems.enderinsignia, 1),"bbb","bib","bbb",'b',Item.itemRegistry.getObject("wool"),'i',Item.itemRegistry.getObject("ender_eye")); 
-		GameRegistry.addRecipe(new ItemStack(ModItems.endgeneralsword, 1),"eee"," d "," o ",'e', ModItems.Endersteelignot,'o',Item.itemRegistry.getObject("blaze_rod"),'d',Item.itemRegistry.getObject("diamond")); 
+		GameRegistry.addRecipe(new ItemStack(ModItems.endgeneralsword, 1),"eee"," d "," o ",'e', ModItems.Endersteelignot,'o',ModItems.Ironrod,'d',Item.itemRegistry.getObject("diamond")); 
 		GameRegistry.addRecipe(new ItemStack(ModItems.EnderSparker, 1),"e  "," p ","   ",'e', ModItems.Endersteelignot,'p',Item.itemRegistry.getObject("ender_pearl"));
 		GameRegistry.addRecipe(new ItemStack(ModItems.EnderSparker, 1),"  e"," p ","   ",'e', ModItems.Endersteelignot,'p',Item.itemRegistry.getObject("ender_pearl"));
 		GameRegistry.addRecipe(new ItemStack(ModItems.demonblood, 1)," b "," g "," w ",'b', Item.itemRegistry.getObject("blaze_powder"),'g',Item.itemRegistry.getObject("gunpowder"),'w',Item.itemRegistry.getObject("potion"));
-		GameRegistry.addRecipe(new ItemStack(ModItems.infernalingot, 1)," d "," g "," i ",'d',ModItems.demonblood,'g',Item.itemRegistry.getObject("gunpowder"),'i',Item.itemRegistry.getObject("iron_ingot"));
-		GameRegistry.addRecipe(new ItemStack(ModItems.Demonsword, 1)," i "," i "," s ",'i',ModItems.infernalingot,'s',Item.itemRegistry.getObject("stick"));
-		GameRegistry.addRecipe(new ItemStack(ModItems.Infernalblade, 1),"iii","idi","iii",'d',ModItems.Demonsword,'i',ModItems.infernalingot);
-		GameRegistry.addRecipe(new ItemStack(ModItems.Riftblade, 1),"ocg","ocg","i",'o', Item.itemRegistry.getObject("obsidian"),'c', Item.itemRegistry.getObject("cobblestone"),'i',ModItems.Ironrod,'g',Item.itemRegistry.getObject("glowstone"));
+		//GameRegistry.addRecipe(new ItemStack(ModItems.infernalingot, 1)," d "," g "," i ",'d',ModItems.demonblood,'g',Item.itemRegistry.getObject("gunpowder"),'i',Item.itemRegistry.getObject("iron_ingot"));
+		GameRegistry.addRecipe(new ItemStack(ModItems.Demonsword, 1)," i "," i "," s ",'i',ModItems.Demoningot,'s',Item.itemRegistry.getObject("stick"));
+		GameRegistry.addRecipe(new ItemStack(ModItems.Infernalblade, 1),"iii","idi","iii",'d',ModItems.Demonsword,'i',ModItems.Demoningot);
+		GameRegistry.addRecipe(new ItemStack(ModItems.Riftblade, 1),"ocg","ocg"," i ",'o', Item.itemRegistry.getObject("obsidian"),'c', Item.itemRegistry.getObject("cobblestone"),'i',ModItems.Ironrod,'g',Item.itemRegistry.getObject("glowstone"));
 		GameRegistry.addRecipe(new ItemStack(ModItems.Ironrod, 1)," i "," i "," i ",'i', Item.itemRegistry.getObject("iron_ingot"));
-		GameRegistry.addRecipe(new ItemStack(ModItems.swordofjudgement, 1),"obo","obo","i",'o', Item.itemRegistry.getObject("obsidian"),'b', Item.itemRegistry.getObject("blaze_powder"),'i',ModItems.Ironrod);		
+		GameRegistry.addRecipe(new ItemStack(ModItems.swordofjudgement, 1),"obo","obo"," i ",'o', Item.itemRegistry.getObject("obsidian"),'b', Item.itemRegistry.getObject("blaze_powder"),'i',ModItems.Ironrod);		
 		GameRegistry.addRecipe(new ItemStack(ModItems.Herostone, 1),"dgd","gng","dgd",'d', Item.itemRegistry.getObject("diamond"),'g', Item.itemRegistry.getObject("gold_ingot"),'n',Item.itemRegistry.getObject("nether_star"));		
-		GameRegistry.addRecipe(new ItemStack(ModItems.Herosword, 1),"jri"," n "," h ",'j', ModItems.swordofjudgement,'i', ModItems.Infernalblade,'r',ModItems.Riftblade,'n',ModItems.Herostone,'h',ModItems.Ironrod);		
+		GameRegistry.addRecipe(new ItemStack(ModItems.Herosword, 1),"jri","xnb"," h ",'j', ModItems.swordofjudgement,'i', ModItems.Infernalblade,'r',ModItems.Riftblade,'n',ModItems.Herostone,'h',ModItems.Ironrod,'b',ModItems.Bonesword,'x',ModItems.xclaibur);		
 		GameRegistry.addRecipe(new ItemStack(ModItems.dragonjawblade, 1),"oeo","oeo"," s ",'e', ModItems.Endersteelignot,'s', Item.itemRegistry.getObject("stick"),'o', Item.itemRegistry.getObject("obsidian"));		
 		GameRegistry.addRecipe(new ItemStack(ModItems.Poseidonswrath, 1)," i "," l "," s ",'s', ModItems.Ironrod,'i', Item.itemRegistry.getObject("ice"),'l', Item.itemRegistry.getObject("gold_ingot"));		
 
