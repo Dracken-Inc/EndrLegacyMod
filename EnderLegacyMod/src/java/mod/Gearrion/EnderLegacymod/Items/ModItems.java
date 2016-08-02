@@ -66,6 +66,7 @@ public final class ModItems {
   public static Item Enderkingchestplate;
   public static Item Endercrown;
   public static Item Enderkingcape; 
+  public static Item Enderkingleggings;
   public static Item EnderTrident;
   public static Item SkySlasher;
   public static Item Divinehelm;
@@ -94,7 +95,7 @@ public final class ModItems {
 		public static ToolMaterial matdfab = EnumHelper.addToolMaterial("matdfab", 4, 2500, 16.0F, 2.0F, 40);		
 		public static ToolMaterial Matendt = EnumHelper.addToolMaterial("Matendt", 4, 0, 1.0F, 16.0F, 53);
 		public static ArmorMaterial MatBoneArmor = EnumHelper.addArmorMaterial("MatBoneArmor", 7, new int[] {2, 6, 4, 2}, 18);	
-		public static ArmorMaterial MatEnderKingArmor = EnumHelper.addArmorMaterial("MatEnderKingArmor", 0, new int[] {15, 25, 18, 14}, 58);	
+		public static ArmorMaterial MatEnderKingArmor = EnumHelper.addArmorMaterial("MatEnderKingArmor", 1000000, new int[] {7, 12, 6, 4}, 25);	
 		public static ArmorMaterial MatHighEnderGeneralArmor = EnumHelper.addArmorMaterial("MatHighEnderGeneralArmor", 1500, new int[] {6, 11, 0, 0}, 58);	
 		public static ArmorMaterial MatEnderSteelArmor = EnumHelper.addArmorMaterial("MatEnderSteelArmor", 1000, new int[] {4, 9, 4, 3}, 8);	
 		public static ArmorMaterial MatDivineArmor = EnumHelper.addArmorMaterial("MatDivineArmor", 1000, new int[] {4, 10, 4, 3}, 5);	
@@ -134,7 +135,8 @@ public final class ModItems {
      	GameRegistry.registerItem(Enderkingchestplate = new ItemModArmor("Enderkingchestplate", MatEnderKingArmor, "Enderkingchestplate", 1), "Enderkingchestplate"); //1 for chestplate
      	GameRegistry.registerItem(Endercrown = new ItemModArmor("Endercrown", MatEnderKingArmor, "Endercrown", 0), "Endercrown"); //0 for helmet
      	GameRegistry.registerItem(Enderkingcape = new ItemModArmor("Enderkingcape", MatEnderKingArmor, "Enderkingcape", 3), "Enderkingcape"); // 3 for boots
-     	  GameRegistry.registerItem(Divinehelm = new ItemModArmor("Divinehelm", MatDivineArmor, "Divinehelm", 0), "Divinehelm"); //0 for helmet
+    	GameRegistry.registerItem(Enderkingleggings = new ItemModArmor("Enderkingleggings", MatEnderKingArmor, "Enderkingleggings", 2), "Enderkingleggings"); // 2 for leggings
+     	GameRegistry.registerItem(Divinehelm = new ItemModArmor("Divinehelm", MatDivineArmor, "Divinehelm", 0), "Divinehelm"); //0 for helmet
       	GameRegistry.registerItem(Divinechestplate = new ItemModArmor("Divinechestplate", MatDivineArmor, "Divinechestplate", 1), "Divinechestplate"); // 1 for chestplate
       	GameRegistry.registerItem(Divineleggings = new ItemModArmor("Divineleggings", MatDivineArmor, "Divineleggings", 2), "Divineleggings"); // 2 for leggings
       	GameRegistry.registerItem(Divineboots = new ItemModArmor("Divineboots", MatDivineArmor, "Divineboots", 3), "Divineboots"); // 3 for boots
