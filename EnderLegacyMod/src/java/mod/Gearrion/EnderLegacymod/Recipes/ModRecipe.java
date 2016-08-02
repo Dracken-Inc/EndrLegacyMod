@@ -68,10 +68,16 @@ import net.minecraftforge.oredict.OreDictionary;
 		GameRegistry.addRecipe(new ItemStack(ModItems.Endersteelchestplate, 1),"e e","eee","eee",'e', ModItems.Endersteelignot);
 		GameRegistry.addRecipe(new ItemStack(ModItems.Endersteelleggings, 1),"eee","e e","e e",'e', ModItems.Endersteelignot);
 		GameRegistry.addRecipe(new ItemStack(ModItems.Endersteelboots, 1),"   ","e e","e e",'e', ModItems.Endersteelignot);
-		//GameRegistry.addRecipe(new ItemStack(ModItems.bonehelmet, 1),"eee","e e","   ",'e', Item.itemRegistry.getObject("bone"));
-		//GameRegistry.addRecipe(new ItemStack(ModItems.bonechestplate, 1),"e e","eee","eee",'e', Item.itemRegistry.getObject("bone"));
-		//GameRegistry.addRecipe(new ItemStack(ModItems.boneleggings, 1),"eee","e e","e e",'e',  Item.itemRegistry.getObject("bone"));
-		//GameRegistry.addRecipe(new ItemStack(ModItems.boneboots, 1),"   ","e e","e e",'e',  Item.itemRegistry.getObject("bone"));
-
+		GameRegistry.addRecipe(new ItemStack(ModItems.bonehelmet, 1),"eee","e e","   ",'e', Item.itemRegistry.getObject("bone"));
+		GameRegistry.addRecipe(new ItemStack(ModItems.bonechestplate, 1),"e e","eee","eee",'e', Item.itemRegistry.getObject("bone"));
+		GameRegistry.addRecipe(new ItemStack(ModItems.boneleggings, 1),"eee","e e","e e",'e',  Item.itemRegistry.getObject("bone"));
+		GameRegistry.addRecipe(new ItemStack(ModItems.boneboots, 1),"   ","e e","e e",'e',  Item.itemRegistry.getObject("bone"));
+		GameRegistry.addRecipe(new ItemStack(ModItems.Divinehelm, 1)," d "," n ","   ",'d', Item.itemRegistry.getObject("diamond_helmet"),'n', Item.itemRegistry.getObject("nether_star"));
+		GameRegistry.addRecipe(new ItemStack(ModItems.Divinechestplate, 1)," d "," n ","   ",'d', Item.itemRegistry.getObject("diamond_chestplate"),'n', Item.itemRegistry.getObject("nether_star"));
+		GameRegistry.addRecipe(new ItemStack(ModItems.Divineleggings, 1)," d "," n ","   ",'d', Item.itemRegistry.getObject("diamond_leggings"),'n', Item.itemRegistry.getObject("nether_star"));
+		GameRegistry.addRecipe(new ItemStack(ModItems.Divineboots, 1)," d "," n ","   ",'d', Item.itemRegistry.getObject("diamond_boots"),'n', Item.itemRegistry.getObject("nether_star"));
+		GameRegistry.addRecipe(new ItemStack(ModItems.Highendergeneralhelm, 1),"eee","ece","   ",'e', ModItems.Endersteelignot,'c', ModItems.Endersteelhelmet);
+		GameRegistry.addRecipe(new ItemStack(ModItems.Highendergeneralchestplate, 1),"ece","eee","eee",'e', ModItems.Endersteelignot,'c', ModItems.Endersteelchestplate);
+		
 	}
 }

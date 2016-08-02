@@ -58,8 +58,9 @@ item.Enderkingcape.name=Ender King Cape
 item.Endercrown.name=Ender Crown
 item.Enderkingchestplate.name=Ender King Chestplate
 item.EnderTrident.name=Ender Trident
-
-
-
-
+item.SkySlasher.name=Sky Slasher
+item.Divinehelm.name=Divine Helm
+item.Divinechestplate.name=Divine Chestplate
+item.Divineleggings.name=Divine Leggings
+item.Divineboots.name=Divine Boots
 itemGroup.EnderLegacy=EnderLegacy
