@@ -61,6 +61,8 @@ public final class ModItems {
   public static Item Poseidonswrath;
   public static Item Endergem;
   public static Item dfab;
+  public static Item Sharpenedcutlass;
+  public static Item Royalenderguardspear;
   public static Item Highendergeneralhelm;
   public static Item Highendergeneralchestplate;
   public static Item Enderkingchestplate;
@@ -75,7 +77,7 @@ public final class ModItems {
   public static Item Divineboots;
   public static Item Royalguardhelm;
   public static Item Royalguardchestplate;
-  
+  public static Item Royalguardhood;
   
   
   //MATS			Name("Name"	=(Harvestlvl,Durability,Mining Speed,Damage,enchantability)									
@@ -143,7 +145,8 @@ public final class ModItems {
       	GameRegistry.registerItem(Divineboots = new ItemModArmor("Divineboots", MatDivineArmor, "Divineboots", 3), "Divineboots"); // 3 for boots
     	GameRegistry.registerItem(Royalguardhelm = new ItemModArmor("Royalguardhelm", MatRoyalenderguardarmor, "Royalguardhelm", 0), "Royalguardhelm"); //0 for helmet
       	GameRegistry.registerItem(Royalguardchestplate = new ItemModArmor("Royalguardchestplate", MatRoyalenderguardarmor, "Royalguardchestplate", 1), "Royalguardchestplate"); // 1 for chestplate
-      
+    	GameRegistry.registerItem(Royalguardhood = new ItemModArmor("Royalguardhood", MatRoyalenderguardarmor, "Royalguardhood", 0), "Royalguardhood"); //0 for helmet
+
     	
     	//Weapons                 ( "Class Name"                ( "Internal Name"    Material         "Texture")   "give item name")
     	GameRegistry.registerItem(EnderBlade = new ItemModWeapon("EnderBlade", MatEnderBladeItem, "Enderbladefinal"),"EnderBlade"); //Enderboy1025
@@ -171,7 +174,9 @@ public final class ModItems {
     	GameRegistry.registerItem(dfab= new ItemModWeapon("dfab", matdfab, "dfab"),"dfab");
     	GameRegistry.registerItem(EnderTrident= new ItemModWeapon("EnderTrident", Matendt, "EnderTrident"),"EnderTrident"); //make bigger
     	GameRegistry.registerItem(SkySlasher= new ItemModWeapon("SkySlasher", MatSpecialweaponsadvanced, "SkySlasher"),"SkySlasher");
-        
+    	GameRegistry.registerItem(Sharpenedcutlass= new ItemModWeapon("Sharpenedcutlass", MatSpecialweapons, "Sharpenedcutlass"),"Sharpenedcutlass");
+    	GameRegistry.registerItem(Royalenderguardspear= new ItemModWeapon("Royalenderguardspear", MatSpecialweaponsadvanced, "Royalenderguardspear"),"Royalenderguardspear"); //make bigger
+
     	
     	//Tools	
     	GameRegistry.registerItem(Endersteelpickaxe = new ItemModTool ("Endersteelpickaxe", MatEnderSteelItem), "endersteelpickaxe");
