@@ -63,6 +63,7 @@ public final class ModItems {
   public static Item dfab;
   public static Item Sharpenedcutlass;
   public static Item Royalenderguardspear;
+  public static Item Blazingkatana;
   public static Item Highendergeneralhelm;
   public static Item Highendergeneralchestplate;
   public static Item Enderkingchestplate;
@@ -158,7 +159,7 @@ public final class ModItems {
     	GameRegistry.registerItem(endgeneralsword = new ItemModWeapon("endgeneralsword", MatSpecialweapons, "endgeneralsword"),"endgeneralsword");
     	GameRegistry.registerItem(PaladosHammer = new ItemModWeapon("Palados'Hammer", Matpalados, "Palados'Hammer"),"Palados'Hammer");
     	GameRegistry.registerItem(seeingeye = new ItemModWeapon("Seeingeye", MatSpecialweapons, "Seeingeye"),"Seeingeye");
-    	GameRegistry.registerItem(Nathanielskatana = new ItemModWeapon("Nathanielskatana", MatSpecialweapons, "Nathanielskatana"),"Nathanielskatana");
+    	GameRegistry.registerItem(Nathanielskatana = new ItemModWeapon("Nathanielskatana", MatSpecialweaponsadvanced, "Nathanielskatana"),"Nathanielskatana");
     	GameRegistry.registerItem(frostdragonsword = new ItemModWeapon("frostdragonsword", MatSpecialweapons, "Frostdragon"),"frostdragonsword");
     	GameRegistry.registerItem(xclaibur = new ItemModWeapon("xclaibur", MatSpecialweaponsadvanced, "TrueXcalibur"),"xclaibur");
     	GameRegistry.registerItem(tomerspear = new ItemModWeapon("tomerspear", MatSpecialweaponsadvanced, "Tomer"),"tomerspear"); //make bigger
@@ -176,6 +177,7 @@ public final class ModItems {
     	GameRegistry.registerItem(SkySlasher= new ItemModWeapon("SkySlasher", MatSpecialweaponsadvanced, "SkySlasher"),"SkySlasher");
     	GameRegistry.registerItem(Sharpenedcutlass= new ItemModWeapon("Sharpenedcutlass", MatSpecialweapons, "Sharpenedcutlass"),"Sharpenedcutlass");
     	GameRegistry.registerItem(Royalenderguardspear= new ItemModWeapon("Royalenderguardspear", MatSpecialweaponsadvanced, "Royalenderguardspear"),"Royalenderguardspear"); //make bigger
+    	GameRegistry.registerItem(Blazingkatana= new ItemModWeapon("Blazingkatana", MatSpecialweapons, "Blazingkatana"),"Blazingkatana");
 
     	
     	//Tools	
