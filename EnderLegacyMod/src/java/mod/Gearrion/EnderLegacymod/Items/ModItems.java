@@ -64,14 +64,17 @@ public final class ModItems {
   public static Item Sharpenedcutlass;
   public static Item Royalenderguardspear;
   public static Item Blazingkatana;
+  public static Item Thundersythe;
+  public static Item Divinearmylongsword;
+  public static Item Enderforgershammer;
+  public static Item EnderTrident;
+  public static Item SkySlasher;
   public static Item Highendergeneralhelm;
   public static Item Highendergeneralchestplate;
   public static Item Enderkingchestplate;
   public static Item Endercrown;
   public static Item Enderkingcape; 
   public static Item Enderkingleggings;
-  public static Item EnderTrident;
-  public static Item SkySlasher;
   public static Item Divinehelm;
   public static Item Divinechestplate;
   public static Item Divineleggings;
@@ -97,6 +100,7 @@ public final class ModItems {
 		public static ToolMaterial MatSpecialweaponsadvanced = EnumHelper.addToolMaterial("MatSpecialweaponsadvanced", 4, 2500, 16.0F, 14.0F, 40);		
 		public static ToolMaterial matdfab = EnumHelper.addToolMaterial("matdfab", 4, 2500, 16.0F, 2.0F, 40);		
 		public static ToolMaterial Matendt = EnumHelper.addToolMaterial("Matendt", 4, 0, 1.0F, 16.0F, 53);
+		public static ToolMaterial Thunder = EnumHelper.addToolMaterial("Thunder", 4, 100000, 1.0F, 17.0F, 60);
 		public static ArmorMaterial MatBoneArmor = EnumHelper.addArmorMaterial("MatBoneArmor", 7, new int[] {2, 6, 4, 2}, 18);	
 		public static ArmorMaterial MatEnderKingArmor = EnumHelper.addArmorMaterial("MatEnderKingArmor", 1000000, new int[] {7, 12, 6, 4}, 25);	
 		public static ArmorMaterial MatHighEnderGeneralArmor = EnumHelper.addArmorMaterial("MatHighEnderGeneralArmor", 15000, new int[] {6, 11, 0, 0}, 58);	
@@ -177,7 +181,10 @@ public final class ModItems {
     	GameRegistry.registerItem(SkySlasher= new ItemModWeapon("SkySlasher", MatSpecialweaponsadvanced, "SkySlasher"),"SkySlasher");
     	GameRegistry.registerItem(Sharpenedcutlass= new ItemModWeapon("Sharpenedcutlass", MatSpecialweapons, "Sharpenedcutlass"),"Sharpenedcutlass");
     	GameRegistry.registerItem(Royalenderguardspear= new ItemModWeapon("Royalenderguardspear", MatSpecialweaponsadvanced, "Royalenderguardspear"),"Royalenderguardspear"); //make bigger
-    	GameRegistry.registerItem(Blazingkatana= new ItemModWeapon("Blazingkatana", MatSpecialweapons, "Blazingkatana"),"Blazingkatana");
+    	GameRegistry.registerItem(Blazingkatana= new ItemModWeapon("Blazingkatana", MatSpecialweapons, "Blazing katana"),"Blazingkatana");
+    	GameRegistry.registerItem(Thundersythe= new ItemModWeapon("Thundersythe", Thunder, "Thundersythe"),"Thundersythe"); //make bigger
+    	GameRegistry.registerItem(Enderforgershammer= new ItemModWeapon("Enderforgershammer", MatSpecialweapons, "Enderforgershammer"),"Enderforgershammer"); //maybe a forge mechanic for players to smelt the ore then pound it into an ingot
+    	GameRegistry.registerItem(Divinearmylongsword= new ItemModWeapon("Divinearmylongsword", MatSpecialweapons, "Divinearmylongsword"),"Divinearmylongsword");
 
     	
     	//Tools	
