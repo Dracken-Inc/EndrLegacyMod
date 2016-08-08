@@ -82,6 +82,16 @@ public final class ModItems {
   public static Item Royalguardhelm;
   public static Item Royalguardchestplate;
   public static Item Royalguardhood;
+  public static Item Headroyalguardchestplate;
+  public static Item Moltenendersteel;
+  public static Item mithrilingot;
+  public static Item jadeingot;
+  public static Item dawnsbetrayal;
+  public static Item swordoflostsouls;
+  public static Item Jadeblade;
+  public static Item mithrilsword;
+  
+  
   
   
   //MATS			Name("Name"	=(Harvestlvl,Durability,Mining Speed,Damage,enchantability)									
@@ -126,8 +136,14 @@ public final class ModItems {
 	    GameRegistry.registerItem(dragonsymbol = new ItemModBasic("dragonsymbol"),"dragonsymbol");
 	    GameRegistry.registerItem(Endergem = new ItemModBasic("Endergem"),"Endergem");
 		GameRegistry.registerItem(Demoningot = new ItemModBasic("Demoningot"),"Demoningot");
+		GameRegistry.registerItem(Moltenendersteel = new ItemModBasic("Moltenendersteel"),"Moltenendersteel");
+		GameRegistry.registerItem(mithrilingot = new ItemModBasic("mithrilingot"),"mithrilingot");
+		GameRegistry.registerItem(jadeingot = new ItemModBasic("jadeingot"),"jadeingot");
 
-	    //Wands
+	    
+		
+		
+		//Wands
 		
 		//Armor
         GameRegistry.registerItem(Endersteelhelmet = new ItemModArmor("Endersteelhelmet", MatEnderSteelArmor, "Endersteelhelmet", 0), "Endersteelhelmet"); //0 for helmet
@@ -151,6 +167,7 @@ public final class ModItems {
     	GameRegistry.registerItem(Royalguardhelm = new ItemModArmor("Royalguardhelm", MatRoyalenderguardarmor, "Royalguardhelm", 0), "Royalguardhelm"); //0 for helmet
       	GameRegistry.registerItem(Royalguardchestplate = new ItemModArmor("Royalguardchestplate", MatRoyalenderguardarmor, "Royalguardchestplate", 1), "Royalguardchestplate"); // 1 for chestplate
     	GameRegistry.registerItem(Royalguardhood = new ItemModArmor("Royalguardhood", MatRoyalenderguardarmor, "Royalguardhood", 0), "Royalguardhood"); //0 for helmet
+     	GameRegistry.registerItem(Headroyalguardchestplate = new ItemModArmor("Headroyalguardchestplate", MatHighEnderGeneralArmor, "Highendergeneralchestplate", 1), "Headroyalguardhood"); // 1 for chestplate
 
     	
     	//Weapons                 ( "Class Name"                ( "Internal Name"    Material         "Texture")   "give item name")
@@ -179,13 +196,21 @@ public final class ModItems {
     	GameRegistry.registerItem(dfab= new ItemModWeapon("dfab", matdfab, "dfab"),"dfab");
     	GameRegistry.registerItem(EnderTrident= new ItemModWeapon("EnderTrident", Matendt, "EnderTrident"),"EnderTrident"); //make bigger
     	GameRegistry.registerItem(SkySlasher= new ItemModWeapon("SkySlasher", MatSpecialweaponsadvanced, "SkySlasher"),"SkySlasher");
-    	GameRegistry.registerItem(Sharpenedcutlass= new ItemModWeapon("Sharpenedcutlass", MatSpecialweapons, "Sharpenedcutlass"),"Sharpenedcutlass");
+    	GameRegistry.registerItem(Sharpenedcutlass= new ItemModWeapon("Sharpenedcutlass", Matbasic, "Sharpenedcutlass"),"Sharpenedcutlass");
     	GameRegistry.registerItem(Royalenderguardspear= new ItemModWeapon("Royalenderguardspear", MatSpecialweaponsadvanced, "Royalenderguardspear"),"Royalenderguardspear"); //make bigger
     	GameRegistry.registerItem(Blazingkatana= new ItemModWeapon("Blazingkatana", MatSpecialweapons, "Blazing katana"),"Blazingkatana");
     	GameRegistry.registerItem(Thundersythe= new ItemModWeapon("Thundersythe", Thunder, "Thundersythe"),"Thundersythe"); //make bigger
     	GameRegistry.registerItem(Enderforgershammer= new ItemModWeapon("Enderforgershammer", MatSpecialweapons, "Enderforgershammer"),"Enderforgershammer"); //maybe a forge mechanic for players to smelt the ore then pound it into an ingot
     	GameRegistry.registerItem(Divinearmylongsword= new ItemModWeapon("Divinearmylongsword", MatSpecialweapons, "Divinearmylongsword"),"Divinearmylongsword");
+    	GameRegistry.registerItem(swordoflostsouls= new ItemModWeapon("swordoflostsouls", MatSpecialweapons, "swordoflostsouls"),"swordoflostsouls");
+    	GameRegistry.registerItem(dawnsbetrayal= new ItemModWeapon("dawnsbetrayal", MatSpecialweaponsadvanced, "dawnsbetrayal"),"dawnsbetrayal");
+    	GameRegistry.registerItem(Jadeblade= new ItemModWeapon("Jadeblade", MatSpecialweapons, "Jadeblade"),"Jadeblade");
+    	GameRegistry.registerItem(mithrilsword= new ItemModWeapon("mithrilsword", MatSpecialweaponsadvanced, "mithrilsword"),"mithrilsword");
 
+    	
+    	
+    	
+    	
     	
     	//Tools	
     	GameRegistry.registerItem(Endersteelpickaxe = new ItemModTool ("Endersteelpickaxe", MatEnderSteelItem), "endersteelpickaxe");
