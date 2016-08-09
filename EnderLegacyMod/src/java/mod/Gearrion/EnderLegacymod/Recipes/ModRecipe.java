@@ -81,6 +81,8 @@ import net.minecraftforge.oredict.OreDictionary;
 		GameRegistry.addRecipe(new ItemStack(ModItems.Divineboots, 1)," d "," n ","   ",'d', Item.itemRegistry.getObject("diamond_boots"),'n', Item.itemRegistry.getObject("nether_star"));
 		GameRegistry.addRecipe(new ItemStack(ModItems.Highendergeneralhelm, 1),"eee","ece","   ",'e', ModItems.Endersteelignot,'c', ModItems.Endersteelhelmet);
 		GameRegistry.addRecipe(new ItemStack(ModItems.Highendergeneralchestplate, 1),"ece","eee","eee",'e', ModItems.Endersteelignot,'c', ModItems.Endersteelchestplate);
-		
+		GameRegistry.addRecipe(new ItemStack(ModItems.Royalguardhelm, 1),"eie","ece","   ",'e', ModItems.Endersteelignot,'c', ModItems.Endersteelhelmet,'i', Item.itemRegistry.getObject("iron_ingot"));
+		GameRegistry.addRecipe(new ItemStack(ModItems.Headroyalguardchestplate, 1),"e e","ece","eie",'e', ModItems.Endersteelignot,'c', ModItems.Endersteelhelmet,'i', Item.itemRegistry.getObject("iron_ingot"));
+
 	}
 }

@@ -90,9 +90,8 @@ public final class ModItems {
   public static Item swordoflostsouls;
   public static Item Jadeblade;
   public static Item mithrilsword;
-  
-  
-  
+  public static Item humansrelicsword;
+  public static Item nightsembrace;
   
   //MATS			Name("Name"	=(Harvestlvl,Durability,Mining Speed,Damage,enchantability)									
 		public static ToolMaterial MatEnderSteelItem = EnumHelper.addToolMaterial("MatEnderSteelItem", 6, 2500, 40.0F, 6.0F, 45); // axe thinks it's a pickaxe
@@ -206,6 +205,8 @@ public final class ModItems {
     	GameRegistry.registerItem(dawnsbetrayal= new ItemModWeapon("dawnsbetrayal", MatSpecialweaponsadvanced, "dawnsbetrayal"),"dawnsbetrayal");
     	GameRegistry.registerItem(Jadeblade= new ItemModWeapon("Jadeblade", MatSpecialweapons, "Jadeblade"),"Jadeblade");
     	GameRegistry.registerItem(mithrilsword= new ItemModWeapon("mithrilsword", MatSpecialweaponsadvanced, "mithrilsword"),"mithrilsword");
+    	GameRegistry.registerItem(nightsembrace= new ItemModWeapon("nightsembrace", MatSpecialweaponsadvanced, "nightsembrace"),"nightsembrace");
+    	GameRegistry.registerItem(humansrelicsword = new ItemModWeapon("humansrelicsword", MatSpecialweapons, "humansrelicsword"),"humansrelicsword");
 
     	
     	
