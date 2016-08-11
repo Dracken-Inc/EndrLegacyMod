@@ -83,4 +83,6 @@ item.Jadeblade.name=Jade Blade
 item.Moltenendersteel.name=Molten Endersteel
 item.humansrelicsword.name=Divine Relic Sword
 item.nightsembrace.name=Night's Embrace
+tile.Jadeore.name=Jade Ore
+tile.mythrilore.name=Mythril Ore
 itemGroup.EnderLegacy=EnderLegacy

@@ -15,7 +15,11 @@ import net.minecraftforge.oredict.OreDictionary;
 		GameRegistry.addSmelting(ModBlocks.Endersteelore, new ItemStack (ModItems.Endersteelignot), 100);
 		OreDictionary.registerOre("demonblood", ModBlocks.Endersteelore);
 		GameRegistry.addSmelting(ModItems.demonblood, new ItemStack (ModItems.Demoningot), 100);
-   
+		OreDictionary.registerOre("mythrilore", ModBlocks.mythrilore);
+		GameRegistry.addSmelting(ModBlocks.mythrilore, new ItemStack (ModItems.mithrilingot), 100);
+		OreDictionary.registerOre("jadeore", ModBlocks.Jadeore);
+		GameRegistry.addSmelting(ModBlocks.Jadeore, new ItemStack (ModItems.jadeingot), 100);
+	
     //Shapped Recipe
 		GameRegistry.addRecipe(
 		   new ItemStack(ModBlocks.Endersteelblock),"ddd","ddd","ddd",'d',ModItems.Endersteelignot);
@@ -40,7 +44,7 @@ import net.minecraftforge.oredict.OreDictionary;
 		
 	//Weapons
 		GameRegistry.addRecipe(new ItemStack(ModItems.seeingeye, 1),"eee"," i "," o ",'e', ModItems.Endersteelignot,'o',Item.itemRegistry.getObject("stick"),'i',Item.itemRegistry.getObject("ender_eye")); 
-		GameRegistry.addRecipe(new ItemStack(ModItems.Endersteelsword, 1)," e "," e "," o ",'e', ModItems.Endersteelignot,'o', Item.itemRegistry.getObject("stick"));
+		GameRegistry.addRecipe(new ItemStack(ModItems.Endersteelsword, 1)," e "," e "," o ",'e', ModItems.Endersteelignot,'o', ModItems.Ironrod);
 		GameRegistry.addRecipe(new ItemStack(ModItems.Enderrelicsword, 1),"ge ","ge "," b ",'e', ModItems.Endersteelignot,'g', Item.itemRegistry.getObject("gold_ingot"),'b', Item.itemRegistry.getObject("blaze_rod")); 
 		GameRegistry.addRecipe(new ItemStack(ModItems.DivineBlade, 1)," d "," n "," b ",'n', Item.itemRegistry.getObject("nether_star"),'d', Item.itemRegistry.getObject("diamond"),'b', Item.itemRegistry.getObject("blaze_rod")); 
 		GameRegistry.addRecipe(new ItemStack(ModItems.frostdragonsword, 1),"ifi","ifi"," s ",'i', Item.itemRegistry.getObject("ice"),'f', Item.itemRegistry.getObject("iron_ingot"),'s', Item.itemRegistry.getObject("stick")); 
@@ -64,6 +68,8 @@ import net.minecraftforge.oredict.OreDictionary;
 		GameRegistry.addRecipe(new ItemStack(ModItems.Thundersythe, 1),"nn "," i "," i ",'i', ModItems.Ironrod,'n', Item.itemRegistry.getObject("nether_star"));		
 		GameRegistry.addRecipe(new ItemStack(ModItems.Divinearmylongsword, 1)," d "," n ","   ",'d', Item.itemRegistry.getObject("iron_sword"),'n', Item.itemRegistry.getObject("nether_star"));
 		GameRegistry.addRecipe(new ItemStack(ModItems.Enderforgershammer, 1),"eee","eoe"," o ",'e', ModItems.Endersteelignot,'o', ModItems.Ironrod);
+		GameRegistry.addRecipe(new ItemStack(ModItems.mithrilsword, 1)," e "," e "," o ",'e', ModItems.mithrilingot,'o', ModItems.Ironrod);
+		GameRegistry.addRecipe(new ItemStack(ModItems.Jadeblade, 1)," e "," e "," o ",'e', ModItems.jadeingot,'o', ModItems.Ironrod);
 
 		
 		//Armor	

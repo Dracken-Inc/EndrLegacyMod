@@ -170,7 +170,7 @@ public final class ModItems {
 
     	
     	//Weapons                 ( "Class Name"                ( "Internal Name"    Material         "Texture")   "give item name")
-    	GameRegistry.registerItem(EnderBlade = new ItemModWeapon("EnderBlade", MatEnderBladeItem, "Enderbladefinal"),"EnderBlade"); //Enderboy1025
+    	GameRegistry.registerItem(EnderBlade = new ItemModWeapon("EnderBlade", MatEnderBladeItem, "EnderbladeELITE"),"EnderBlade"); //Enderboy1025
     	GameRegistry.registerItem(Endersteelsword = new ItemModWeapon("Endersteelsword", MatEnderSteelItem, "Endersteelsword"),"Endersteelsword");
 //      GameRegistry.registerItem(Huntressbow = new ItemModWeapon("Huntressbow", MatEnderSteel),"Huntressbow", "Huntressbow");
     	GameRegistry.registerItem(VoidCutter = new ItemModWeapon("VoidCutter", MatVoidcutterItem, "Voidcutterfinal"),"VoidCutter");
