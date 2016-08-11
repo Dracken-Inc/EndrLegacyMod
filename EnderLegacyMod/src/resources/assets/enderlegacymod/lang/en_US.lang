@@ -85,4 +85,14 @@ item.humansrelicsword.name=Divine Relic Sword
 item.nightsembrace.name=Night's Embrace
 tile.Jadeore.name=Jade Ore
 tile.mythrilore.name=Mythril Ore
+item.mithrilhelmet.name=Mithril Helm
+item.mithrilchestplate.name=Mithril Chestplate
+item.mithrilpants.name=Mithril Pants
+item.mithrilboots.name=Mithril Boots
+item.jadehelmet.name=Jade Helm
+item.jadechestplate.name=Jade Chestplate
+item.jadepants.name=Jade Pants
+item.jadeboots.name=Jade Boots
+
+
 itemGroup.EnderLegacy=EnderLegacy

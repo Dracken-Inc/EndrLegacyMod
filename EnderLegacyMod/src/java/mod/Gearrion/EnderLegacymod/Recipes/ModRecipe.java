@@ -89,6 +89,14 @@ import net.minecraftforge.oredict.OreDictionary;
 		GameRegistry.addRecipe(new ItemStack(ModItems.Highendergeneralchestplate, 1),"ece","eee","eee",'e', ModItems.Endersteelignot,'c', ModItems.Endersteelchestplate);
 		GameRegistry.addRecipe(new ItemStack(ModItems.Royalguardhelm, 1),"eie","ece","   ",'e', ModItems.Endersteelignot,'c', ModItems.Endersteelhelmet,'i', Item.itemRegistry.getObject("iron_ingot"));
 		GameRegistry.addRecipe(new ItemStack(ModItems.Headroyalguardchestplate, 1),"e e","ece","eie",'e', ModItems.Endersteelignot,'c', ModItems.Endersteelhelmet,'i', Item.itemRegistry.getObject("iron_ingot"));
-
+		GameRegistry.addRecipe(new ItemStack(ModItems.jadehelmet, 1),"eee","e e","   ",'e', ModItems.jadeingot);
+		GameRegistry.addRecipe(new ItemStack(ModItems.jadechestplate, 1),"e e","eee","eee",'e', ModItems.jadeingot);
+		GameRegistry.addRecipe(new ItemStack(ModItems.jadepants, 1),"eee","e e","e e",'e', ModItems.jadeingot);
+		GameRegistry.addRecipe(new ItemStack(ModItems.jadeboots, 1),"   ","e e","e e",'e', ModItems.jadeingot);
+		GameRegistry.addRecipe(new ItemStack(ModItems.mithrilhelmet, 1),"eee","e e","   ",'e', ModItems.mithrilingot);
+		GameRegistry.addRecipe(new ItemStack(ModItems.mithrilchestplate, 1),"e e","eee","eee",'e', ModItems.mithrilingot);
+		GameRegistry.addRecipe(new ItemStack(ModItems.mithrilpants, 1),"eee","e e","e e",'e', ModItems.mithrilingot);
+		GameRegistry.addRecipe(new ItemStack(ModItems.mithrilboots, 1),"   ","e e","e e",'e', ModItems.mithrilingot);
+	
 	}
 }

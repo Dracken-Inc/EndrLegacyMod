@@ -92,6 +92,18 @@ public final class ModItems {
   public static Item mithrilsword;
   public static Item humansrelicsword;
   public static Item nightsembrace;
+  public static Item jadehelmet;
+  public static Item jadechestplate;
+  public static Item jadepants;
+  public static Item jadeboots;
+  public static Item mithrilhelmet;
+  public static Item mithrilchestplate;
+  public static Item mithrilpants;
+  public static Item mithrilboots;
+
+  
+  
+  
   
   //MATS			Name("Name"	=(Harvestlvl,Durability,Mining Speed,Damage,enchantability)									
 		public static ToolMaterial MatEnderSteelItem = EnumHelper.addToolMaterial("MatEnderSteelItem", 6, 2500, 40.0F, 6.0F, 45); // axe thinks it's a pickaxe
@@ -116,6 +128,8 @@ public final class ModItems {
 		public static ArmorMaterial MatEnderSteelArmor = EnumHelper.addArmorMaterial("MatEnderSteelArmor", 10000, new int[] {4, 9, 4, 3}, 8);	
 		public static ArmorMaterial MatDivineArmor = EnumHelper.addArmorMaterial("MatDivineArmor", 10000, new int[] {4, 10, 4, 3}, 5);	
 		public static ArmorMaterial MatRoyalenderguardarmor = EnumHelper.addArmorMaterial("MatRoyalenderguardarmor", 15000, new int[] {5, 10, 0, 0}, 58);	
+		public static ArmorMaterial MatjadeArmor = EnumHelper.addArmorMaterial("MatjadeArmor", 10000, new int[] {2, 6, 2, 1}, 64);	
+		public static ArmorMaterial MatmithrilArmor = EnumHelper.addArmorMaterial("MatmithrilArmor", 10000, new int[] {4, 8, 3, 2}, 20);	
 
 		
 		
@@ -167,7 +181,15 @@ public final class ModItems {
       	GameRegistry.registerItem(Royalguardchestplate = new ItemModArmor("Royalguardchestplate", MatRoyalenderguardarmor, "Royalguardchestplate", 1), "Royalguardchestplate"); // 1 for chestplate
     	GameRegistry.registerItem(Royalguardhood = new ItemModArmor("Royalguardhood", MatRoyalenderguardarmor, "Royalguardhood", 0), "Royalguardhood"); //0 for helmet
      	GameRegistry.registerItem(Headroyalguardchestplate = new ItemModArmor("Headroyalguardchestplate", MatHighEnderGeneralArmor, "Highendergeneralchestplate", 1), "Headroyalguardhood"); // 1 for chestplate
-
+     	GameRegistry.registerItem(jadehelmet = new ItemModArmor("jadehelmet", MatjadeArmor, "jadehelmet", 0), "jadehelmet"); //0 for helmet
+      	GameRegistry.registerItem(jadechestplate = new ItemModArmor("jadechestplate", MatjadeArmor, "jadechestplate", 1), "jadechestplate"); // 1 for chestplate
+      	GameRegistry.registerItem(jadepants = new ItemModArmor("jadepants", MatjadeArmor, "jadepants", 2), "jadepants"); // 2 for leggings
+      	GameRegistry.registerItem(jadeboots = new ItemModArmor("jadeboots", MatjadeArmor, "jadeboots", 3), "jadeboots"); // 3 for boots
+      	GameRegistry.registerItem(mithrilhelmet = new ItemModArmor("mithrilhelmet", MatmithrilArmor, "mithrilhelmet", 0), "mithrilhelmet"); //0 for helmet
+      	GameRegistry.registerItem(mithrilchestplate = new ItemModArmor("mithrilchestplate", MatmithrilArmor, "mithrilchestplate", 1), "mithrilchestplate"); // 1 for chestplate
+      	GameRegistry.registerItem(mithrilpants = new ItemModArmor("mithrilpants", MatmithrilArmor, "mithrilpants", 2), "mithrilpants"); // 2 for leggings
+      	GameRegistry.registerItem(mithrilboots = new ItemModArmor("mithrilboots", MatmithrilArmor, "mithrilboots", 3), "mithrilboots"); // 3 for boots
+    	
     	
     	//Weapons                 ( "Class Name"                ( "Internal Name"    Material         "Texture")   "give item name")
     	GameRegistry.registerItem(EnderBlade = new ItemModWeapon("EnderBlade", MatEnderBladeItem, "EnderbladeELITE"),"EnderBlade"); //Enderboy1025
