@@ -70,6 +70,7 @@ import net.minecraftforge.oredict.OreDictionary;
 		GameRegistry.addRecipe(new ItemStack(ModItems.Enderforgershammer, 1),"eee","eoe"," o ",'e', ModItems.Endersteelignot,'o', ModItems.Ironrod);
 		GameRegistry.addRecipe(new ItemStack(ModItems.mithrilsword, 1)," e "," e "," o ",'e', ModItems.mithrilingot,'o', ModItems.Ironrod);
 		GameRegistry.addRecipe(new ItemStack(ModItems.Jadeblade, 1)," e "," e "," o ",'e', ModItems.jadeingot,'o', ModItems.Ironrod);
+		GameRegistry.addRecipe(new ItemStack(ModItems.royalenderguardsword, 1),"eee"," d "," o ",'e', ModItems.Endersteelignot,'o',ModItems.Ironrod,'d',Item.itemRegistry.getObject("iron_ingot")); 
 
 		
 		//Armor	
