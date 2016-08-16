@@ -199,7 +199,7 @@ public final class ModItems {
     	GameRegistry.registerItem(VoidCutter = new ItemModWeapon("VoidCutter", MatVoidcutterItem, "VoidcutterELITE"),"VoidCutter");
     	GameRegistry.registerItem(DivineBlade = new ItemModWeapon("DivineBlade", MatDivineblade, "DivineBlade"),"DivineBlade");
     	GameRegistry.registerItem(Enderrelicsword = new ItemModWeapon("Enderrelicsword", MatSpecialweapons, "Enderrelicsword"),"Enderrelicsword");
-    	GameRegistry.registerItem(endgeneralsword = new ItemModWeapon("endgeneralsword", MatSpecialweaponsadvanced, "endgeneralsword"),"endgeneralsword");
+    	GameRegistry.registerItem(endgeneralsword = new ItemModWeapon("endgeneralsword", MatSpecialweaponsUlt, "endgeneralsword"),"endgeneralsword");
     	GameRegistry.registerItem(PaladosHammer = new ItemModWeapon("Palados'Hammer", Matpalados, "Palados'Hammer"),"Palados'Hammer");
     	GameRegistry.registerItem(seeingeye = new ItemModWeapon("Seeingeye", MatSpecialweapons, "Seeingeye"),"Seeingeye");
     	GameRegistry.registerItem(Nathanielskatana = new ItemModWeapon("Nathanielskatana", MatSpecialweaponsadvanced, "Nathanielskatana"),"Nathanielskatana");
