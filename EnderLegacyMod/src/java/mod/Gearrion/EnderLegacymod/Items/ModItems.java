@@ -101,14 +101,14 @@ public final class ModItems {
   public static Item mithrilpants;
   public static Item mithrilboots;
   public static Item royalenderguardsword;
-  
+  public static Item Spectralblade;
   
   
   
   //MATS			Name("Name"	=(Harvestlvl,Durability,Mining Speed,Damage,enchantability)									
 		public static ToolMaterial MatEnderSteelItem = EnumHelper.addToolMaterial("MatEnderSteelItem", 6, 2500, 40.0F, 6.0F, 45); // axe thinks it's a pickaxe
 		public static ToolMaterial MatEnderBladeItem = EnumHelper.addToolMaterial("MatEnderBladeItem", 6, 0, 40.0F, 21.0F, 50);
-		public static ToolMaterial MatVoidcutterItem = EnumHelper.addToolMaterial("MatVoidcutterItem", 6, 0, 30.0F, 19.0F, 50);
+		public static ToolMaterial MatVoidcutterItem = EnumHelper.addToolMaterial("MatVoidcutterItem", 6, 0, 30.0F, 20.0F, 50);
 		public static ToolMaterial MatEnderwand = EnumHelper.addToolMaterial("MatEnderwand", 1, 50, 1.0F, 1.0F, 0);	
 		public static ToolMaterial MatSpecialweapons = EnumHelper.addToolMaterial("MatSpecialweapons", 4, 2500, 16.0F, 8.0F, 35);		
 		public static ToolMaterial Matbasic = EnumHelper.addToolMaterial("Matbasic", 4, 1000, 14.0F, 4.0F, 25);
@@ -122,7 +122,8 @@ public final class ModItems {
 		public static ToolMaterial MatSpecialweaponsUlt = EnumHelper.addToolMaterial("MatSpecialweaponsUlt", 4, 2500, 16.0F, 14.0F, 40);		
         public static ToolMaterial matdfab = EnumHelper.addToolMaterial("matdfab", 4, 2500, 16.0F, 2.0F, 40);		
 		public static ToolMaterial Matendt = EnumHelper.addToolMaterial("Matendt", 4, 0, 1.0F, 16.0F, 53);
-		public static ToolMaterial Thunder = EnumHelper.addToolMaterial("Thunder", 4, 100000, 1.0F, 17.0F, 60);
+		public static ToolMaterial Matghost = EnumHelper.addToolMaterial("Matghost", 4, 10, 1.0F, 20.0F, 53);
+        public static ToolMaterial Thunder = EnumHelper.addToolMaterial("Thunder", 4, 100000, 1.0F, 17.0F, 60);
 		public static ArmorMaterial MatBoneArmor = EnumHelper.addArmorMaterial("MatBoneArmor", 7, new int[] {2, 6, 4, 2}, 18);	
 		public static ArmorMaterial MatEnderKingArmor = EnumHelper.addArmorMaterial("MatEnderKingArmor", 1000000, new int[] {7, 12, 6, 4}, 25);	
 		public static ArmorMaterial MatHighEnderGeneralArmor = EnumHelper.addArmorMaterial("MatHighEnderGeneralArmor", 15000, new int[] {6, 11, 0, 0}, 58);	
@@ -231,6 +232,7 @@ public final class ModItems {
     	GameRegistry.registerItem(nightsembrace= new ItemModWeapon("nightsembrace", MatSpecialweaponsUlt, "nightsembrace"),"nightsembrace");
     	GameRegistry.registerItem(humansrelicsword = new ItemModWeapon("humansrelicsword", MatSpecialweapons, "humansrelicsword"),"humansrelicsword");
     	GameRegistry.registerItem(royalenderguardsword= new ItemModWeapon("royalenderguardsword", MatSpecialweapons, "royalenderguardsword"),"royalenderguardsword");
+    	GameRegistry.registerItem(Spectralblade= new ItemModWeapon("Spectralblade", Matghost, "Spectralblade"),"Spectralblade");
 
     	
     	
