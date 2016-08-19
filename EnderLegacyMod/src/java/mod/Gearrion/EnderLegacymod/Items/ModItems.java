@@ -102,6 +102,18 @@ public final class ModItems {
   public static Item mithrilboots;
   public static Item royalenderguardsword;
   public static Item Spectralblade;
+  public static Item Souldevourer;
+  public static Item Darkspear;
+  public static Item Demonkingcrown;
+  public static Item Demonkingchestplate;
+  public static Item Demonkingpants;
+  public static Item Demonkingboots;
+ 
+ 
+  
+  
+  
+  
   
   
   
@@ -132,6 +144,7 @@ public final class ModItems {
 		public static ArmorMaterial MatRoyalenderguardarmor = EnumHelper.addArmorMaterial("MatRoyalenderguardarmor", 15000, new int[] {5, 10, 0, 0}, 58);	
 		public static ArmorMaterial MatjadeArmor = EnumHelper.addArmorMaterial("MatjadeArmor", 10000, new int[] {2, 6, 2, 1}, 64);	
 		public static ArmorMaterial MatmithrilArmor = EnumHelper.addArmorMaterial("MatmithrilArmor", 10000, new int[] {4, 8, 3, 2}, 20);	
+		public static ArmorMaterial MatdemonArmor = EnumHelper.addArmorMaterial("MatdemonArmor", 10000, new int[] {4, 8, 3, 2}, 45);	
 
 		
 		
@@ -191,7 +204,11 @@ public final class ModItems {
       	GameRegistry.registerItem(mithrilchestplate = new ItemModArmor("mithrilchestplate", MatmithrilArmor, "mithrilchestplate", 1), "mithrilchestplate"); // 1 for chestplate
       	GameRegistry.registerItem(mithrilpants = new ItemModArmor("mithrilpants", MatmithrilArmor, "mithrilpants", 2), "mithrilpants"); // 2 for leggings
       	GameRegistry.registerItem(mithrilboots = new ItemModArmor("mithrilboots", MatmithrilArmor, "mithrilboots", 3), "mithrilboots"); // 3 for boots
-    	
+      	GameRegistry.registerItem(Demonkingcrown = new ItemModArmor("Demonkingcrown", MatdemonArmor, "Demonkingcrown", 0), "Demonkingcrown"); //0 for helmet
+      	GameRegistry.registerItem(Demonkingchestplate = new ItemModArmor("Demonkingchestplate", MatdemonArmor, "Demonkingchestplate", 1), "Demonkingchestplate"); // 1 for chestplate
+      	GameRegistry.registerItem(Demonkingpants = new ItemModArmor("Demonkingpants", MatdemonArmor, "Demonkingpants", 2), "Demonkingpants"); // 2 for leggings
+      	GameRegistry.registerItem(Demonkingboots = new ItemModArmor("Demonkingboots", MatdemonArmor, "Demonkingboots", 3), "Demonkingboots"); // 3 for boots
+    
     	
     	//Weapons                 ( "Class Name"                ( "Internal Name"    Material         "Texture")   "give item name")
     	GameRegistry.registerItem(EnderBlade = new ItemModWeapon("EnderBlade", MatEnderBladeItem, "EnderbladeELITE"),"EnderBlade"); //Enderboy1025
@@ -233,6 +250,8 @@ public final class ModItems {
     	GameRegistry.registerItem(humansrelicsword = new ItemModWeapon("humansrelicsword", MatSpecialweapons, "humansrelicsword"),"humansrelicsword");
     	GameRegistry.registerItem(royalenderguardsword= new ItemModWeapon("royalenderguardsword", MatSpecialweapons, "royalenderguardsword"),"royalenderguardsword");
     	GameRegistry.registerItem(Spectralblade= new ItemModWeapon("Spectralblade", Matghost, "Spectralblade"),"Spectralblade");
+    	GameRegistry.registerItem(Souldevourer= new ItemModWeapon("Souldevourer", MatSpecialweapons, "Soul Devourer"),"Souldevourer");
+    	GameRegistry.registerItem(Darkspear = new ItemModWeapon("Darkspear", MatSpecialweaponsadvanced, "Darkspear"),"Darkspear"); //make bigger
 
     	
     	
