@@ -72,6 +72,8 @@ import net.minecraftforge.oredict.OreDictionary;
 		GameRegistry.addRecipe(new ItemStack(ModItems.Jadeblade, 1)," e "," e "," o ",'e', ModItems.jadeingot,'o', ModItems.Ironrod);
 		GameRegistry.addRecipe(new ItemStack(ModItems.royalenderguardsword, 1),"eee"," d "," o ",'e', ModItems.Endersteelignot,'o',ModItems.Ironrod,'d',Item.itemRegistry.getObject("iron_ingot")); 
 		GameRegistry.addRecipe(new ItemStack(ModItems.Spectralblade, 1),"eee","eie"," o ",'e',Item.itemRegistry.getObject("iron_ingot"),'o',Item.itemRegistry.getObject("blaze_rod"),'i',Item.itemRegistry.getObject("bone")); 
+		GameRegistry.addRecipe(new ItemStack(ModItems.Souldevourer, 1),"eee"," d "," o ",'d', ModItems.swordoflostsouls,'o',ModItems.Ironrod,'e',Item.itemRegistry.getObject("blaze_rod")); 
+		GameRegistry.addRecipe(new ItemStack(ModItems.swordoflostsouls, 1)," e "," d "," o ",'d',Item.itemRegistry.getObject("ghast_tear"),'o',ModItems.Ironrod,'e',Item.itemRegistry.getObject("bone")); 
 
 		
 		//Armor	
