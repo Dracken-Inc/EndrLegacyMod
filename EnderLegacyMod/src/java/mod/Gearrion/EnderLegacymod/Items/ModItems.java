@@ -108,7 +108,10 @@ public final class ModItems {
   public static Item Demonkingchestplate;
   public static Item Demonkingpants;
   public static Item Demonkingboots;
- 
+  public static Item Enderdiadem;
+  public static Item Enderqueentop;
+  public static Item Enderqueenhiddenarmor;
+  public static Item Enderqueendress;
  
   
   
@@ -145,6 +148,7 @@ public final class ModItems {
 		public static ArmorMaterial MatjadeArmor = EnumHelper.addArmorMaterial("MatjadeArmor", 10000, new int[] {2, 6, 2, 1}, 64);	
 		public static ArmorMaterial MatmithrilArmor = EnumHelper.addArmorMaterial("MatmithrilArmor", 10000, new int[] {4, 8, 3, 2}, 20);	
 		public static ArmorMaterial MatdemonArmor = EnumHelper.addArmorMaterial("MatdemonArmor", 10000, new int[] {4, 8, 3, 2}, 45);	
+		public static ArmorMaterial MatEnderQueenArmor = EnumHelper.addArmorMaterial("MatEnderQueenArmor", 1000000, new int[] {2, 5, 15, 2}, 45);	
 
 		
 		
@@ -208,6 +212,10 @@ public final class ModItems {
       	GameRegistry.registerItem(Demonkingchestplate = new ItemModArmor("Demonkingchestplate", MatdemonArmor, "Demonkingchestplate", 1), "Demonkingchestplate"); // 1 for chestplate
       	GameRegistry.registerItem(Demonkingpants = new ItemModArmor("Demonkingpants", MatdemonArmor, "Demonkingpants", 2), "Demonkingpants"); // 2 for leggings
       	GameRegistry.registerItem(Demonkingboots = new ItemModArmor("Demonkingboots", MatdemonArmor, "Demonkingboots", 3), "Demonkingboots"); // 3 for boots
+      	GameRegistry.registerItem(Enderdiadem = new ItemModArmor("Enderdiadem", MatEnderQueenArmor, "Enderdiadem", 0), "Enderdiadem"); //0 for helmet
+      	GameRegistry.registerItem(Enderqueentop = new ItemModArmor("Enderqueentop", MatEnderQueenArmor, "Enderqueentop", 1), "Enderqueentop"); // 1 for chestplate
+      	GameRegistry.registerItem(Enderqueenhiddenarmor = new ItemModArmor("Enderqueenhiddenarmor", MatEnderQueenArmor, "Enderqueenhiddenarmor", 2), "Enderqueenhiddenarmor"); // 2 for leggings
+      	GameRegistry.registerItem(Enderqueendress = new ItemModArmor("Enderqueendress", MatEnderQueenArmor, "Enderqueendress", 3), "Enderqueendress"); // 3 for boots
     
     	
     	//Weapons                 ( "Class Name"                ( "Internal Name"    Material         "Texture")   "give item name")
